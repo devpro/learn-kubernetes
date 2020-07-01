@@ -4,6 +4,7 @@
 
 * [Introduction](./docs/introduction.md)
 * [Basics](./docs/basics.md)
+* [Installation and Configuration](./docs/installation-configuration.md)
 
 ## Training
 
