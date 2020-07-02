@@ -18,10 +18,10 @@ Going further:
 
 Other solutions for managing containerized applications:
 
-- Docker Swarm
-- Apache Mesos
-- Nomad
-- Rancher
+- [Docker Swarm](https://docs.docker.com/engine/swarm/)
+- [Apache Mesos](https://mesos.apache.org/)
+- [HashiCorp Nomad](https://www.nomadproject.io/)
+- [Rancher]((https://rancher.com/)
 
 ## Architecture
 
