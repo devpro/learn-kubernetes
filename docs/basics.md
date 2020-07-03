@@ -72,7 +72,7 @@ To make management easier, we can use labels, arbitrary strings which become par
 
 - [Minikube](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/minikube.md)
 - kubeadm
-- kubectl
+- [kubectl](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/kubectl.md)
 - [Helm](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/helm.md)
 - Kompose
 
