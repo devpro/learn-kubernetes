@@ -21,7 +21,7 @@ Other solutions for managing containerized applications:
 - [Docker Swarm](https://docs.docker.com/engine/swarm/)
 - [Apache Mesos](https://mesos.apache.org/)
 - [HashiCorp Nomad](https://www.nomadproject.io/)
-- [Rancher]((https://rancher.com/)
+- [Rancher](https://rancher.com/)
 
 ## Architecture
 
@@ -70,10 +70,10 @@ To make management easier, we can use labels, arbitrary strings which become par
 
 ## Tools
 
-- Minikube
+- [Minikube](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/minikube.md)
 - kubeadm
 - kubectl
-- Helm
+- [Helm](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/helm.md)
 - Kompose
 
 ## Resources
