@@ -1,10 +1,18 @@
 # Kubernetes Certification 2020
 
+This codebase is a training material to get knowledge about Kubernetes, in the contect of passing Kubernetes certifications.
+
+Topics that will be included:
+
+- History
+- Architecture and components
+- API and most important resources
+- Application deployment and management
+
 ## Content
 
-* [Introduction](./docs/introduction.md)
 * [Basics](./docs/basics.md)
-* [Installation and Configuration](./docs/installation-configuration.md)
+* [Installation](./docs/installation.md)
 * [Projects](./docs/projects.md)
 
 ## Training
