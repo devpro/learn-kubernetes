@@ -33,7 +33,7 @@ A network must be defined to manage the cluster and avoid any IP conflict.
 
 3 options:
 
-- [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/): boostrap quickly a cluster (appeared in v1.4, stabke and HA with V1.15)
+- [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/): boostrap quickly a cluster (appeared in v1.4, stabe & HA with V1.15)
 - [kops](https://kubernetes.io/docs/setup/production-environment/tools/kops/)
 - [kubespray](https://kubernetes.io/docs/setup/production-environment/tools/kubespray/)
 
@@ -80,4 +80,6 @@ Kubernetes The Hard Way by Kelsey Hightower: [GitHub](https://github.com/kelseyh
 
 ### Hyperkube
 
-TODO
+As of July of 2020, Kyperkube seems deprecated. The image build has been removed from Kubernetes base images, see [PR#88676](https://github.com/kubernetes/kubernetes/pull/88676).
+
+
