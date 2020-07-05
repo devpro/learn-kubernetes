@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Kubernetes is the greek word for Helmsman, or pilot of the ship. It started as an internal Google product called Borg, they have been working with it during 15 years before giving it to the community (in 2014).
+Kubernetes is the greek word for Helmsman, or pilot of the ship. It started as an internal Google product called **Borg**, they have been working with it during 15 years before giving it to the community (in 2014).
 
-As mentionned in the official website [kubernetes.io](https://kubernetes.io/), "Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications." (in other words an orchestration system to deploy and manage containers).
+As mentionned in the official website [kubernetes.io](https://kubernetes.io/), "Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications". In other words, Kubernetes is an orchestration system to deploy and manage containers.
 
-Keeping with the maritime theme of Docker containers, Kubernetes is the pilot of a ship of containers and is all about decoupled, transcient services.
+Keeping with the maritime theme of Docker containers, Kubernetes is the pilot of a ship of containers and is all about decoupled and transcient services.
 
-Kubernetes is written in Go Language, it is an open source software with an Apache license. Google donated Kubernetes to the Cloud Native Computing Foundation (CNCF) within The Linux Foundation in July 2015, when Kubernetes reached the v1.0 release.
+Kubernetes is written in Go Language with an Apache license. Google donated Kubernetes to the Cloud Native Computing Foundation (CNCF) within The Linux Foundation in July 2015, when Kubernetes reached the v1.0 release.
 
 Going further:
 
