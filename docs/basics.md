@@ -2,11 +2,15 @@
 
 ## Introduction
 
-Kubernetes is the greek word for Helmsman, or pilot of the ship. It started as an internal Google product called **Borg**, which have been used during 15 years before being given it to the community (in 2014).
+> Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications
 
-As mentionned in the official website [kubernetes.io](https://kubernetes.io/), "Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications". In other words, Kubernetes is an orchestration system to deploy and manage containers.
+Reference: [kubernetes.io](https://kubernetes.io/)
 
-Keeping with the maritime theme of Docker containers, Kubernetes is the pilot of a ship of containers and is all about decoupled and transcient services.
+In other words, Kubernetes is an orchestration system to deploy and manage containers in order to serve decoupled and transcient services.
+
+Kubernetes comes from the Greek language, it means Helmsman (or pilot of the ship).
+
+It started as an internal Google product called **Borg**, which have been used during 15 years before being given it to the community (in 2014).
 
 Kubernetes is written in Go Language with an Apache license. Google donated Kubernetes to the Cloud Native Computing Foundation (CNCF) within The Linux Foundation in July 2015, when Kubernetes reached the v1.0 release.
 
@@ -48,35 +52,35 @@ Other solutions for managing containerized applications:
 
 ### Pods
 
-Containers are not managed individually; instead, they are part of a larger object called a Pod.
-
-A Pod consists of one or more containers which share an IP address, access to storage and namespace.
+A **Pod** consists of one or more containers (containers are not managed individually) ; inside a Pod we have the same IP address, same access to storage and same namespace.
 
 ### Controllers
 
-Orchestration is managed through a series of watch-loops, or controllers. Each controller interrogates the kube-apiserver for a particular object state, modifying the object until the declared state matches the current state. These controllers are compiled into the kube-controller-manager.
+**Controllers** (aka Operators) are a series of watch-loops which makes possible the orchestration through Kubernetes. Each **Controller** interrogates the `kube-apiserver` for a particular object state, modifying the object until the declared state matches the current state. These controllers are compiled into the `kube-controller-manager`.
 
 ### Services
 
-TODO
+**Services** are flexible and scalable agents which connect resources together and will reconnect, should something die and a replacement is spawned. Each Service is a microservice handling a particular bit of traffic, such as a single NodePort or a LoadBalancer to distribute inbound requests among many Pods.
+
+A Service also handles access policies for inbound requests, useful for resource control, as well as for security.
 
 #### Deployments
 
-The default controller for containers is a Deployment. A Deployment ensures that resources declared in the PodSpec are available, such as IP address and storage, and then deploys a ReplicaSet.
+**Deployment** is the default controller for containers. It ensures that resources declared in the `PodSpec` are available, such as IP address and storage, and then deploys a `ReplicaSet`.
 
 #### ReplicaSet
 
-The ReplicaSet is a controller which deploys and restarts pods, which declares to the container engine, Docker by default, to spawn or terminate a container until the requested number is running.
+The **ReplicaSet* is a controller which deploys and restarts pods, declares to the container engine (Docker by default) to spawn or terminate a container until the requested number is running.
 
 #### Jobs/CronJobs
 
-There are also Jobs and CronJobs to handle single or recurring tasks, among others. 
+There are also **Jobs** and **CronJobs** to handle single or recurring tasks, among others. 
 
 ### Metadata
 
 #### Labels
 
-To make management easier, we can use labels, arbitrary strings which become part of the object metadata.
+To make management easier, we can use **Labels**, arbitrary strings which become part of the object metadata.
 
 ## Tools
 
