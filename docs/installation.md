@@ -8,6 +8,7 @@ Several options to start with a new Kubernetes cluster:
 - [Docker Desktop](https://www.docker.com/products/kubernetes)  on Windows and MacOS
 - [Minikube](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/minikube.md) on Windows
 - [MicroK8s](https://microk8s.io/docs) from Canonical on Ubuntu
+- [K3s](https://k3s.io/) from Rancher on small devices
 
 ### Kubernetes CLI
 
@@ -15,11 +16,13 @@ Several options to start with a new Kubernetes cluster:
 
 ## Cluster creation
 
-[Picking the Right Solution](https://pwittrock.github.io/docs/setup/pick-right-solution/)
+### General thought
+
+- [Picking the Right Solution](https://pwittrock.github.io/docs/setup/pick-right-solution/)
 
 ### Network
 
-A network must be defined to manage the cluster and avoid any IP conflict.
+A network must be defined to manage the cluster and avoid any IP conflict. Available plugins may implement [Container Network Interface (CNI)](https://github.com/devpro/kubernetes-certification-2020/blob/master/docs/projects.md#container-network-interface-cni), a CNCF project.
 
 4 choices for pod networking:
 
@@ -31,7 +34,7 @@ A network must be defined to manage the cluster and avoid any IP conflict.
 
 ### Tools
 
-3 options:
+3 choices:
 
 - [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/): boostrap quickly a cluster (appeared in v1.4, stabe & HA with V1.15)
 - [kops](https://kubernetes.io/docs/setup/production-environment/tools/kops/)
@@ -74,12 +77,10 @@ Reference: [GitHub](https://github.com/kubernetes/kubeadm)
 
 See recipes with Ansible, Chef, Puppet, Terraform.
 
-### DIY
+### No tools involved
 
 Kubernetes The Hard Way by Kelsey Hightower: [GitHub](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 
 ### Hyperkube
 
 As of July of 2020, Kyperkube seems deprecated. The image build has been removed from Kubernetes base images, see [PR#88676](https://github.com/kubernetes/kubernetes/pull/88676).
-
-
