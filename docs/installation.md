@@ -4,11 +4,15 @@
 
 Several options to start with a new Kubernetes cluster:
 
-- [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine/) provided by [Google Cloud](https://cloud.google.com/)
+- Managed Kubernetes Services
+  - [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine/) provided by [Google Cloud](https://cloud.google.com/)
+  - Amazon Elastic Container Service for Kubernetes (EKS)
+  - Azure Kubernetes Service (AKS)
+  - RedHat OpenShift
 - [Docker Desktop](https://www.docker.com/products/kubernetes)  on Windows and MacOS
-- [Minikube](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/minikube.md) on Windows
+- [Minikube](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/minikube.md) on all machines
 - [MicroK8s](https://microk8s.io/docs) from Canonical on Ubuntu
-- [K3s](https://k3s.io/) from Rancher on small devices
+- [K3s](https://k3s.io/) from Rancher on small devices or CI pipelines
 
 ### Kubernetes CLI
 
