@@ -8,7 +8,7 @@ Reference: [kubernetes.io](https://kubernetes.io/)
 
 In other words, Kubernetes is an orchestration system to deploy and manage containers in order to serve decoupled and transcient services.
 
-Kubernetes comes from the Greek language, it means Helmsman (or pilot of the ship).
+Kubernetes is the Greek word for Helmsman (or pilot of the ship).
 
 It started as an internal Google product called **Borg**, which have been used during 15 years before being given it to the community (in 2014).
 
@@ -27,6 +27,18 @@ Other solutions for managing containerized applications:
 - [HashiCorp Nomad](https://www.nomadproject.io/)
 - [Rancher](https://rancher.com/)
 
+## Main features
+
+Core features:
+
+- Load balancing
+- Autoscaling
+
+Add-ons features:
+
+- Centralized logging
+- Monitoring
+
 ## Architecture
 
 <details>
@@ -37,8 +49,8 @@ Other solutions for managing containerized applications:
   <img src="https://d33wubrfki0l68.cloudfront.net/7016517375d10c702489167e704dcb99e570df85/7bb53/images/docs/components-of-kubernetes.png">
 </details>
 
-- **Head node(s)** (only Linux): main manager which have several agents
-  - `kube-apiserver` (FrontEnd): handles all traffic (internal & external), authenticates/validates and forwards API calls (REST operations), persists state in `etcd` (only component to talk to the database)
+- **Head node(s)** (only Linux): main manager which have several agents (previously names master nodes), all head nodes form the Control Plane
+  - `kube-apiserver` (frontend): handles all traffic (internal & external), authenticates/validates and forwards API calls (REST operations), persists state in `etcd` (only component to talk to the database)
     <details>
       <summary>Additional information</summary>
   
@@ -54,14 +66,14 @@ Other solutions for managing containerized applications:
       - There is a master database along with possible followers. While very fast and potentially durable, there have been some hiccups with new tools, such as kubeadm, and features like whole cluster upgrades.
     </details>
     
-  - [`kube-controller-manager`](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/): core control loop daemon which interacts with the `kube-apiserver` that regulates the state of the system
-  - [`cloud-controller-manager`](https://kubernetes.io/docs/tasks/administer-cluster/running-cloud-controller/): allows cloud vendors to evolve independently from the core Kubernetes code  
+  - [`kube-controller-manager`](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/): core control loop daemon which interacts with the `kube-apiserver` that regulates the state of the system, responsible for running resource controllers such as Deployments
+  - [`cloud-controller-manager`](https://kubernetes.io/docs/tasks/administer-cluster/running-cloud-controller/): interacts with the cloud provider (if cloud-based clusters), managing resources such as load balancers and disk volumes, allows cloud vendors to evolve independently from the core Kubernetes code
 - **Worder nodes** (Linux, and Windows since 1.14 release)
   - `kubelet`: receives requests to run the containers, manages any necessary resources and watches over them on the local node, interacts with the local container engine, which is Docker by default, but could be rkt or cri-o
   - `kube-proxy`: creates and manages networking rules to expose the container on the network
   - Container Runtime: Docker, containerd, cri-o, rktlet or any implementation of the Kubernetes CRI (Container Runtime Interface)
 
-## Terminology
+## Terminology / Kubernetes Objects
 
 ### Pods
 
@@ -79,7 +91,7 @@ While Pods are often deployed with one application container in each, a common r
 
 #### ReplicaSet
 
-The **ReplicaSet* is a controller which deploys and restarts pods, declares to the container engine (Docker by default) to spawn or terminate a container until the requested number is running.
+The **ReplicaSet** is a controller which deploys and restarts pods, declares to the container engine (Docker by default) to spawn or terminate a container until the requested number is running.
 
 #### Jobs/CronJobs
 
@@ -96,6 +108,12 @@ A Service also handles access policies for inbound requests, useful for resource
 #### Labels
 
 To make management easier, we can use **Labels**, arbitrary strings which become part of the object metadata.
+
+## Security
+
+### Role-Based Access Control (RBAC)
+
+TODO
 
 ## Tools
 
