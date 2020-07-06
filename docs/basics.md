@@ -14,11 +14,21 @@ It started as an internal Google product called **Borg**, which have been used d
 
 Kubernetes is written in Go Language with an Apache license. Google donated Kubernetes to the Cloud Native Computing Foundation (CNCF) within The Linux Foundation in July 2015, when Kubernetes reached the v1.0 release.
 
-Going further:
+Read more:
 
-- Read more on [wikipedia](https://en.wikipedia.org/wiki/Kubernetes).
-- View the source code on [GitHub](https://github.com/kubernetes/kubernetes/).
-- Start with the [documentation](https://kubernetes.io/docs/home/)
+- [Documentation](https://kubernetes.io/docs/home/)
+- [GitHub](https://github.com/kubernetes/kubernetes/)
+- [Wikipedia](https://en.wikipedia.org/wiki/Kubernetes)
+
+<details>
+  <summary>Going further</summary>
+
+  - [Publication - Large-scale cluster management at Google with Borg](https://research.google/pubs/pub43438/)
+  - [Goocle Cloud Platform Podcast - Borg and Kubernetes with John Wilkes](https://www.gcppodcast.com/post/episode-46-borg-and-k8s-with-john-wilkes/)
+  - [GitHub - Kubernetes community](https://github.com/kubernetes/community)
+  - [Slack](https://slack.kubernetes.io/)
+  - [StackOverflow](https://stackoverflow.com/search?q=kubernetes)
+</details>
 
 Other solutions for managing containerized applications:
 
@@ -113,20 +123,16 @@ To make management easier, we can use **Labels**, arbitrary strings which become
 
 ### Role-Based Access Control (RBAC)
 
-TODO
+Introduced in 1.6 as an option when setting up clusters, should be turned on.
+
+_Tip_: execute `kubectl describe pod -n kube-system -l component=kube-apiserver` and look at `--authorization-mode` to see if it's enabled
+
+Kubernetes Objects:
+
+- ClusterRole
+- RoleBinding
 
 ## Tools
 
-- [Minikube](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/minikube.md)
-- kubeadm
-- [kubectl](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/kubectl.md)
 - [Helm](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/helm.md)
 - Kompose
-
-## Resources
-
-- [Publication - Large-scale cluster management at Google with Borg](https://research.google/pubs/pub43438/)
-- [Goocle Cloud Platform Podcast - Borg and Kubernetes with John Wilkes](https://www.gcppodcast.com/post/episode-46-borg-and-k8s-with-john-wilkes/)
-- [GitHub - Kubernetes community](https://github.com/kubernetes/community)
-- [Slack](https://slack.kubernetes.io/)
-- [StackOverflow](https://stackoverflow.com/search?q=kubernetes)
