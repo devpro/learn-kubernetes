@@ -20,6 +20,13 @@ Several options to start with a new Kubernetes cluster:
 
 - [Picking the Right Solution](https://pwittrock.github.io/docs/setup/pick-right-solution/)
 
+### Deployment configurations
+
+- Single-node
+- Single head node, multiple workers
+- Multiple head nodes with HA, multiple workers
+- HA etcd, HA head nodes, multiple workers
+
 ### Network
 
 A network must be defined to manage the cluster and avoid any IP conflict. Available plugins may implement [Container Network Interface (CNI)](https://github.com/devpro/kubernetes-certification-2020/blob/master/docs/projects.md#container-network-interface-cni), a CNCF project.
@@ -39,13 +46,6 @@ A network must be defined to manage the cluster and avoid any IP conflict. Avail
 - [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/): boostrap quickly a cluster (appeared in v1.4, stabe & HA with V1.15)
 - [kops](https://kubernetes.io/docs/setup/production-environment/tools/kops/)
 - [kubespray](https://kubernetes.io/docs/setup/production-environment/tools/kubespray/)
-
-### Deployment configurations
-
-- Single-node
-- Single head node, multiple workers
-- Multiple head nodes with HA, multiple workers
-- HA etcd, HA head nodes, multiple workers
 
 #### kubeadm
 
