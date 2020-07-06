@@ -37,12 +37,25 @@ Other solutions for managing containerized applications:
   <img src="https://d33wubrfki0l68.cloudfront.net/7016517375d10c702489167e704dcb99e570df85/7bb53/images/docs/components-of-kubernetes.png">
 </details>
 
-- **Head node(s)** (only Linux): main manager
-  - `kube-apiserver`: API server
-  - `kube-scheduler`: scheduler
-  - `etcd`: storage system (b+tree key-value store) of the state of the cluster, container settings, networking configurations
-  - [`kube-controller-manager`](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/): core control loop daemon which interacts with the kube-apiserver that regulates the state of the system
-  - [`cloud-controller-manager`](https://kubernetes.io/docs/tasks/administer-cluster/running-cloud-controller/): allows cloud vendors to evolve independently from the core Kubernetes code
+- **Head node(s)** (only Linux): main manager which have several agents
+  - `kube-apiserver` (FrontEnd): handles all traffic (internal & external), authenticates/validates and forwards API calls (REST operations), persists state in `etcd` (only component to talk to the database)
+    <details>
+      <summary>Additional information</summary>
+  
+      - Starting as an alpha feature in v1.16 is the ability to separate user-initiated traffic from server-initiated traffic.
+    </details>
+    
+  - `kube-scheduler`: determines which node will host a Pod (through an algorithm)
+  - `etcd`: database/storage system (b+tree key-value store) of the cluster state, container settings, networking configurations
+    <details>
+      <summary>Additional information</summary>
+  
+      - Rather than finding and changing an entry, values are always appended to the end. Previous copies of the data are then marked for future removal by a compaction process. It is expected to receive error 409 errors if the value has been updated between while processing a request.
+      - There is a master database along with possible followers. While very fast and potentially durable, there have been some hiccups with new tools, such as kubeadm, and features like whole cluster upgrades.
+    </details>
+    
+  - [`kube-controller-manager`](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/): core control loop daemon which interacts with the `kube-apiserver` that regulates the state of the system
+  - [`cloud-controller-manager`](https://kubernetes.io/docs/tasks/administer-cluster/running-cloud-controller/): allows cloud vendors to evolve independently from the core Kubernetes code  
 - **Worder nodes** (Linux, and Windows since 1.14 release)
   - `kubelet`: receives requests to run the containers, manages any necessary resources and watches over them on the local node, interacts with the local container engine, which is Docker by default, but could be rkt or cri-o
   - `kube-proxy`: creates and manages networking rules to expose the container on the network
@@ -52,7 +65,9 @@ Other solutions for managing containerized applications:
 
 ### Pods
 
-A **Pod** consists of one or more containers (containers are not managed individually) ; inside a Pod we have the same IP address, same access to storage and same namespace.
+A **Pod** consists of one or more containers (containers are not managed individually) ; inside a Pod we have the same IP address, same access to storage and same namespace. It is the smallest unit we can work with.
+
+While Pods are often deployed with one application container in each, a common reason to have multiple containers in a Pod is for logging. You may find the term sidecar for a container dedicated to performing a helper task, like handling logs and responding to requests, as the primary application container may not have this ability. The term sidecar, like ambassador and adapter, does not have a special setting, but refers to the concept of what secondary pods are included to do.
 
 ### Controllers
 
