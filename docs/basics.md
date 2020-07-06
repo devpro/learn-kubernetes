@@ -67,17 +67,11 @@ Other solutions for managing containerized applications:
 
 A **Pod** consists of one or more containers (containers are not managed individually) ; inside a Pod we have the same IP address, same access to storage and same namespace. It is the smallest unit we can work with.
 
-While Pods are often deployed with one application container in each, a common reason to have multiple containers in a Pod is for logging. You may find the term sidecar for a container dedicated to performing a helper task, like handling logs and responding to requests, as the primary application container may not have this ability. The term sidecar, like ambassador and adapter, does not have a special setting, but refers to the concept of what secondary pods are included to do.
+While Pods are often deployed with one application container in each, a common reason to have multiple containers in a Pod is for logging. You may find the term sidecar (like ambassador and adapter) for a container dedicated to performing a helper task, like handling logs and responding to requests, as the primary application container may not have this ability.
 
 ### Controllers
 
 **Controllers** (aka Operators) are a series of watch-loops which makes possible the orchestration through Kubernetes. Each **Controller** interrogates the `kube-apiserver` for a particular object state, modifying the object until the declared state matches the current state. These controllers are compiled into the `kube-controller-manager`.
-
-### Services
-
-**Services** are flexible and scalable agents which connect resources together and will reconnect, should something die and a replacement is spawned. Each Service is a microservice handling a particular bit of traffic, such as a single NodePort or a LoadBalancer to distribute inbound requests among many Pods.
-
-A Service also handles access policies for inbound requests, useful for resource control, as well as for security.
 
 #### Deployments
 
@@ -90,6 +84,12 @@ The **ReplicaSet* is a controller which deploys and restarts pods, declares to t
 #### Jobs/CronJobs
 
 There are also **Jobs** and **CronJobs** to handle single or recurring tasks, among others. 
+
+### Services
+
+**Services** are flexible and scalable agents which connect resources together and will reconnect, should something die and a replacement is spawned. Each Service is a microservice handling a particular bit of traffic, such as a single NodePort or a LoadBalancer to distribute inbound requests among many Pods.
+
+A Service also handles access policies for inbound requests, useful for resource control, as well as for security.
 
 ### Metadata
 
