@@ -59,7 +59,7 @@ Add-ons features:
   <img src="https://d33wubrfki0l68.cloudfront.net/7016517375d10c702489167e704dcb99e570df85/7bb53/images/docs/components-of-kubernetes.png">
 </details>
 
-- **Head node(s)** (only Linux): main manager which have several agents (previously names master nodes), all head nodes form the Control Plane
+- **Head node(s)** (only Linux, previously named master node(s)): main manager which have several agents, all head nodes constitue the **Control Plane**
   - `kube-apiserver` (frontend): handles all traffic (internal & external), authenticates/validates and forwards API calls (REST operations), persists state in `etcd` (only component to talk to the database)
     <details>
       <summary>Additional information</summary>
@@ -87,9 +87,9 @@ Add-ons features:
 
 ### Pods
 
-A **Pod** consists of one or more containers (containers are not managed individually) ; inside a Pod we have the same IP address, same access to storage and same namespace. It is the smallest unit we can work with.
+A **Pod** consists of one or more containers (containers are not managed individually). Inside a Pod we have the same IP address, same access to storage and same namespace. It is the smallest unit we can work with.
 
-While Pods are often deployed with one application container in each, a common reason to have multiple containers in a Pod is for logging. You may find the term sidecar (like ambassador and adapter) for a container dedicated to performing a helper task, like handling logs and responding to requests, as the primary application container may not have this ability.
+While Pods are often deployed with one application container in each, a common reason to have multiple containers in a Pod is for logging. You may find the term **Sidecar** (like ambassador and adapter) for a container dedicated to performing a helper task, like handling logs and responding to requests, as the primary application container may not have this ability.
 
 ### Controllers
 
