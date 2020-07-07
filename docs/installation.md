@@ -13,6 +13,7 @@ Several options to start with a new Kubernetes cluster:
 - [Minikube](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/minikube.md) on all machines
 - [MicroK8s](https://microk8s.io/docs) from Canonical on Ubuntu
 - [K3s](https://k3s.io/) from Rancher on small devices or CI pipelines
+- [Kind (Kubernetes in Docker)](https://kind.sigs.k8s.io/): fast and easy testing of clusters
 
 ### Kubernetes CLI
 
@@ -32,6 +33,15 @@ Several options to start with a new Kubernetes cluster:
 - HA etcd, HA head nodes, multiple workers
 
 ### Network
+
+Networking is a central part of Kubernetes, but it can be challenging to understand exactly how it is expected to work. There are 4 distinct networking problems to address:
+
+- Highly-coupled container-to-container communications
+- Pod-to-Pod communications
+- Pod-to-Service communications
+- External-to-Service communications
+
+Reference: [Documentation > Concepts > Cluster Administration > Cluster Networking](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
 
 A network must be defined to manage the cluster and avoid any IP conflict. Available plugins may implement [Container Network Interface (CNI)](https://github.com/devpro/kubernetes-certification-2020/blob/master/docs/projects.md#container-network-interface-cni), a CNCF project.
 
