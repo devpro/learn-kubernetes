@@ -2,13 +2,6 @@
 
 This is a training material to get knowledge about Kubernetes and pass Kubernetes certifications (CKA & CKAD).
 
-Topics that will be included:
-
-* History
-* Architecture and components
-* API and most important resources
-* Application deployment and management
-
 ## Content
 
 * [Basics](./docs/basics.md)
@@ -26,3 +19,4 @@ Topics that will be included:
 ### Books
 
 * [O'Reilly - Cloud Native DevOps with Kubernetes](https://www.oreilly.com/library/view/cloud-native-devops/9781492040750/)
+* [O'Reilly - Kubernetes Up and Running](https://www.oreilly.com/library/view/kubernetes-up-and/9781491935668/)
