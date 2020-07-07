@@ -41,8 +41,9 @@ Other solutions for managing containerized applications:
 
 Core features:
 
-- Load balancing
 - Autoscaling
+- Load-balancing
+- Self-healing
 
 Add-ons features:
 
@@ -81,7 +82,7 @@ Add-ons features:
 - **Worder nodes** (Linux, and Windows since 1.14 release)
   - `kubelet`: receives requests to run the containers, manages any necessary resources and watches over them on the local node, interacts with the local container engine, which is Docker by default, but could be rkt or cri-o
   - `kube-proxy`: creates and manages networking rules to expose the container on the network
-  - Container Runtime: Docker, containerd, cri-o, rktlet or any implementation of the Kubernetes CRI (Container Runtime Interface)
+  - Container Runtime: Docker, containerd, cri-o, rktlet or any implementation of the Kubernetes [CRI (Container Runtime Interface)](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md)
 
 ## Terminology / Kubernetes Objects
 
@@ -135,4 +136,3 @@ Kubernetes Objects:
 ## Tools
 
 - [Helm](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/helm.md)
-- Kompose
