@@ -14,6 +14,7 @@ Topics that will be included:
 * [Basics](./docs/basics.md)
 * [Installation](./docs/installation.md)
 * [Projects](./docs/projects.md)
+* [Manifests](./docs/manifests.md)
 
 ## References
 
