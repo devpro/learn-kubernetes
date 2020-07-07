@@ -32,8 +32,20 @@ Reference: [GitHub](https://github.com/containernetworking/cni)
 
 Reference: [fluentd.org](https://www.fluentd.org/)
 
+## Knative
+
+> Kubernetes-based platform to deploy and manage modern serverless workloads.
+
+Reference: [knative.dev](https://knative.dev/), [GitHub](https://github.com/knative)
+
 ## Prometheus
 
 > From metrics to insight. Power your metrics and alerting with a leading open-source monitoring solution.
 
 Reference: [prometheus.io](https://prometheus.io/)
+
+## Valero
+
+> Velero is an open source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes cluster resources and persistent volumes.
+
+Reference: [velero.io](https://velero.io/), [GitHub](https://github.com/vmware-tanzu/velero)
