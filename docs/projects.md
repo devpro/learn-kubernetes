@@ -25,3 +25,15 @@ Reference: [GitHub](https://github.com/containernetworking/cni)
   - [CNCF Blog - CNCF Hosts Container Networking Interface (CNI)](https://www.cncf.io/blog/2017/05/23/cncf-hosts-container-networking-interface-cni/) - May-23 '17
   - [SlideShare - Introduction to the Container Network Interface (CNI)](https://www.slideshare.net/weaveworks/introduction-to-the-container-network-interface-cni) - Sep-01 '17
 </details>
+
+## Fluentd
+
+>  Fluentd is an open source data collector for unified logging layer. Fluentd allows you to unify data collection and consumption for a better use and understanding of data.
+
+Reference: [fluentd.org](https://www.fluentd.org/)
+
+## Prometheus
+
+> From metrics to insight. Power your metrics and alerting with a leading open-source monitoring solution.
+
+Reference: [prometheus.io](https://prometheus.io/)
