@@ -12,7 +12,7 @@ Kubernetes is the Greek word for Helmsman (or pilot of the ship).
 
 It started as an internal Google product called **Borg**, which have been used during 15 years before being given it to the community (in 2014).
 
-Kubernetes is written in Go Language with an Apache license. Google donated Kubernetes to the Cloud Native Computing Foundation (CNCF) within The Linux Foundation in July 2015, when Kubernetes reached the v1.0 release.
+Kubernetes is written in Go Language with an Apache license. Google donated Kubernetes to the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) within The Linux Foundation in July 2015, when Kubernetes reached the v1.0 release.
 
 Read more:
 
@@ -28,6 +28,7 @@ Read more:
   - [GitHub - Kubernetes community](https://github.com/kubernetes/community)
   - [Slack](https://slack.kubernetes.io/)
   - [StackOverflow](https://stackoverflow.com/search?q=kubernetes)
+  - [Microsoft - What is Kubernetes?](https://aka.ms/k8slearning)
 </details>
 
 Other solutions for managing containerized applications:
@@ -51,6 +52,8 @@ Add-ons features:
 - Monitoring
 
 ## Architecture
+
+### Nodes
 
 <details>
   <summary>High-level view</summary>
@@ -84,6 +87,10 @@ Add-ons features:
   - `kube-proxy`: creates and manages networking rules to expose the container on the network
   - Container Runtime: Docker, containerd, cri-o, rktlet or any implementation of the Kubernetes [CRI (Container Runtime Interface)](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md)
 
+### API
+
+[API Overview](https://kubernetes.io/docs/concepts/overview/kubernetes-api/) > [API Reference](https://kubernetes.io/docs/reference/kubernetes-api/)
+
 ## Terminology / Kubernetes Objects
 
 ### Pods
@@ -110,9 +117,21 @@ There are also **Jobs** and **CronJobs** to handle single or recurring tasks, am
 
 ### Services
 
+A [Service](https://kubernetes.io/docs/concepts/services-networking/service/) is an "abstract way to expose an application running on a set of Pods as a network service".
+
 **Services** are flexible and scalable agents which connect resources together and will reconnect, should something die and a replacement is spawned. Each Service is a microservice handling a particular bit of traffic, such as a single NodePort or a LoadBalancer to distribute inbound requests among many Pods.
 
 A Service also handles access policies for inbound requests, useful for resource control, as well as for security.
+
+Service types:
+
+- NodePort
+- ClusterIP
+- LoadBalancer
+
+Read more:
+
+- [Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
 
 ### Metadata
 
@@ -136,3 +155,4 @@ Kubernetes Objects:
 ## Tools
 
 - [Helm](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/helm.md)
+- [k14s](https://k14s.io/)
