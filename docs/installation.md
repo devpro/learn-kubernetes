@@ -6,9 +6,10 @@ Several options to start with a new Kubernetes cluster:
 
 - Managed Kubernetes Services
   - [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine/) provided by [Google Cloud](https://cloud.google.com/)
-  - Amazon Elastic Container Service for Kubernetes (EKS)
-  - Azure Kubernetes Service (AKS)
-  - RedHat OpenShift
+  - [Amazon Elastic Kubernetes Service (EKS)](https://aws.amazon.com/eks/)
+  - [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/services/kubernetes-service/)
+  - [VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid) (replaced Pivotal Container Service aka PKS)
+  - [RedHat OpenShift](https://www.openshift.com/)
 - [Docker Desktop](https://www.docker.com/products/kubernetes)  on Windows and MacOS
 - [Minikube](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/minikube.md) on all machines
 - [MicroK8s](https://microk8s.io/docs) from Canonical on Ubuntu
@@ -24,6 +25,7 @@ Several options to start with a new Kubernetes cluster:
 ### General thought
 
 - [Picking the Right Solution](https://pwittrock.github.io/docs/setup/pick-right-solution/)
+- [Kubernetes The Hard Way by Kelsey Hightower](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 
 ### Deployment configurations
 
@@ -45,7 +47,7 @@ Reference: [Documentation > Concepts > Cluster Administration > Cluster Networki
 
 A network must be defined to manage the cluster and avoid any IP conflict. Available plugins may implement [Container Network Interface (CNI)](https://github.com/devpro/kubernetes-certification-2020/blob/master/docs/projects.md#container-network-interface-cni), a CNCF project.
 
-4 choices for pod networking:
+5 choices for pod networking:
 
 - [Calico](https://www.projectcalico.org/)
 - [Flannel](https://github.com/coreos/flannel)
@@ -90,10 +92,6 @@ Reference: [GitHub](https://github.com/kubernetes/kubeadm)
 ### Configuration management systems
 
 See recipes with Ansible, Chef, Puppet, Terraform.
-
-### No tools involved
-
-Kubernetes The Hard Way by Kelsey Hightower: [GitHub](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 
 ### Hyperkube
 
