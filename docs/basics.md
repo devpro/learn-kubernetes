@@ -111,9 +111,23 @@ While Pods are often deployed with one application container in each, a common r
 
 The **ReplicaSet** is a controller which deploys and restarts pods, declares to the container engine (Docker by default) to spawn or terminate a container until the requested number is running.
 
-#### Jobs/CronJobs
+#### StatefulSets
 
-There are also **Jobs** and **CronJobs** to handle single or recurring tasks, among others. 
+A [**StatefulSet**](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/) is the workload API object used to manage stateful applications.
+
+See [Documentation > Tutorials > Stateful Applications > StatefulSet Basics](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/)
+
+#### DaemonSet
+
+A [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) ensures that all (or some) Nodes run a copy of a Pod. As nodes are added to the cluster, Pods are added to them. As nodes are removed from the cluster, those Pods are garbage collected. Deleting a DaemonSet will clean up the Pods it created.
+
+#### Jobs
+
+A [**Job**](https://kubernetes.io/docs/concepts/workloads/controllers/job/) creates one or more Pods and ensures that a specified number of them successfully terminate. As pods successfully complete, the Job tracks the successful completions. When a specified number of successful completions is reached, the task (ie, Job) is complete. Deleting a Job will clean up the Pods it created.
+
+#### CronJobs
+
+A [**CronJob**](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/) creates Jobs on a repeating schedule.
 
 ### Services
 
@@ -138,6 +152,26 @@ Read more:
 #### Labels
 
 To make management easier, we can use **Labels**, arbitrary strings which become part of the object metadata.
+
+### Storage
+
+#### Persistent Volumes
+
+A [**PersistentVolume (PV)**](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes. It is a resource in the cluster just like a node is a cluster resource.
+
+#### Persistent Volume Claims
+
+A [**PersistentVolumeClaim (PVC)**](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) is a request for storage by a user. It is similar to a Pod. Pods consume node resources and PVCs consume PV resources.
+
+### Configuration
+
+#### ConfigMaps
+
+A [**ConfigMap**](https://kubernetes.io/docs/concepts/configuration/configmap/) is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume. It allows you to decouple environment-specific configuration from your container images , so that your applications are easily portable.
+
+#### Secrets
+
+A [**Secret**](https://kubernetes.io/docs/concepts/configuration/secret/) is an object that contains a small amount of sensitive data such as a password, a token, or a key.
 
 ## Security
 
