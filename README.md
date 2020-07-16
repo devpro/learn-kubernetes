@@ -8,6 +8,7 @@ This is a training material to get knowledge about Kubernetes and pass Kubernete
 * [Installation](./docs/installation.md)
 * [Projects](./docs/projects.md)
 * [Manifests](./docs/manifests.md)
+* [Releases](./docs/releases.md)
 * [Examination](./docs/examination.md)
 
 ## Sandboxes
