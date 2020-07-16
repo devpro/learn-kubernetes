@@ -169,6 +169,12 @@ A [**PersistentVolumeClaim (PVC)**](https://kubernetes.io/docs/concepts/storage/
 
 A [**ConfigMap**](https://kubernetes.io/docs/concepts/configuration/configmap/) is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume. It allows you to decouple environment-specific configuration from your container images , so that your applications are easily portable.
 
+<details>
+  <summary>CNCF webinars</summary>
+
+  - [ConfigMaps in Kubernetes: how they work and what you should remember](https://medium.com/flant-com/configmaps-in-kubernetes-f9f6d0081dcb) - Jun 23 '20
+</details>
+
 #### Secrets
 
 A [**Secret**](https://kubernetes.io/docs/concepts/configuration/secret/) is an object that contains a small amount of sensitive data such as a password, a token, or a key.
