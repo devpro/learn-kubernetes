@@ -1,5 +1,11 @@
 # Kubernetes related projects
 
+## Cloud Native Application Bundle
+
+>  A spec for packaging distributed apps. CNABs facilitate the bundling, installing and managing of container-native apps — and their coupled services.
+
+Reference: [cnab.io](https://cnab.io/)
+
 ## Cloud Native Buildpacks
 
 > Cloud Native Buildpacks transform your application source code to images that can run on any cloud. 
@@ -31,6 +37,12 @@ Reference: [GitHub](https://github.com/containernetworking/cni)
   - [CNCF Blog - CNCF Hosts Container Networking Interface (CNI)](https://www.cncf.io/blog/2017/05/23/cncf-hosts-container-networking-interface-cni/) - May-23 '17
   - [SlideShare - Introduction to the Container Network Interface (CNI)](https://www.slideshare.net/weaveworks/introduction-to-the-container-network-interface-cni) - Sep-01 '17
 </details>
+
+## dapr (Distributed Application Runtime)
+
+> An event-driven, portable runtime for building microservices on cloud and edge.
+
+Reference: [dapr.io](https://dapr.io/), [GitHub](https://github.com/dapr/dapr/), [Announcement](https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-dapr-open-source-project-build-microservice-applications/)
 
 ## Fluentd
 
