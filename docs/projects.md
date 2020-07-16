@@ -1,6 +1,6 @@
 # Kubernetes related projects
 
-## Cloud Native Application Bundle
+## Cloud Native Application Bundle (CNAB)
 
 >  A spec for packaging distributed apps. CNABs facilitate the bundling, installing and managing of container-native apps — and their coupled services.
 
@@ -70,7 +70,7 @@ See also: [TGI Kubernetes 091: kpack](https://www.youtube.com/watch?v=4zkRX9PSJ5
 
 Reference: [prometheus.io](https://prometheus.io/)
 
-## Valero
+## Velero
 
 > Velero is an open source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes cluster resources and persistent volumes.
 
