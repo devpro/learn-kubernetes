@@ -50,6 +50,12 @@ Reference: [dapr.io](https://dapr.io/), [GitHub](https://github.com/dapr/dapr/),
 
 Reference: [fluentd.org](https://www.fluentd.org/)
 
+## Keycloack
+
+> Open Source Identity and Access Management for Modern Applications and Services.
+
+Reference: [keycloak.org](https://www.keycloak.org/)
+
 ## Knative
 
 > Kubernetes-based platform to deploy and manage modern serverless workloads.
