@@ -21,6 +21,47 @@ This is a training material to get knowledge about Kubernetes and pass Kubernete
 
 ## References
 
+### Certifications
+
+Programs:
+
+* [Certified Kubernetes Application Developer (CKAD)](https://www.cncf.io/certification/ckad/)
+
+<details>
+  <summary>Domains with their weights</summary>
+
+  - Core Concepts 13%
+  - Configuration 18%
+  - Multi-Container Pods 10%
+  - Observability 18%
+  - Pod Design 20%
+  - Services & Networking 13%
+  – State Persistence 8%
+
+</details>
+
+* [Certified Kubernetes Administrator (CKA)](https://www.cncf.io/certification/cka/)
+
+<details>
+  <summary>Domains with their weights</summary>
+
+  - Application Lifecycle Management 8%
+  - Installation, Configuration & Validation 12%
+  - Core Concepts 19%
+  - Networking 11%
+  - Scheduling 5%
+  - Security 12%
+  - Cluster Maintenance 11%
+  - Logging / Monitoring 5%
+  - Storage 7%
+  - Troubleshooting 10%
+</details>
+
+General information:
+* [Candidate handbook](https://docs.linuxfoundation.org/tc-docs/certification/lf-candidate-handbook)
+* [Curriculum](https://github.com/cncf/curriculum)
+* [Tips](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
+
 ### Training courses
 
 * Free
