@@ -34,8 +34,29 @@ Reference: [GitHub](https://github.com/containernetworking/cni)
 <details>
   <summary>Read more</summary>
  
+  - `kubeadmin` uses CNI as the default network interface mechanism since v1.6.0.
   - [CNCF Blog - CNCF Hosts Container Networking Interface (CNI)](https://www.cncf.io/blog/2017/05/23/cncf-hosts-container-networking-interface-cni/) - May-23 '17
   - [SlideShare - Introduction to the Container Network Interface (CNI)](https://www.slideshare.net/weaveworks/introduction-to-the-container-network-interface-cni) - Sep-01 '17
+  - Sample of configuration file:
+  
+  ```json
+  {
+    "cniVersion": "0.2.0",
+    "name": "mynet",
+    "type": "bridge",
+    "bridge": "cni0",
+    "isGateway": true,
+    "ipMasq": true,
+    "ipam": {
+      "type": "host-local",
+      "subnet": "10.22.0.0/16",
+      "routes": [
+        { "dst": "0.0.0.0/0" }
+      ]
+    }
+  }
+  ```
+  
 </details>
 
 ## dapr (Distributed Application Runtime)
