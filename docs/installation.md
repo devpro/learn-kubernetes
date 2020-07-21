@@ -75,6 +75,9 @@ Reference: [GitHub](https://github.com/kubernetes/kubeadm)
   <summary>Usual commands</summary>
  
   ```bash
+  # make sure swap is disabled
+  swapoff -a
+  
   # bootstrap the initial Kubernetes control-plane node -> will return a token and a SHA256 hash
   kubeadm init
   
