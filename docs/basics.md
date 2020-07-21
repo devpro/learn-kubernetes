@@ -196,3 +196,5 @@ Kubernetes Objects:
 
 - [Helm](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/helm.md)
 - [k14s](https://k14s.io/)
+- [k9s](https://github.com/derailed/k9s)
+- [Lens](https://k8slens.dev/)
