@@ -55,6 +55,8 @@ A network must be defined to manage the cluster and avoid any IP conflict. Avail
 - [Romana](https://github.com/romana/romana)
 - [Weave Net](https://www.weave.works/oss/net/)
 
+Reference: [Documentation / Concepts / Cluster Administration / Installing Addons](https://kubernetes.io/docs/concepts/cluster-administration/addons/)
+
 ### Tools
 
 3 choices:
