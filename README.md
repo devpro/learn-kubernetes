@@ -28,7 +28,7 @@ Programs:
 * [Certified Kubernetes Application Developer (CKAD)](https://www.cncf.io/certification/ckad/)
 
 <details>
-  <summary>Domains with their weights</summary>
+  <summary>CKAD domains with their weights</summary>
 
   - Core Concepts 13%
   - Configuration 18%
@@ -36,14 +36,14 @@ Programs:
   - Observability 18%
   - Pod Design 20%
   - Services & Networking 13%
-  – State Persistence 8%
+  - State Persistence 8%
 
 </details>
 
 * [Certified Kubernetes Administrator (CKA)](https://www.cncf.io/certification/cka/)
 
 <details>
-  <summary>Domains with their weights</summary>
+  <summary>CKA domains with their weights</summary>
 
   - Application Lifecycle Management 8%
   - Installation, Configuration & Validation 12%
