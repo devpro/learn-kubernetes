@@ -80,6 +80,8 @@ General information:
   - [Building Production-ready Services with Kubernetes and Serverless Architectures](https://www.cncf.io/webinars/building-production-ready-services-with-kubernetes-and-serverless-architectures/) - July 8, 2020
   - [Optimize your Kubernetes Clusters on Azure with Built-in Best Practices](https://www.cncf.io/webinars/optimize-your-kubernetes-clusters-on-azure-with-built-in-best-practices/) - July 7, 2020
   - [Best Practices for Running and Implementing Kubernetes](https://www.cncf.io/webinars/best-practices-for-running-and-implementing-kubernetes/) - June 30, 2020
+  - [How Alibaba Extends K8s scheduler to support AI and big data workloads](https://www.cncf.io/webinars/how-alibaba-extends-k8s-scheduler-to-support-ai-and-big-data-workloads/) - July 15, 2020
+  - [Kubernetes for storage, an overview](https://www.cncf.io/webinars/kubernetes-for-storage-an-overview/) - July 16, 2020
   
 </details>
 
