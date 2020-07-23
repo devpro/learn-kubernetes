@@ -89,5 +89,37 @@ mkdir -p $GOPATH/bin/
 # or another easier way to install it
 sudo apt-get install golang
 
+if grep -q GOPATH "$(echo ${HOME})/.bashrc"; then 
+  echo "bashrc already has GOPATH";
+else
+  echo "adding GOPATH to bashrc";
+  echo "export GOPATH=$(echo ${HOME})/go" >> ${HOME}/.bashrc;
+  PATH_VAR=$PATH":/usr/lib/go/bin:$(echo ${HOME})/go/bin";
+  echo "export PATH=$(echo $PATH_VAR)" >> ${HOME}/.bashrc;
+  source ${HOME}/.bashrc;
+fi
+
+mkdir -p $GOPATH/bin/
+
 go version
+
+sudo apt install git
+
+git clone https://github.com/etcd-io/etcd --branch release-3.4 ${GOPATH}/src/go.etcd.io/etcd
+
+cd ${GOPATH}/src/go.etcd.io/etcd && ./build
+
+export ETCD_UNSUPPORTED_ARCH=arm
+${GOPATH}/src/go.etcd.io/etcd/bin/etcd --version
+${GOPATH}/src/go.etcd.io/etcd/bin/etcdctl version
+
+unset ETCD_UNSUPPORTED_ARCH
+  
+# or an easier way to install it
+sudo apt-get install etcd
+
+sudo nano /etc/default/etcd
+# add a line at the end: ETCD_UNSUPPORTED_ARCH=arm
+sudo apt-get install etcd
+sudo apt remove etcd
 ```
