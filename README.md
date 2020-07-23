@@ -10,6 +10,7 @@ This is a training material to get knowledge about Kubernetes and pass Kubernete
 * [Manifests](./docs/manifests.md)
 * [Releases](./docs/releases.md)
 * [Labs](./docs/labs.md)
+  * [Odroid setup](./docs/odroid-setup.md)
 * [Examination](./docs/examination.md)
 
 ## Sandboxes
