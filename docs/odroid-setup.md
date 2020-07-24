@@ -30,7 +30,7 @@ sudo mv cfssljson /usr/local/bin/
 cfssljson --version
 ```
 
-#### Certification generation
+#### Certificate generation
 
 Follow steps described in [Provisioning a CA and Generating TLS Certificates](https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/04-certificate-authority.md). Update the commands linked to GCP and use the defined IP addresses.
 
@@ -45,7 +45,7 @@ scp ca.pem ca-key.pem kubernetes-key.pem kubernetes.pem service-account-key.pem 
 scp ca.pem worker-0-key.pem worker-0.pem root@odroid2:~/
 ```
 
-## Control plane
+## Main node
 
 ### etcd
 
@@ -77,7 +77,7 @@ sudo nano /etc/default/etcd
 sudo apt-get install etcd
 sudo apt remove etcd
 
-# there were multiple files left
+# there were multiple files left to be delete manually
 ```
 
 #### Build from source
@@ -203,4 +203,119 @@ etcdctl --endpoints=https://192.168.86.139:2379 --cacert=./ca.pem --cert=./kuber
 
 # should return "1"
 etcdctl --endpoints=https://192.168.86.139:2379 --cacert=./ca.pem --cert=./kubernetes.pem --key=./kubernetes-key.pem del foo
+```
+
+### Kubernetes control plane
+
+#### Local folders
+
+- Create kubeconfig files by following [the procedure](https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/05-kubernetes-configuration-files.md)
+
+- Execute the lines
+
+```bash
+mkdir -p /etc/kubernetes/config
+sudo mkdir -p /var/lib/kubernetes/
+
+ENCRYPTION_KEY=$(head -c 32 /dev/urandom | base64)
+cat > encryption-config.yaml <<EOF
+kind: EncryptionConfig
+apiVersion: v1
+resources:
+  - resources:
+      - secrets
+    providers:
+      - aescbc:
+          keys:
+            - name: key1
+              secret: ${ENCRYPTION_KEY}
+      - identity: {}
+EOF
+sudo mv ca.pem ca-key.pem kubernetes-key.pem kubernetes.pem \
+    service-account-key.pem service-account.pem \
+    encryption-config.yaml /var/lib/kubernetes/
+    
+sudo mv kube-controller-manager.kubeconfig /var/lib/kubernetes/
+```
+
+#### Install components from release packages
+
+```bash
+wget -q --show-progress --https-only --timestamping "https://dl.k8s.io/v1.18.5/kubernetes-server-linux-arm.tar.gz"
+tar -xvf kubernetes-server-linux-arm.tar.gz
+
+chmod +x kubernetes/server/bin/kube-apiserver kubernetes/server/bin/kube-controller-manager kubernetes/server/bin/kube-scheduler kubernetes/server/bin/kubectl
+sudo mv kubernetes/server/bin/kube-apiserver kubernetes/server/bin/kube-controller-manager kubernetes/server/bin/kube-scheduler kubernetes/server/bin/kubectl /usr/local/bin/
+```
+
+#### Create service files
+
+```bash
+cat <<EOF | sudo tee /etc/systemd/system/kube-apiserver.service
+[Unit]
+Description=Kubernetes API Server
+Documentation=https://github.com/kubernetes/kubernetes
+
+[Service]
+ExecStart=/usr/local/bin/kube-apiserver \\
+  --advertise-address=10.0.0.1 \\
+  --allow-privileged=true \\
+  --apiserver-count=3 \\
+  --audit-log-maxage=30 \\
+  --audit-log-maxbackup=3 \\
+  --audit-log-maxsize=100 \\
+  --audit-log-path=/var/log/audit.log \\
+  --authorization-mode=Node,RBAC \\
+  --bind-address=0.0.0.0 \\
+  --client-ca-file=/var/lib/kubernetes/ca.pem \\
+  --enable-admission-plugins=NamespaceLifecycle,NodeRestriction,LimitRanger,ServiceAccount,DefaultStorageClass,ResourceQuota \\
+  --etcd-cafile=/var/lib/kubernetes/ca.pem \\
+  --etcd-certfile=/var/lib/kubernetes/kubernetes.pem \\
+  --etcd-keyfile=/var/lib/kubernetes/kubernetes-key.pem \\
+  --etcd-servers=https://10.0.0.1:2379 \\
+  --event-ttl=1h \\
+  --encryption-provider-config=/var/lib/kubernetes/encryption-config.yaml \\
+  --kubelet-certificate-authority=/var/lib/kubernetes/ca.pem \\
+  --kubelet-client-certificate=/var/lib/kubernetes/kubernetes.pem \\
+  --kubelet-client-key=/var/lib/kubernetes/kubernetes-key.pem \\
+  --kubelet-https=true \\
+  --runtime-config='api/all=true' \\
+  --service-account-key-file=/var/lib/kubernetes/service-account.pem \\
+  --service-cluster-ip-range=10.32.0.0/24 \\
+  --service-node-port-range=30000-32767 \\
+  --tls-cert-file=/var/lib/kubernetes/kubernetes.pem \\
+  --tls-private-key-file=/var/lib/kubernetes/kubernetes-key.pem \\
+  --v=2
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+cat <<EOF | sudo tee /etc/systemd/system/kube-controller-manager.service
+[Unit]
+Description=Kubernetes Controller Manager
+Documentation=https://github.com/kubernetes/kubernetes
+
+[Service]
+ExecStart=/usr/local/bin/kube-controller-manager \\
+  --bind-address=0.0.0.0 \\
+  --cluster-cidr=10.200.0.0/16 \\
+  --cluster-name=kubernetes \\
+  --cluster-signing-cert-file=/var/lib/kubernetes/ca.pem \\
+  --cluster-signing-key-file=/var/lib/kubernetes/ca-key.pem \\
+  --kubeconfig=/var/lib/kubernetes/kube-controller-manager.kubeconfig \\
+  --leader-elect=true \\
+  --root-ca-file=/var/lib/kubernetes/ca.pem \\
+  --service-account-private-key-file=/var/lib/kubernetes/service-account-key.pem \\
+  --service-cluster-ip-range=10.32.0.0/24 \\
+  --use-service-account-credentials=true \\
+  --v=2
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+EOF
 ```
