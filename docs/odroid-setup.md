@@ -53,7 +53,7 @@ See [etcd cheat sheet](https://github.com/devpro/everyday-cheatsheets/edit/maste
 
 On the control plane node.
 
-Install from an official version (must be in 64bit).
+#### Install from an official version (processor must be 64bit)
 
 ```
 wget -q --show-progress --https-only --timestamping "https://github.com/etcd-io/etcd/releases/download/v3.4.10/etcd-v3.4.10-linux-arm64.tar.gz"
@@ -66,29 +66,40 @@ etcd --version
 etcdctl version
 ```
 
-Build from source:
+#### Install with the package management (not recommended and didn't work on ARM 32bit)
 
+```bash
+sudo apt-get install etcd
+
+sudo nano /etc/default/etcd
+# add a line at the end: ETCD_UNSUPPORTED_ARCH=arm
+
+sudo apt-get install etcd
+sudo apt remove etcd
+
+# there were multiple files left
 ```
-# from the official
+
+#### Build from source
+
+- Install Go
+
+```bash
+# from an official release package
 wget -q --show-progress --https-only --timestamping "https://golang.org/dl/go1.14.6.linux-armv6l.tar.gz"
 tar -xvf go1.14.6.linux-armv6l.tar.gz
 sudo mv go /usr/local/
 
-if grep -q GOPATH "$(echo ${HOME})/.bashrc"; then 
-  echo "bashrc already has GOPATH";
-else
-  echo "adding GOPATH to bashrc";
-  echo "export GOPATH=$(echo ${HOME})/go" >> ${HOME}/.bashrc;
-  PATH_VAR=$PATH":/usr/local/go/bin:$(echo ${HOME})/go/bin";
-  echo "export PATH=$(echo $PATH_VAR)" >> ${HOME}/.bashrc;
-  source ${HOME}/.bashrc;
-fi
-
-mkdir -p $GOPATH/bin/
-
 # or another easier way to install it
 sudo apt-get install golang
 
+# make sure the binary is ok
+go version
+```
+
+- Set GOPATH
+
+```bash
 if grep -q GOPATH "$(echo ${HOME})/.bashrc"; then 
   echo "bashrc already has GOPATH";
 else
@@ -100,11 +111,17 @@ else
 fi
 
 mkdir -p $GOPATH/bin/
+```
 
-go version
+- Install git
 
+```bash
 sudo apt install git
+```
 
+- Build sources
+
+```bash
 git clone https://github.com/etcd-io/etcd --branch release-3.4 ${GOPATH}/src/go.etcd.io/etcd
 
 cd ${GOPATH}/src/go.etcd.io/etcd && ./build
@@ -121,17 +138,11 @@ sudo chmod 700 /var/lib/etcd
 sudo cp ca.pem kubernetes-key.pem kubernetes.pem /etc/etcd/
 
 #unset ETCD_UNSUPPORTED_ARCH
-  
-# or an easier way to install it
-sudo apt-get install etcd
+```
 
-sudo nano /etc/default/etcd
-# add a line at the end: ETCD_UNSUPPORTED_ARCH=arm
-sudo apt-get install etcd
-sudo apt remove etcd
+#### Create a service
 
-sudo apt install curl
-
+```bash
 cat <<EOF | sudo tee /etc/systemd/system/etcd.service
 [Unit]
 Description=etcd
@@ -151,7 +162,7 @@ ExecStart=/usr/local/bin/etcd \\
   --client-cert-auth \\
   --initial-advertise-peer-urls https://10.0.0.1:2380 \\
   --listen-peer-urls https://10.0.0.1:2380 \\
-  --listen-client-urls https://10.0.0.1:2379,https://127.0.0.1:2379 \\
+  --listen-client-urls https://10.0.0.1:2379,https://127.0.0.1:2379,https://192.168.86.139:2379 \\
   --advertise-client-urls https://10.0.0.1:2379 \\
   --initial-cluster-token etcd-cluster-0 \\
   --initial-cluster odroid1=https://10.0.0.1:2380 \\
@@ -170,9 +181,26 @@ sudo systemctl enable etcd
 sudo systemctl start etcd
 sudo systemctl status etcd
 
-sudo ETCDCTL_API=3 etcdctl member list \
+ETCDCTL_API=3 etcdctl member list \
   --endpoints=https://127.0.0.1:2379 \
   --cacert=/etc/etcd/ca.pem \
   --cert=/etc/etcd/kubernetes.pem \
   --key=/etc/etcd/kubernetes-key.pem
+```
+
+#### Remote check
+
+From a remote workstation
+
+```bash
+export ETCDCTL_API=3
+
+# should return "OK"
+etcdctl --endpoints=https://192.168.86.139:2379 --cacert=./ca.pem --cert=./kubernetes.pem --key=./kubernetes-key.pem put foo "Hello world!"
+
+# should return "foo\nHello world!"
+etcdctl --endpoints=https://192.168.86.139:2379 --cacert=./ca.pem --cert=./kubernetes.pem --key=./kubernetes-key.pem get foo
+
+# should return "1"
+etcdctl --endpoints=https://192.168.86.139:2379 --cacert=./ca.pem --cert=./kubernetes.pem --key=./kubernetes-key.pem del foo
 ```
