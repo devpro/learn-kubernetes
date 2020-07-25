@@ -83,6 +83,10 @@ General information:
   - [Best Practices for Running and Implementing Kubernetes](https://www.cncf.io/webinars/best-practices-for-running-and-implementing-kubernetes/) - June 30, 2020
   - [How Alibaba Extends K8s scheduler to support AI and big data workloads](https://www.cncf.io/webinars/how-alibaba-extends-k8s-scheduler-to-support-ai-and-big-data-workloads/) - July 15, 2020
   - [Kubernetes for storage, an overview](https://www.cncf.io/webinars/kubernetes-for-storage-an-overview/) - July 16, 2020
+  - [Implementing Canary Releases on Kubernetes w/ Spinnaker, Istio, and Prometheus](https://www.cncf.io/webinars/implementing-canary-releases-on-kubernetes-w-spinnaker-istio-and-prometheus/) - July 22, 2020
+  - [Kubernetes Secrets Management: Build Secure Apps Faster Without Secrets](https://www.cncf.io/webinars/kubernetes-secrets-management-build-secure-apps-faster-without-secrets/) - July 22, 2020
+  - [Building application management platform with Open Application Model](https://www.cncf.io/webinars/cncf-ambassador-webinar-building-application-management-platform-with-open-application-model/) - July 22, 2020
+  - [Observability of multi-party computation with OpenTelemetry](https://www.cncf.io/webinars/observability-of-multi-party-computation-with-opentelemetry/) - July 23, 2020
   
 </details>
 
