@@ -45,7 +45,7 @@ scp ca.pem ca-key.pem kubernetes-key.pem kubernetes.pem service-account-key.pem 
 scp ca.pem worker-0-key.pem worker-0.pem root@odroid2:~/
 ```
 
-## Main node
+## Main node(s)s
 
 ### etcd
 
@@ -351,3 +351,103 @@ sudo systemctl enable kube-apiserver kube-controller-manager kube-scheduler
 sudo systemctl start kube-apiserver kube-controller-manager kube-scheduler
 sudo systemctl status kube-apiserver kube-controller-manager kube-scheduler
 ```
+
+#### Create nginx as proxy
+
+```bash
+sudo apt-get update
+sudo apt-get install -y nginx
+
+cat > kubernetes.default.svc.cluster.local <<EOF
+server {
+  listen      80;
+  server_name kubernetes.default.svc.cluster.local;
+
+  location /healthz {
+     proxy_pass                    https://127.0.0.1:6443/healthz;
+     proxy_ssl_trusted_certificate /var/lib/kubernetes/ca.pem;
+  }
+}
+EOF
+
+sudo mv kubernetes.default.svc.cluster.local /etc/nginx/sites-available/kubernetes.default.svc.cluster.local
+sudo ln -s /etc/nginx/sites-available/kubernetes.default.svc.cluster.local /etc/nginx/sites-enabled/
+
+# fix issue: [emerg] could not build server_names_hash, you should increase server_names_hash_bucket_size: 32
+sudo vi /etc/nginx/nginx.conf
+# uncomment server_names_hash_bucket_size 64;
+
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+
+# check all components are healthy (scheduler, controller-manager, etcd-0)
+kubectl get componentstatuses --kubeconfig admin.kubeconfig
+
+# test nginx health check proxy (should return HTTP 200)
+curl -H "Host: kubernetes.default.svc.cluster.local" -i http://127.0.0.1/healthz
+```
+
+#### RBAC for Kubelet authorization
+
+```bash
+# should create clusterrole.rbac.authorization.k8s.io/system:kube-apiserver-to-kubelet
+cat <<EOF | kubectl apply --kubeconfig admin.kubeconfig -f -
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRole
+metadata:
+  annotations:
+    rbac.authorization.kubernetes.io/autoupdate: "true"
+  labels:
+    kubernetes.io/bootstrapping: rbac-defaults
+  name: system:kube-apiserver-to-kubelet
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - nodes/proxy
+      - nodes/stats
+      - nodes/log
+      - nodes/spec
+      - nodes/metrics
+    verbs:
+      - "*"
+EOF
+
+# should create clusterrolebinding.rbac.authorization.k8s.io/system:kube-apiserver
+cat <<EOF | kubectl apply --kubeconfig admin.kubeconfig -f -
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  name: system:kube-apiserver
+  namespace: ""
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: system:kube-apiserver-to-kubelet
+subjects:
+  - apiGroup: rbac.authorization.k8s.io
+    kind: User
+    name: kubernetes
+EOF
+```
+
+#### External access
+
+From the frond end machine (odroid1):
+
+```bash
+ufw allow 6443
+```
+
+Test from an external machine (Ubuntu used to generate certifiates):
+
+```bash
+# should return Kubernetes information
+curl --cacert ca.pem https://192.168.86.139:6443/version
+```
+
+## Worker node
+
+### OS dependencies
+
+TODO
