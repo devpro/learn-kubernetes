@@ -483,7 +483,14 @@ wget -q --show-progress --https-only --timestamping \
   https://storage.googleapis.com/kubernetes-release/release/v1.18.5/bin/linux/arm/kubelet
 chmod +x kubectl kube-proxy kubelet
 sudo mv kubectl kube-proxy kubelet /usr/local/bin/
+./go/bin/go
 
+# install Go
+wget -q --show-progress --https-only --timestamping https://golang.org/dl/go1.14.6.linux-armv6l.tar.gz
+tar -C /usr/local -xzf go1.14.6.linux-armv6l.tar.gz
+# tar -xzf go1.14.6.linux-armv6l.tar.gz
+
+# to be reviewed
 wget -q --show-progress --https-only --timestamping \
   https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.18.0/crictl-v1.18.0-linux-arm.tar.gz \
   https://github.com/opencontainers/runc/releases/download/v1.0.0-rc91/runc.amd64 \
