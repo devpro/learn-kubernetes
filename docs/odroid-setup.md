@@ -10,40 +10,47 @@ See [Odroid cheat sheet](https://github.com/devpro/everyday-cheatsheets/blob/mas
 
 Steps can be done in an Ubuntu (WSL on Windows 10).
 
-#### cfssl installation
+<details>
+  <summary>cfssl installation</summary>
+  
+  See [release page](https://github.com/cloudflare/cfssl/releases).
 
-See [release page](https://github.com/cloudflare/cfssl/releases).
+  ```bash
+  # install locally cfssl
+  wget -q --show-progress --https-only --timestamping https://github.com/cloudflare/cfssl/releases/download/v1.4.1/cfssl_1.4.1_linux_amd64
+  mv cfssl_1.4.1_linux_amd64 cfssl
+  chmod +x cfssl
+  sudo mv cfssl /usr/local/bin/
+  cfssl version
 
-```bash
-# install locally cfssl
-wget -q --show-progress --https-only --timestamping https://github.com/cloudflare/cfssl/releases/download/v1.4.1/cfssl_1.4.1_linux_amd64
-mv cfssl_1.4.1_linux_amd64 cfssl
-chmod +x cfssl
-sudo mv cfssl /usr/local/bin/
-cfssl version
+  # install locally cfssljson
+  wget -q --show-progress --https-only --timestamping https://github.com/cloudflare/cfssl/releases/download/v1.4.1/cfssljson_1.4.1_linux_amd64
+  mv cfssljson_1.4.1_linux_amd64 cfssljson
+  chmod +x cfssljson
+  sudo mv cfssljson /usr/local/bin/
+  cfssljson --version
+  ```
+  
+</details>
 
-# install locally cfssljson
-wget -q --show-progress --https-only --timestamping https://github.com/cloudflare/cfssl/releases/download/v1.4.1/cfssljson_1.4.1_linux_amd64
-mv cfssljson_1.4.1_linux_amd64 cfssljson
-chmod +x cfssljson
-sudo mv cfssljson /usr/local/bin/
-cfssljson --version
-```
 
-#### Certificate generation
+<details>
+  <summary>Certificate generation</summary>
+  
+  Follow steps described in [Provisioning a CA and Generating TLS Certificates](https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/04-certificate-authority.md). Update the commands linked to GCP and use the defined IP addresses.
 
-Follow steps described in [Provisioning a CA and Generating TLS Certificates](https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/04-certificate-authority.md). Update the commands linked to GCP and use the defined IP addresses.
+  ```bash
+  cfssl gencert -ca=ca.pem -ca-key=ca-key.pem -config=ca-config.json -hostname=worker-0,192.168.86.142,10.0.0.2 -profile=kubernetes worker-0-csr.json | cfssljson -bar
+  e worker-0
 
-```bash
-cfssl gencert -ca=ca.pem -ca-key=ca-key.pem -config=ca-config.json -hostname=worker-0,192.168.86.142,10.0.0.2 -profile=kubernetes worker-0-csr.json | cfssljson -bar
-e worker-0
+  cfssl gencert -ca=ca.pem -ca-key=ca-key.pem -config=ca-config.json -hostname=10.32.0.1,10.240.0.10,10.240.0.11,10.240.0.12,10.0.0.1,192.168.86.139,127.
+  0.0.1,kubernetes,kubernetes.default,kubernetes.default.svc,kubernetes.default.svc.cluster,kubernetes.svc.cluster.local -profile=kubernetes kubernetes-csr.json | cfssljson -bare kubernetes
 
-cfssl gencert -ca=ca.pem -ca-key=ca-key.pem -config=ca-config.json -hostname=10.32.0.1,10.240.0.10,10.240.0.11,10.240.0.12,10.0.0.1,192.168.86.139,127.
-0.0.1,kubernetes,kubernetes.default,kubernetes.default.svc,kubernetes.default.svc.cluster,kubernetes.svc.cluster.local -profile=kubernetes kubernetes-csr.json | cfssljson -bare kubernetes
-
-scp ca.pem ca-key.pem kubernetes-key.pem kubernetes.pem service-account-key.pem service-account.pem root@odroid1:~/
-scp ca.pem worker-0-key.pem worker-0.pem root@odroid2:~/
-```
+  scp ca.pem ca-key.pem kubernetes-key.pem kubernetes.pem service-account-key.pem service-account.pem root@odroid1:~/
+  scp ca.pem worker-0-key.pem worker-0.pem root@odroid2:~/
+  ```
+    
+</details>
 
 ## Main node(s)s
 
