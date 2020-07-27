@@ -33,7 +33,6 @@ Steps can be done in an Ubuntu (WSL on Windows 10).
   
 </details>
 
-
 <details>
   <summary>Certificate generation</summary>
   
@@ -457,4 +456,37 @@ curl --cacert ca.pem https://192.168.86.139:6443/version
 
 ### OS dependencies
 
-TODO
+```bash
+sudo apt-get update
+sudo apt-get -y install socat conntrack ipset
+
+# make sure Swap is off (result should be empty)
+sudo swapon --show
+```
+
+### Install worker binaries
+
+```bash
+# create local directories
+sudo mkdir -p \
+  /etc/cni/net.d \
+  /opt/cni/bin \
+  /var/lib/kubelet \
+  /var/lib/kube-proxy \
+  /var/lib/kubernetes \
+  /var/run/kubernetes
+
+# download kubernetes worker binaries and client binary
+wget -q --show-progress --https-only --timestamping \
+  https://storage.googleapis.com/kubernetes-release/release/v1.18.5/bin/linux/arm/kubectl \
+  https://storage.googleapis.com/kubernetes-release/release/v1.18.5/bin/linux/arm/kube-proxy \
+  https://storage.googleapis.com/kubernetes-release/release/v1.18.5/bin/linux/arm/kubelet
+chmod +x kubectl kube-proxy kubelet
+sudo mv kubectl kube-proxy kubelet /usr/local/bin/
+
+wget -q --show-progress --https-only --timestamping \
+  https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.18.0/crictl-v1.18.0-linux-arm.tar.gz \
+  https://github.com/opencontainers/runc/releases/download/v1.0.0-rc91/runc.amd64 \
+  https://github.com/containernetworking/plugins/releases/download/v0.8.6/cni-plugins-linux-amd64-v0.8.6.tgz \
+  https://github.com/containerd/containerd/releases/download/v1.3.6/containerd-1.3.6-linux-amd64.tar.gz
+```
