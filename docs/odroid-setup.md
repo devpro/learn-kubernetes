@@ -678,8 +678,8 @@ clusterDNS:
 podCIDR: "${POD_CIDR}"
 resolvConf: "/run/systemd/resolve/resolv.conf"
 runtimeRequestTimeout: "15m"
-tlsCertFile: "/var/lib/kubelet/${HOSTNAME}.pem"
-tlsPrivateKeyFile: "/var/lib/kubelet/${HOSTNAME}-key.pem"
+tlsCertFile: "/var/lib/kubelet/worker-0.pem"
+tlsPrivateKeyFile: "/var/lib/kubelet/worker-0.pem"
 EOF
 
 cat <<EOF | sudo tee /etc/systemd/system/kubelet.service
