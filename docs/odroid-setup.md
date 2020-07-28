@@ -1,4 +1,4 @@
-# Kubernetes setup on Odroid (boards)
+# Kubernetes setup on Odroid
 
 ## OS setup
 
@@ -483,17 +483,53 @@ wget -q --show-progress --https-only --timestamping \
   https://storage.googleapis.com/kubernetes-release/release/v1.18.5/bin/linux/arm/kubelet
 chmod +x kubectl kube-proxy kubelet
 sudo mv kubectl kube-proxy kubelet /usr/local/bin/
-./go/bin/go
 
-# install Go
+# download crictl & cni plugins
+wget -q --show-progress --https-only --timestamping \
+  https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.18.0/crictl-v1.18.0-linux-arm.tar.gz
+tar -xvf crictl-v1.18.0-linux-arm.tar.gz
+sudo mv crictl /usr/local/bin/
+rm crictl-v1.18.0-linux-arm.tar.gz
+crictl --version
+
+# download cni plugins
+wget -q --show-progress --https-only --timestamping \
+  https://github.com/containernetworking/plugins/releases/download/v0.8.6/cni-plugins-linux-arm-v0.8.6.tgz
+sudo tar -xvf cni-plugins-linux-arm-v0.8.6.tgz -C /opt/cni/bin/
+rm cni-plugins-linux-arm-v0.8.6.tgz
+
+# install Go (needed to build certain tool in ARM 32bit)
 wget -q --show-progress --https-only --timestamping https://golang.org/dl/go1.14.6.linux-armv6l.tar.gz
 tar -C /usr/local -xzf go1.14.6.linux-armv6l.tar.gz
-# tar -xzf go1.14.6.linux-armv6l.tar.gz
+cat << \EOF >> ~/.profile
 
-# to be reviewed
-wget -q --show-progress --https-only --timestamping \
-  https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.18.0/crictl-v1.18.0-linux-arm.tar.gz \
-  https://github.com/opencontainers/runc/releases/download/v1.0.0-rc91/runc.amd64 \
-  https://github.com/containernetworking/plugins/releases/download/v0.8.6/cni-plugins-linux-amd64-v0.8.6.tgz \
-  https://github.com/containerd/containerd/releases/download/v1.3.6/containerd-1.3.6-linux-amd64.tar.gz
+# add Go
+export PATH=$PATH:/usr/local/go/bin
+EOF
+source $HOME/.profile
+go version
+
+# build runc
+apt install git
+apt install libseccomp-dev
+apt install pkg-config
+mkdir -p github.com/opencontainers
+cd github.com/opencontainers
+git clone https://github.com/opencontainers/runc
+cd runc
+git checkout tags/v1.0.0-rc91
+make
+sudo mv runc /usr/local/bin/
+runc --version
+
+# grab containerd from docker release (see https://download.docker.com/linux/static/stable/)
+wget -q --show-progress --https-only --timestamping https://download.docker.com/linux/static/stable/armhf/docker-19.03.12.tgz
+tar -xvf docker-19.03.12.tgz
+chown root:root docker/containerd*
+sudo mv docker/containerd* /bin/
+rm -r docker
+rm docker-19.03.12.tgz
 ```
+
+## Configure networks
+
