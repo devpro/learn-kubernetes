@@ -1,5 +1,20 @@
 # Kubernetes setup on Odroid
 
+## General configuration
+
+### Kubernetes cluster
+
+Name: kubernetes-odroid-xu4
+
+### Network configuration
+
+Value | Detail
+----- | ------
+192.168.86.0/24 | Internet connected WLAN
+10.0.0.0/24 | Local configuration
+10.200.0.0/16 | CIDR Range for Pods in cluster
+10.32.0.0/24 | A CIDR notation IP range from which to assign service cluster IPs. This must not overlap with any IP ranges assigned to nodes for pods.
+
 ## OS setup
 
 See [Odroid cheat sheet](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/sbd.md#odroid).
@@ -531,5 +546,202 @@ rm -r docker
 rm docker-19.03.12.tgz
 ```
 
+## Create configuration files
+
+From the single machine that generated the certificates:
+
+```bash
+kubectl config set-cluster kubernetes-odroid-xu4 \
+  --certificate-authority=ca.pem \
+  --embed-certs=true \
+  --server=https://192.168.86.139:6443 \
+  --kubeconfig=worker-0.kubeconfig
+kubectl config set-credentials system:node:worker-0 \
+  --client-certificate=worker-0.pem \
+  --client-key=worker-0-key.pem \
+  --embed-certs=true \
+  --kubeconfig=worker-0.kubeconfig
+kubectl config set-context default \
+  --cluster=kubernetes-odroid-xu4 \
+  --user=system:node:worker-0 \
+  --kubeconfig=worker-0.kubeconfig
+kubectl config use-context default --kubeconfig=worker-0.kubeconfig
+scp worker-0.kubeconfig root@odroid2:~/
+
+kubectl config set-cluster kubernetes-odroid-xu4 \
+  --certificate-authority=ca.pem \
+  --embed-certs=true \
+  --server=https://192.168.86.139:6443 \
+  --kubeconfig=kube-proxy.kubeconfig
+kubectl config set-credentials system:kube-proxy \
+  --client-certificate=kube-proxy.pem \
+  --client-key=kube-proxy-key.pem \
+  --embed-certs=true \
+  --kubeconfig=kube-proxy.kubeconfig
+kubectl config set-context default \
+  --cluster=kubernetes-odroid-xu4 \
+  --user=system:kube-proxy \
+  --kubeconfig=kube-proxy.kubeconfig
+kubectl config use-context default --kubeconfig=kube-proxy.kubeconfig
+scp kube-proxy.kubeconfig root@odroid2:~/
+```
+
 ## Configure networks
 
+```bash
+cat <<EOF | sudo tee /etc/cni/net.d/10-bridge.conf
+{
+    "cniVersion": "0.3.1",
+    "name": "bridge",
+    "type": "bridge",
+    "bridge": "cnio0",
+    "isGateway": true,
+    "ipMasq": true,
+    "ipam": {
+        "type": "host-local",
+        "ranges": [
+          [{"subnet": "10.200.0.0/16"}]
+        ],
+        "routes": [{"dst": "0.0.0.0/0"}]
+    }
+}
+EOF
+
+cat <<EOF | sudo tee /etc/cni/net.d/99-loopback.conf
+{
+    "cniVersion": "0.3.1",
+    "name": "lo",
+    "type": "loopback"
+}
+EOF
+```
+
+## Configure containerd
+
+```bash
+sudo mkdir -p /etc/containerd/
+cat << EOF | sudo tee /etc/containerd/config.toml
+[plugins]
+  [plugins.cri.containerd]
+    snapshotter = "overlayfs"
+    [plugins.cri.containerd.default_runtime]
+      runtime_type = "io.containerd.runtime.v1.linux"
+      runtime_engine = "/usr/local/bin/runc"
+      runtime_root = ""
+EOF
+
+cat <<EOF | sudo tee /etc/systemd/system/containerd.service
+[Unit]
+Description=containerd container runtime
+Documentation=https://containerd.io
+After=network.target
+
+[Service]
+ExecStartPre=/sbin/modprobe overlay
+ExecStart=/bin/containerd
+Restart=always
+RestartSec=5
+Delegate=yes
+KillMode=process
+OOMScoreAdjust=-999
+LimitNOFILE=1048576
+LimitNPROC=infinity
+LimitCORE=infinity
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+## Configure kubelet
+
+```bash
+sudo mv worker-0-key.pem worker-0.pem /var/lib/kubelet/
+sudo mv worker-0.kubeconfig /var/lib/kubelet/kubeconfig
+sudo mv ca.pem /var/lib/kubernetes/
+
+cat <<EOF | sudo tee /var/lib/kubelet/kubelet-config.yaml
+kind: KubeletConfiguration
+apiVersion: kubelet.config.k8s.io/v1beta1
+authentication:
+  anonymous:
+    enabled: false
+  webhook:
+    enabled: true
+  x509:
+    clientCAFile: "/var/lib/kubernetes/ca.pem"
+authorization:
+  mode: Webhook
+clusterDomain: "cluster.local"
+clusterDNS:
+  - "10.32.0.10"
+podCIDR: "${POD_CIDR}"
+resolvConf: "/run/systemd/resolve/resolv.conf"
+runtimeRequestTimeout: "15m"
+tlsCertFile: "/var/lib/kubelet/${HOSTNAME}.pem"
+tlsPrivateKeyFile: "/var/lib/kubelet/${HOSTNAME}-key.pem"
+EOF
+
+cat <<EOF | sudo tee /etc/systemd/system/kubelet.service
+[Unit]
+Description=Kubernetes Kubelet
+Documentation=https://github.com/kubernetes/kubernetes
+After=containerd.service
+Requires=containerd.service
+
+[Service]
+ExecStart=/usr/local/bin/kubelet \\
+  --config=/var/lib/kubelet/kubelet-config.yaml \\
+  --container-runtime=remote \\
+  --container-runtime-endpoint=unix:///var/run/containerd/containerd.sock \\
+  --image-pull-progress-deadline=2m \\
+  --kubeconfig=/var/lib/kubelet/kubeconfig \\
+  --network-plugin=cni \\
+  --register-node=true \\
+  --v=2
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+## Configure kube-proxy
+
+```bash
+sudo mv kube-proxy.kubeconfig /var/lib/kube-proxy/kubeconfig
+
+cat <<EOF | sudo tee /var/lib/kube-proxy/kube-proxy-config.yaml
+kind: KubeProxyConfiguration
+apiVersion: kubeproxy.config.k8s.io/v1alpha1
+clientConnection:
+  kubeconfig: "/var/lib/kube-proxy/kubeconfig"
+mode: "iptables"
+clusterCIDR: "10.200.0.0/16"
+EOF
+
+cat <<EOF | sudo tee /etc/systemd/system/kube-proxy.service
+[Unit]
+Description=Kubernetes Kube Proxy
+Documentation=https://github.com/kubernetes/kubernetes
+
+[Service]
+ExecStart=/usr/local/bin/kube-proxy \\
+  --config=/var/lib/kube-proxy/kube-proxy-config.yaml
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+## Start worker services
+
+```
+sudo systemctl daemon-reload
+sudo systemctl enable containerd kubelet kube-proxy
+sudo systemctl start containerd kubelet kube-proxy
+sudo systemctl status containerd kubelet kube-proxy
+```
