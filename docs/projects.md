@@ -16,7 +16,7 @@ Reference: [buildpacks.io](https://buildpacks.io/)
 
 > The Cluster API is a Kubernetes project to bring declarative, Kubernetes-style APIs to cluster creation, configuration, and management. It provides optional, additive functionality on top of core Kubernetes.
 
-Reference: [GitHub](https://github.com/kubernetes-sigs/cluster-api), [The Cluster API Book](https://cluster-api.sigs.k8s.io/)
+Reference: [kubernetes-sigs/cluster-api](https://github.com/kubernetes-sigs/cluster-api), [The Cluster API Book](https://cluster-api.sigs.k8s.io/)
 
 <details>
   <summary>Read more</summary>
@@ -29,11 +29,12 @@ Reference: [GitHub](https://github.com/kubernetes-sigs/cluster-api), [The Cluste
 
 > CNI (Container Network Interface), a Cloud Native Computing Foundation project, consists of a specification and libraries for writing plugins to configure network interfaces in Linux containers, along with a number of supported plugins. CNI concerns itself only with network connectivity of containers and removing allocated resources when the container is deleted.
 
-Reference: [GitHub](https://github.com/containernetworking/cni)
+Reference: [containernetworking/cni](https://github.com/containernetworking/cni)
 
 <details>
   <summary>Read more</summary>
  
+  - [containernetworking/plugins](https://github.com/containernetworking/plugins)
   - `kubeadmin` uses CNI as the default network interface mechanism since v1.6.0.
   - [CNCF Blog - CNCF Hosts Container Networking Interface (CNI)](https://www.cncf.io/blog/2017/05/23/cncf-hosts-container-networking-interface-cni/) - May-23 '17
   - [SlideShare - Introduction to the Container Network Interface (CNI)](https://www.slideshare.net/weaveworks/introduction-to-the-container-network-interface-cni) - Sep-01 '17
@@ -59,11 +60,28 @@ Reference: [GitHub](https://github.com/containernetworking/cni)
   
 </details>
 
+## Container Runtime Interface (CRI)
+
+- [Introducing Container Runtime Interface (CRI) in Kubernetes](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/) - December 19, 2016
+- [kubernetes-sigs/cri-tools](https://github.com/kubernetes-sigs/cri-tools)
+
+## containerd
+
+> An industry-standard container runtime with an emphasis on simplicity, robustness and portability
+
+Reference: [containerd.io](https://containerd.io/), [containerd/containerd](https://github.com/containerd/containerd)
+
+## cri-o
+
+> Lightweight Container Runtime for Kubernetes
+
+Reference: [cri-o.io](https://cri-o.io/)
+
 ## dapr (Distributed Application Runtime)
 
 > An event-driven, portable runtime for building microservices on cloud and edge.
 
-Reference: [dapr.io](https://dapr.io/), [GitHub](https://github.com/dapr/dapr/), [Announcement](https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-dapr-open-source-project-build-microservice-applications/)
+Reference: [dapr.io](https://dapr.io/), [dapr/dapr](https://github.com/dapr/dapr), [Announcement](https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-dapr-open-source-project-build-microservice-applications/)
 
 ## Fluentd
 
@@ -87,9 +105,15 @@ Reference: [knative.dev](https://knative.dev/), [GitHub](https://github.com/knat
 
 Kubernetes Native Container Build Service provided by Pivotal
 
-Reference: [GitHub](https://github.com/pivotal/kpack)
+Reference: [pivotal/kpack](https://github.com/pivotal/kpack)
 
 See also: [TGI Kubernetes 091: kpack](https://www.youtube.com/watch?v=4zkRX9PSJ5k&feature=youtu.be)
+
+## OCI (Open Container Initiative)
+
+> The Open Container Initiative is an open governance structure for the express purpose of creating open industry standards around container formats and runtimes.
+
+Reference: [opencontainers.org](https://opencontainers.org/), [opencontainers/runtime-spec](https://github.com/opencontainers/runtime-spec)
 
 ## Prometheus
 
@@ -97,8 +121,14 @@ See also: [TGI Kubernetes 091: kpack](https://www.youtube.com/watch?v=4zkRX9PSJ5
 
 Reference: [prometheus.io](https://prometheus.io/)
 
+## runc
+
+> runc is a CLI tool for spawning and running containers according to the OCI specification.
+
+Reference: [opencontainers/runc](https://github.com/opencontainers/runc)
+
 ## Velero
 
 > Velero is an open source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes cluster resources and persistent volumes.
 
-Reference: [velero.io](https://velero.io/), [GitHub](https://github.com/vmware-tanzu/velero)
+Reference: [velero.io](https://velero.io/), [vmware-tanzu/velero](https://github.com/vmware-tanzu/velero)
