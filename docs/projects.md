@@ -71,6 +71,14 @@ Reference: [containernetworking/cni](https://github.com/containernetworking/cni)
 
 Reference: [containerd.io](https://containerd.io/), [containerd/containerd](https://github.com/containerd/containerd)
 
+## CoreDNS
+
+> CoreDNS is a DNS Server
+
+Reference: [coredns.io](https://coredns.io/), [coredns/coredns](https://github.com/coredns/coredns)
+
+See also: [Helm chart](https://hub.helm.sh/charts/stable/coredns)
+
 ## cri-o
 
 > Lightweight Container Runtime for Kubernetes
