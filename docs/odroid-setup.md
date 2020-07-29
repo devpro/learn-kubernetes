@@ -325,7 +325,7 @@ Documentation=https://github.com/kubernetes/kubernetes
 ExecStart=/usr/local/bin/kube-controller-manager \\
   --bind-address=0.0.0.0 \\
   --cluster-cidr=10.200.0.0/16 \\
-  --cluster-name=kubernetes \\
+  --cluster-name=kubernetes-odroid-xu4 \\
   --cluster-signing-cert-file=/var/lib/kubernetes/ca.pem \\
   --cluster-signing-key-file=/var/lib/kubernetes/ca-key.pem \\
   --kubeconfig=/var/lib/kubernetes/kube-controller-manager.kubeconfig \\
@@ -675,11 +675,11 @@ authorization:
 clusterDomain: "cluster.local"
 clusterDNS:
   - "10.32.0.10"
-podCIDR: "${POD_CIDR}"
+podCIDR: "10.200.0.0/16"
 resolvConf: "/run/systemd/resolve/resolv.conf"
 runtimeRequestTimeout: "15m"
 tlsCertFile: "/var/lib/kubelet/worker-0.pem"
-tlsPrivateKeyFile: "/var/lib/kubelet/worker-0.pem"
+tlsPrivateKeyFile: "/var/lib/kubelet/worker-0-key.pem"
 EOF
 
 cat <<EOF | sudo tee /etc/systemd/system/kubelet.service
@@ -698,6 +698,7 @@ ExecStart=/usr/local/bin/kubelet \\
   --kubeconfig=/var/lib/kubelet/kubeconfig \\
   --network-plugin=cni \\
   --register-node=true \\
+  --hostname-override=worker-0 \\
   --v=2
 Restart=on-failure
 RestartSec=5
@@ -729,7 +730,7 @@ Documentation=https://github.com/kubernetes/kubernetes
 [Service]
 ExecStart=/usr/local/bin/kube-proxy \\
   --config=/var/lib/kube-proxy/kube-proxy-config.yaml \\
-  --hostname-override worker-0
+  --hostname-override=worker-0
 Restart=on-failure
 RestartSec=5
 
@@ -738,11 +739,103 @@ WantedBy=multi-user.target
 EOF
 ```
 
-## Start worker services
+### Start worker services
 
-```
+If there are some issues, execute directly the command line seen in the service file.
+
+```bash
 sudo systemctl daemon-reload
 sudo systemctl enable containerd kubelet kube-proxy
 sudo systemctl start containerd kubelet kube-proxy
 sudo systemctl status containerd kubelet kube-proxy
+```
+
+From the main node, check you can see the node:
+
+```bash
+kubectl get nodes --kubeconfig admin.kubeconfig
+```
+
+## Remote access
+
+From the workstation used to generate certificates:
+
+```bash
+kubectl config set-cluster kubernetes-odroid-xu4 \
+  --certificate-authority=ca.pem \
+  --embed-certs=true \
+  --server=https://192.168.86.139:6443
+
+kubectl config set-credentials admin \
+  --client-certificate=admin.pem \
+  --client-key=admin-key.pem
+
+kubectl config set-context kubernetes-odroid-xu4 \
+  --cluster=kubernetes-odroid-xu4 \
+  --user=admin
+
+kubectl config use-context kubernetes-odroid-xu4
+
+kubectl get componentstatuses
+kubectl get nodes
+```
+
+## Network routes
+
+Goal: enable networking between pods
+
+[Cluster Networking](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
+
+## Cluster DNS
+
+[DNS for Services and Pods](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
+
+From the machine where we generated the certificates:
+
+```bash
+# install Helm
+wget https://get.helm.sh/helm-v3.2.4-linux-amd64.tar.gz
+tar -zxvf helm-v3.2.4-linux-amd64.tar.gz
+mv linux-amd64/helm /usr/local/bin/
+rm helm-v3.2.4-linux-amd64.tar.gz
+rm -r linux-amd64/
+helm version
+
+# generate and apply CoreDNS definition (will generate a configmap, clusterrole.rbac.authorization.k8s.io, clusterrolebinding.rbac.authorization.k8s.io; service/coredns-coredns, deployment.apps/coredns-coredns)
+helm template coredns stable/coredns --namespace=kube-system > coredns.yml
+kubectl apply -f coredns.yaml -n kube-system
+kubectl get pods -n kube-system
+```
+
+## Quick check
+
+```bash
+# create a pod
+kubectl run busybox --image=busybox:1.28 --command -- sleep 3600
+
+# make sure the pod is created
+kubectl get pods -l run=busybox
+
+# look for kubernetes service
+POD_NAME=$(kubectl get pods -l run=busybox -o jsonpath="{.items[0].metadata.name}")
+kubectl exec -ti $POD_NAME -- nslookup kubernetes
+```
+
+## Smoke tests
+
+```bash
+# create a first deployment
+kubectl create deployment nginx --image=nginx
+kubectl get pods -l app=nginx
+
+# port forwarding
+POD_NAME=$(kubectl get pods -l app=nginx -o jsonpath="{.items[0].metadata.name}")
+kubectl port-forward $POD_NAME 8080:80
+
+# from another terminal (then stop port forwarding in the initial command)
+curl --head http://127.0.0.1:8080
+
+# interact with the pod
+kubectl logs $POD_NAME
+kubectl exec -ti $POD_NAME -- nginx -v
 ```
