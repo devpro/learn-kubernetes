@@ -1,5 +1,11 @@
 # Kubernetes related projects
 
+## Argo
+
+> Get stuff done with Kubernetes. Open source Kubernetes native workflows, events, CI and CD
+
+Reference: [argoproj.github.io](https://argoproj.github.io/), [argoproj/argo](https://github.com/argoproj/argo)
+
 ## Cloud Native Application Bundle (CNAB)
 
 >  A spec for packaging distributed apps. CNABs facilitate the bundling, installing and managing of container-native apps — and their coupled services.
