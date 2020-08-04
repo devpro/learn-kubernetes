@@ -123,6 +123,12 @@ Reference: [pivotal/kpack](https://github.com/pivotal/kpack)
 
 See also: [TGI Kubernetes 091: kpack](https://www.youtube.com/watch?v=4zkRX9PSJ5k&feature=youtu.be)
 
+## Kubebuilder
+
+> Kubebuilder is a framework for building Kubernetes APIs using custom resource definitions (CRDs).
+
+Reference: [book.kubebuilder.io](https://book.kubebuilder.io/introduction.html), [kubernetes-sigs/kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)
+
 ## OCI (Open Container Initiative)
 
 > The Open Container Initiative is an open governance structure for the express purpose of creating open industry standards around container formats and runtimes.
