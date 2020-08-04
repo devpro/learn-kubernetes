@@ -97,6 +97,14 @@ Reference: [cri-o.io](https://cri-o.io/)
 
 Reference: [dapr.io](https://dapr.io/), [dapr/dapr](https://github.com/dapr/dapr), [Announcement](https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-dapr-open-source-project-build-microservice-applications/)
 
+## Envoy
+
+> Envoy is an open source edge and service proxy, designed for cloud-native applications
+
+Reference: [envoyproxy.io](https://www.envoyproxy.io/), [envoyproxy/envoy](https://github.com/envoyproxy/envoy)
+
+Get started with [interactive labs](https://www.envoyproxy.io/try/) (powered by [Katacoda](https://www.katacoda.com/))
+
 ## Fluentd
 
 >  Fluentd is an open source data collector for unified logging layer. Fluentd allows you to unify data collection and consumption for a better use and understanding of data.
