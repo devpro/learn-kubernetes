@@ -69,6 +69,7 @@ General information:
   * [Linux Foundation - Introduction to Kubernetes (LFS158)](https://training.linuxfoundation.org/training/introduction-to-kubernetes/)
   * [Microsoft - Kubernetes learning path](https://azure.microsoft.com/en-us/resources/kubernetes-learning-path/)
   * [Coursera - Getting Started with Google Kubernetes Engine](https://www.coursera.org/learn/google-kubernetes-engine)
+  * [VMWare - KubeAcademy](https://kube.academy/) 
 * [Linux Foundation - Kubernetes Fundamentals (LFS258)](https://trainingportal.linuxfoundation.org/learn/course/kubernetes-fundamentals-lfs258/course-introduction/course-information) > [Class forum](https://forum.linuxfoundation.org/categories/lfs258-class-forum)
 * [Linux Foundation - Kubernetes for Developers (LFD259)](https://trainingportal.linuxfoundation.org/learn/course/kubernetes-for-developers-lfd259/introduction/course-information)
 
@@ -101,3 +102,7 @@ General information:
 
 * [O'Reilly - Cloud Native DevOps with Kubernetes](https://www.oreilly.com/library/view/cloud-native-devops/9781492040750/)
 * [O'Reilly - Kubernetes Up and Running](https://www.oreilly.com/library/view/kubernetes-up-and/9781491935668/)
+
+### History
+
+- [RisingStack](https://blog.risingstack.com/the-history-of-kubernetes/)
