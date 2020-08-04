@@ -72,9 +72,12 @@ General information:
 * [Linux Foundation - Kubernetes Fundamentals (LFS258)](https://trainingportal.linuxfoundation.org/learn/course/kubernetes-fundamentals-lfs258/course-introduction/course-information) > [Class forum](https://forum.linuxfoundation.org/categories/lfs258-class-forum)
 * [Linux Foundation - Kubernetes for Developers (LFD259)](https://trainingportal.linuxfoundation.org/learn/course/kubernetes-for-developers-lfd259/introduction/course-information)
 
-### CNCF landscape
+### Cloud Native Computing Foundation (CNCF)
 
-[landscape.cncf.io](https://landscape.cncf.io/zoom=200) ([Introducing The Cloud Native Landscape 2.0](https://www.cncf.io/blog/2018/03/08/introducing-the-cloud-native-landscape-2-0-interactive-edition/) - March 8, 2018)
+- [cncf.io](https://www.cncf.io/)
+  - [Annoucements](https://www.cncf.io/newsroom/announcements/)
+  - [Landscape](https://landscape.cncf.io/zoom=200)
+    - [Introducing The Cloud Native Landscape 2.0](https://www.cncf.io/blog/2018/03/08/introducing-the-cloud-native-landscape-2-0-interactive-edition/) - March 8, 2018
 
 ### Webinars
 
