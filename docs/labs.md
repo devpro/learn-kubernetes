@@ -41,9 +41,9 @@ kubectl expose deployment <deployment-name> --type=LoadBalancer --port 80 --targ
 minikube service <service-name>
 kubectl delete service <service-name>
 
-# execute bash commands in the pod
+# execute bash commands in the pod (see https://kubernetes.io/docs/tasks/debug-application-cluster/get-shell-running-container/)
 kubectl exec --stdin --tty <pod-name> -- bash
 
-# delete the Deployment
+# delete the deployment
 kubectl delete deployment <deployment-name>
 ```
