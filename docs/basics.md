@@ -85,13 +85,54 @@ Add-ons features:
 - **Worder nodes** (Linux, and Windows since 1.14 release)
   - `kubelet`: receives requests to run the containers, manages any necessary resources and watches over them on the local node, interacts with the local container engine, which is Docker by default, but could be rkt or cri-o
   - `kube-proxy`: creates and manages networking rules to expose the container on the network
-  - Container Runtime: Docker, containerd, cri-o, rktlet or any implementation of the Kubernetes [CRI (Container Runtime Interface)](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md)
+  - Container Runtime: Docker, containerd, cri-o or any implementation of the Kubernetes [CRI (Container Runtime Interface)](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md)
+
+<details>
+  <summary>Overview of CRI</summary>
+ 
+  Image taken from Kubernetes blog post [Introducing Container Runtime Interface (CRI) in Kubernetes](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/)
+  
+  <img src="https://d1sz9tkli0lfjq.cloudfront.net/items/0I3X2U0S0W3r1D1z2O0Q/Image%202016-12-19%20at%2017.13.16.png">
+</details>
 
 ### API
 
 [API Overview](https://kubernetes.io/docs/concepts/overview/kubernetes-api/) > [API Reference](https://kubernetes.io/docs/reference/kubernetes-api/)
 
-## Terminology / Kubernetes Objects
+### Container options
+
+<details>
+  <summary>Container layers</summary>
+ 
+  Image taken from Docker blog post [What is containerd?](https://www.docker.com/blog/what-is-containerd-runtime/)
+  
+  <img src="https://i0.wp.com/www.docker.com/blog/wp-content/uploads/974cd631-b57e-470e-a944-78530aaa1a23-1.jpg?w=906&ssl=1">
+</details>
+
+#### Container runtime
+
+Reference: [Documentation / Getting started / Production environment / Container runtimes](https://kubernetes.io/docs/setup/production-environment/container-runtimes/)
+
+Kubernetes uses a container runtime to run containers in Pods. There are mainly 3:
+
+- [Docker engine](https://docs.docker.com/engine/) is still the default container runtime for Kubernetes
+- [CRI-O](https://cri-o.io/) ([cri-o/cri-o](https://github.com/cri-o/cri-o))
+- [containerd](https://containerd.io/) ([containerd/containerd](https://github.com/containerd/containerd))
+
+_Note_: [rktlet](https://github.com/kubernetes-retired/rktlet) and [rkt](https://github.com/rkt/rkt) projects have been ended
+
+#### Containerized image
+
+The [Open Container Initiative (OCI)](https://opencontainers.org/) is an open governance structure for the express purpose of creating open industry standards around container formats and runtimes. Source repositories are managed inside [opencontainers](https://github.com/opencontainers) GitHub organization.
+
+There are currently two specifications:
+
+- [Runtime Specification (runtime-spec)](https://github.com/opencontainers/runtime-spec)
+- [Image Specification (image-spec)](https://github.com/opencontainers/image-spec)
+
+Docker donated [runC](https://github.com/opencontainers/runc) to OCI.
+
+## Kubernetes Objects
 
 ### Pods
 
