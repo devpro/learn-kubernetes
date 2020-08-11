@@ -213,6 +213,12 @@ Read more:
 
 To make management easier, we can use **Labels**, arbitrary strings which become part of the object metadata.
 
+**Label selectors** are a very powerful way to get the Kubernetes objects we want to interact with.
+
+```bash
+kubectl -n <namespace> get --selector app=<application-name> pod
+```
+
 ### Storage
 
 #### Persistent Volumes
