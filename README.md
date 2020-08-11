@@ -85,6 +85,9 @@ General information:
 <details>
   <summary>CNCF webinars</summary>
 
+  - [Comparing eBPF and Istio/Envoy for Monitoring Microservice Interactions](https://www.cncf.io/webinars/comparing-ebpf-and-istio-envoy-for-monitoring-microservice-interactions/) - August 4, 2020
+  - [Event-Driven Cloud Native Workflows Use Cases and Patterns](https://www.cncf.io/webinars/event-driven-cloud-native-workflows-use-cases-and-patterns/) - July 29, 2020
+  - [CNCF Member Webinar: Kubernetes Policies 101](https://www.cncf.io/webinars/kubernetes-policies-101/) - July 28, 2020
   - [The top 7 most useful Kubernetes APIs for comprehensive cloud native observability](https://www.cncf.io/webinars/the-top-7-most-useful-kubernetes-apis-for-comprehensive-cloud-native-observability/) - July 9, 2020
   - [Building Production-ready Services with Kubernetes and Serverless Architectures](https://www.cncf.io/webinars/building-production-ready-services-with-kubernetes-and-serverless-architectures/) - July 8, 2020
   - [Optimize your Kubernetes Clusters on Azure with Built-in Best Practices](https://www.cncf.io/webinars/optimize-your-kubernetes-clusters-on-azure-with-built-in-best-practices/) - July 7, 2020
