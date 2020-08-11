@@ -47,15 +47,22 @@ Reference: [Documentation > Concepts > Cluster Administration > Cluster Networki
 
 A network must be defined to manage the cluster and avoid any IP conflict. Available plugins may implement [Container Network Interface (CNI)](https://github.com/devpro/kubernetes-certification-2020/blob/master/docs/projects.md#container-network-interface-cni), a CNCF project.
 
-5 choices for pod networking:
+#### Network plugins (pod networking)
 
-- [Calico](https://www.projectcalico.org/)
-- [Flannel](https://github.com/coreos/flannel)
-- [Kube-Router](https://www.kube-router.io/)
-- [Romana](https://github.com/romana/romana)
-- [Weave Net](https://www.weave.works/oss/net/)
+Reference:
 
-Reference: [Documentation / Concepts / Cluster Administration / Installing Addons](https://kubernetes.io/docs/concepts/cluster-administration/addons/)
+- [Documentation > Concepts > Extending Kubernetes > Compute, Storage, and Networking Extensions > Network Plugins](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/)
+- [Documentation > Concepts > Cluster Administration > Installing Addons](https://kubernetes.io/docs/concepts/cluster-administration/addons/)
+- [Virtual Extensible LAN (VXLAN)](https://en.wikipedia.org/wiki/Virtual_Extensible_LAN)
+
+Name | Network Model | Allow vxlan | Allow network policies | Can encrypt all TCP and UDP traffic
+---- | ------------- | ----------- | ---------------------- | -----------------------------------
+[`Calico`](https://www.projectcalico.org/) | Level 3 | Yes | Yes | Yes
+[`Weave Net`](https://www.weave.works/oss/net/) | Level 2 | Yes | | Yes
+[`Flannel`](https://github.com/coreos/flannel) | Level 2 | Yes | |
+[`Kube Router`](https://www.kube-router.io/) | Level 3 | | Yes |
+[`Romana`](https://romana.io/) ([romana/romana](https://github.com/romana/romana)) | Level 3 | | Yes |
+[`Kopeio`](https://github.com/kopeio/networking) | Level 2 | Yes | | Yes
 
 ### Tools
 
