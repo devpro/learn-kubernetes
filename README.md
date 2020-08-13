@@ -11,6 +11,8 @@ This is a training material to get knowledge about Kubernetes and pass Kubernete
 * [Releases](./docs/releases.md)
 * [Labs](./docs/labs.md)
   * [Odroid setup](./docs/odroid-setup.md)
+  * [LF - Kubernetes for Developers](./docs/lfd259.md)
+  * [LF - Kubernetes Fundamentals](./docs/lfs258.md)
 * [Examination](./docs/examination.md)
 
 ## Sandboxes

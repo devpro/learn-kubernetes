@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: basicpod
+  labels:
+    type: webserver
+spec:
+#  serviceAccountName: secret-access-sa
+  volumes:                          #<--Same depth as containers
+    - name: weblog-pv-storage       #
+      persistentVolumeClaim:        #
+        claimName: weblog-pv-claim  # name from kubectl get output
+    - name: log-config
+      configMap:
+        name: fluentd-config
+  containers:
+  - name: webcont
+    image: nginx
+    ports:
+    - containerPort: 80
+    volumeMounts:                     #<--Same depth as ports
+      - mountPath: "/var/log/nginx/"  #
+        name: weblog-pv-storage       # Must match volume name above
+  - name: fdlogger
+    image: k8s.gcr.io/fluentd-gcp:1.30
+    env:                              #Same depth as image:
+    - name: FLUENTD_ARGS
+      value: -c /etc/fluentd-config/fluentd.conf
+    volumeMounts:                     #<--Same depth as image:  
+      - mountPath: "/var/log"         # We will configure this directory soon
+        name: weblog-pv-storage       # Must match volume name above
+      - name: log-config              # Must match volume name above
+        mountPath: "/etc/fluentd-config"

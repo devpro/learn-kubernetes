@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: rs-one
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      system: ReplicaOne
+  template:
+    metadata:
+      labels:
+        system: ReplicaOne
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.15.1
+        ports:
+        - containerPort: 80

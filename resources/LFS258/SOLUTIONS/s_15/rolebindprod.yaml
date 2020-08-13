@@ -1,0 +1,13 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: production-role-binding  #<-- Edit to production
+  namespace: production          #<-- Also here
+subjects:
+- kind: User
+  name: DevDan
+  apiGroup: ""
+roleRef:
+  kind: Role
+  name: dev-prod                 #<-- Also this
+  apiGroup: ""

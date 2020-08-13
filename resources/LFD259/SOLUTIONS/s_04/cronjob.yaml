@@ -1,0 +1,16 @@
+apiVersion: batch/v1beta1    #<-- Add beta1 to be v1beta1
+kind: CronJob   #<-- Change this line
+metadata:
+  name: sleepy
+spec:                        #<-- Remove completions:, parallelism:, and activeDeadlineSeconds:
+  schedule: "*/2 * * * *"    #<-- Add Linux style cronjob syntax
+  jobTemplate:               #<-- New jobTemplate and spec
+    spec:
+      template:   #<-- This and following lines space four to right
+        spec:
+          containers:
+          - name: resting
+            image: busybox
+            command: ["/bin/sleep"]
+            args: ["3"]
+          restartPolicy: Never

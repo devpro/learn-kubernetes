@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+# Determines YAML versioned schema.
+kind: Deployment
+# Describes the resource defined in this file.
+metadata:
+  name: nginx-one
+  labels:
+    system: secondary
+# Required string which defines object within namespace.
+  namespace: accounting
+# Existing namespace resource will be deployed into.
+spec:
+  selector:
+    matchLabels:
+      system: secondary
+# Declaration of the label for the deployment to manage
+  replicas: 2
+# How many Pods of following containers to deploy
+  template:
+    metadata:
+      labels:
+        system: secondary
+# Some string meaningful to users, not cluster. Keys
+# must be unique for each object. Allows for mapping
+# to customer needs.
+    spec:
+      containers:
+# Array of objects describing containerized application with a Pod.
+# Referenced with shorthand spec.template.spec.containers
+      - image: nginx:1.16.1
+# The Docker image to deploy
+        imagePullPolicy: Always
+        name: nginx
+# Unique name for each container, use local or Docker repo image
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+# Optional resources this container may need to function.
+      nodeSelector:
+        system: secondOne
+# One method of node affinity. 

@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: List
+items:
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    labels:
+      review: tux
+    name: label-pod1
+  spec:
+    containers:
+    - image: nginx
+      name: design-a
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    labels:
+      review: tux
+    name: label-pod2
+  spec:
+    containers:
+    - image: nginx
+      name: design-b
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    labels:
+      linux: rocks
+    name: label-pod3
+  spec:
+    containers:
+    - image: nginx
+      name: design-c
+- apiVersion: v1
+  kind: Pod
+  metadata:
+    labels:
+      domain: review
+    name: label-pod4
+  spec:
+    containers:
+    - image: nginx
+      name: design-d
+
+
+# Create pods with selectors

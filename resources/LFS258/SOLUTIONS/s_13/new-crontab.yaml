@@ -1,0 +1,10 @@
+apiVersion: "training.lfs458.com/v1"
+    # This is from the group and version of new CRD
+kind: CronTab
+    # The kind from the new CRD
+metadata:
+  name: new-cron-object
+spec:
+  cronSpec: "*/5 * * * *"
+  image: some-cron-image
+    #Does not exist

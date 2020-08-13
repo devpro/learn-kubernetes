@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  creationTimestamp: 2017-10-25T19:59:25Z
+  generation: 3
+  labels:
+    system: DaemonSetOne
+  name: ds-two
+  namespace: default
+spec:
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      system: DaemonSetOne
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        system: DaemonSetOne
+    spec:
+      containers:
+      - image: nginx:1.11.1
+        imagePullPolicy: IfNotPresent
+        name: nginx
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+  templateGeneration: 3
+  updateStrategy:
+    type: RollingUpdate

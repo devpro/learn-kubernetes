@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: securityreview
+spec:
+  securityContext:
+    runAsUser: 2100
+  containers:
+  - name:  webguy
+    image: nginx
+    securityContext:
+      runAsUser: 3000
+      allowPrivilegeEscalation: false

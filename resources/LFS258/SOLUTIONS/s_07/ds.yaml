@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: ds-one
+spec:
+  selector:
+    matchLabels:
+      system: DaemonSetOne
+
+  template:
+    metadata:
+      labels:
+        system: DaemonSetOne
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.11.1
+        ports:
+        - containerPort: 80

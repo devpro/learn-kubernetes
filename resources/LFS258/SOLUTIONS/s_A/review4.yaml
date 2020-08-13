@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: design-pod1
+spec:
+  containers:
+  - image: vish/stress
+    name: design-pod1
+    resources:
+      limits:
+        cpu: "2.22"
+        memory: "567Mi"
+      requests:
+        cpu: "0.3"
+        memory: "456Mi"
+    args:
+    - -cpus
+    - "1"
+    - -mem-total
+    - "1036Mi"
+    - -mem-alloc-size
+    - "500Mi"
+    - -mem-alloc-sleep
+    - "1s"
+
+
+#Domain CPU requirements
+

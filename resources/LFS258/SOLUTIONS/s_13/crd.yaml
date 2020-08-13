@@ -1,0 +1,16 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: crontabs.training.lfs458.com
+         # This name must match names below.
+         # <plural>.<group> syntax
+spec:
+  scope: Cluster    #Could also be Namespaced
+  group: training.lfs458.com
+  version: v1
+  names:
+    kind: CronTab      #Typically CamelCased for resource manifest
+    plural: crontabs   #Shown in URL
+    singular: crontab  #Short name for CLI alias
+    shortNames:
+    - ct               #CLI short name
