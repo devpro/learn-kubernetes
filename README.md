@@ -70,8 +70,9 @@ General information:
   * [Microsoft - Kubernetes learning path](https://azure.microsoft.com/en-us/resources/kubernetes-learning-path/)
   * [Coursera - Getting Started with Google Kubernetes Engine](https://www.coursera.org/learn/google-kubernetes-engine)
   * [VMWare - KubeAcademy](https://kube.academy/) 
-* [Linux Foundation - Kubernetes Fundamentals (LFS258)](https://trainingportal.linuxfoundation.org/learn/course/kubernetes-fundamentals-lfs258/course-introduction/course-information) > [Class forum](https://forum.linuxfoundation.org/categories/lfs258-class-forum)
-* [Linux Foundation - Kubernetes for Developers (LFD259)](https://trainingportal.linuxfoundation.org/learn/course/kubernetes-for-developers-lfd259/introduction/course-information)
+* Charged
+  * [Linux Foundation - Kubernetes Fundamentals (LFS258)](https://trainingportal.linuxfoundation.org/learn/course/kubernetes-fundamentals-lfs258/course-introduction/course-information) > [Class forum](https://forum.linuxfoundation.org/categories/lfs258-class-forum)
+  * [Linux Foundation - Kubernetes for Developers (LFD259)](https://trainingportal.linuxfoundation.org/learn/course/kubernetes-for-developers-lfd259/introduction/course-information) > [Class forum](https://forum.linuxfoundation.org/categories/lfd259-class-forum)
 
 ### Cloud Native Computing Foundation (CNCF)
 
