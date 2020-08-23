@@ -1,6 +1,6 @@
 # Kubernetes Certification 2020
 
-This is a training material to get knowledge about Kubernetes and pass Kubernetes certifications (CKA & CKAD).
+This is a training material to get knowledge about Kubernetes and prepare for Kubernetes certifications (CKA & CKAD).
 
 ## Content
 
