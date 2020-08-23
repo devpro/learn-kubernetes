@@ -2,17 +2,13 @@
 
 ## Introduction
 
-> Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications
-
-Reference: [kubernetes.io](https://kubernetes.io/)
+> [**Kubernetes** (K8s)](https://kubernetes.io/) is an open-source system for automating deployment, scaling, and management of containerized applications
 
 In other words, Kubernetes is an orchestration system to deploy and manage containers in order to serve decoupled and transcient services.
 
-Kubernetes is the Greek word for Helmsman (or pilot of the ship).
+Kubernetes is the Greek word for Helmsman (or pilot of the ship). It has been created by Google from their experience on internal Google products called [**Borg**](https://research.google/pubs/pub43438/), which have been used during 15 years, and [**Omega**](https://research.google/pubs/pub41684/).
 
-It started as an internal Google product called **Borg**, which have been used during 15 years before being given it to the community (in 2014).
-
-Kubernetes is written in Go Language with an Apache license. Google donated Kubernetes to the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) within The Linux Foundation in July 2015, when Kubernetes reached the v1.0 release.
+Kubernetes is written in Go language with an Apache license. Google donated Kubernetes to the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) within The Linux Foundation in July 2015, when Kubernetes reached the v1.0 release.
 
 Read more:
 
@@ -23,7 +19,6 @@ Read more:
 <details>
   <summary>Going further</summary>
 
-  - [Publication - Large-scale cluster management at Google with Borg](https://research.google/pubs/pub43438/)
   - [Goocle Cloud Platform Podcast - Borg and Kubernetes with John Wilkes](https://www.gcppodcast.com/post/episode-46-borg-and-k8s-with-john-wilkes/)
   - [GitHub - Kubernetes community](https://github.com/kubernetes/community)
   - [Slack](https://slack.kubernetes.io/)
@@ -140,8 +135,8 @@ Docker donated [runC](https://github.com/opencontainers/runc) to OCI.
 
 Probe type | Reason
 ---------- | ------
-Readiness | Make sure the application is ready to accept traffic
-Liveness | Make sure the application is running ok
+**Readiness** | Make sure the application is ready to accept traffic
+**Liveness** | Make sure the application is running ok
 
 ## Kubernetes Objects
 
@@ -161,7 +156,9 @@ Secondary container type | Usecase
 
 ### Controllers
 
-**Controllers** (aka Operators) are a series of watch-loops which makes possible the orchestration through Kubernetes. Each **Controller** interrogates the `kube-apiserver` for a particular object state, modifying the object until the declared state matches the current state. These controllers are compiled into the `kube-controller-manager`.
+**Controllers** are a series of watch-loops which makes possible the orchestration through Kubernetes. Each **Controller** interrogates the `kube-apiserver` for a particular object state, modifying the object until the declared state matches the current state. These controllers are compiled into the `kube-controller-manager`.
+
+Samples: [kubernetes/sample-controller](https://github.com/kubernetes/sample-controller)
 
 #### Deployments
 
@@ -188,6 +185,12 @@ A [**Job**](https://kubernetes.io/docs/concepts/workloads/controllers/job/) crea
 #### CronJobs
 
 A [**CronJob**](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/) creates Jobs on a repeating schedule.
+
+#### Operators
+
+An operator is a domain specific controller.
+
+See [Stackoverflow answer](https://stackoverflow.com/questions/47848258/kubernetes-controller-vs-kubernetes-operator#47857073), [page on Octetz](https://octetz.com/docs/2019/2019-10-13-controllers-and-operators/), [GitHub issue](https://github.com/kubeflow/tf-operator/issues/300) and [CoreOS definition](https://coreos.com/operators/).
 
 ### Services
 
