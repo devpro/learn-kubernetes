@@ -14,7 +14,8 @@ Several options to start with a new Kubernetes cluster:
 - [Minikube](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/minikube.md) on all machines
 - [MicroK8s](https://microk8s.io/docs) from Canonical on Ubuntu
 - [K3s](https://k3s.io/) from Rancher on small devices or CI pipelines
-- [Kind (Kubernetes in Docker)](https://kind.sigs.k8s.io/): fast and easy testing of clusters
+- [Kind (Kubernetes in Docker)](https://kind.sigs.k8s.io/) ([kubernetes-sigs/kind](https://github.com/kubernetes-sigs/kind)): fast and easy testing of clusters
+  - [Kubernetes Podcast #69 kind, with Ben Elder (September 3, 2019)](https://kubernetespodcast.com/episode/069-kind/)
 
 ### Kubernetes CLI
 
