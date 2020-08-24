@@ -113,6 +113,7 @@ Kubernetes uses a container runtime to run containers in Pods. There are mainly 
 
 - [Docker engine](https://docs.docker.com/engine/) is the default container runtime for Kubernetes
 - [CRI-O](https://cri-o.io/) ([cri-o/cri-o](https://github.com/cri-o/cri-o))
+  - [Awesome CRI-O](https://github.com/cri-o/cri-o/blob/master/awesome.md)
 - [containerd](https://containerd.io/) ([containerd/containerd](https://github.com/containerd/containerd))
 
 _Note_: [rktlet](https://github.com/kubernetes-retired/rktlet) and [rkt](https://github.com/rkt/rkt) projects have been ended
