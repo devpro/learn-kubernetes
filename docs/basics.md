@@ -48,6 +48,8 @@ Add-ons features:
 
 ## Architecture
 
+[Community > Kubernetes Design and Architecture](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/architecture/architecture.md)
+
 ### Nodes
 
 <details>
