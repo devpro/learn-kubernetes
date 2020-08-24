@@ -78,9 +78,8 @@ Add-ons features:
   - [`kube-controller-manager`](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/): core control loop daemon which interacts with the `kube-apiserver` that regulates the state of the system, responsible for running resource controllers such as Deployments
   - [`cloud-controller-manager`](https://kubernetes.io/docs/tasks/administer-cluster/running-cloud-controller/): interacts with the cloud provider (if cloud-based clusters), managing resources such as load balancers and disk volumes, allows cloud vendors to evolve independently from the core Kubernetes code
 - **Worder nodes** (Linux, and Windows since 1.14 release)
-  - `kubelet`: receives requests to run the containers, manages any necessary resources and watches over them on the local node, interacts with the local container engine, which is Docker by default, but could be rkt or cri-o
+  - `kubelet`: receives requests to run the containers, manages any necessary resources and watches over them on the local node, interacts with the local container engine, which is `Docker` by default, but could be `containerd` or `cri-o` (or any implementation of the Kubernetes [CRI (Container Runtime Interface)](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md))
   - `kube-proxy`: creates and manages networking rules to expose the container on the network
-  - Container Runtime: Docker, containerd, cri-o or any implementation of the Kubernetes [CRI (Container Runtime Interface)](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md)
 
 <details>
   <summary>Overview of CRI</summary>
@@ -110,7 +109,7 @@ Reference: [Documentation / Getting started / Production environment / Container
 
 Kubernetes uses a container runtime to run containers in Pods. There are mainly 3:
 
-- [Docker engine](https://docs.docker.com/engine/) is still the default container runtime for Kubernetes
+- [Docker engine](https://docs.docker.com/engine/) is the default container runtime for Kubernetes
 - [CRI-O](https://cri-o.io/) ([cri-o/cri-o](https://github.com/cri-o/cri-o))
 - [containerd](https://containerd.io/) ([containerd/containerd](https://github.com/containerd/containerd))
 
@@ -263,7 +262,10 @@ Kubernetes Objects:
 
 ## Tools
 
-- [Helm](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/helm.md)
-- [k14s](https://k14s.io/)
-- [k9s](https://github.com/derailed/k9s)
-- [Lens](https://k8slens.dev/)
+- [Helm](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/helm.md): "The package manager for Kubernetes"
+
+- [Carvel (previously k14s)](https://k14s.io/): "A set of reliable, single-purpose, composable tools that aid in your application building, configuration, and deployment to Kubernetes"
+
+- [k9s](https://github.com/derailed/k9s): "Kubernetes CLI To Manage Your Clusters In Style!"
+
+- [Lens](https://k8slens.dev/): "Lens is the only IDE you’ll ever need to take control of your Kubernetes clusters. It's open source and free."
