@@ -104,6 +104,10 @@ General information:
   
 </details>
 
+### Podcasts
+
+- [Kubernetes Podcast from Google](https://kubernetespodcast.com/)
+
 ### Books
 
 * [O'Reilly - Cloud Native DevOps with Kubernetes](https://www.oreilly.com/library/view/cloud-native-devops/9781492040750/)
