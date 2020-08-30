@@ -97,7 +97,9 @@ kubectl patch cronjob test-job -p '{"spec":{"schedule": "33 16 * * 1"}}'
 kubectl delete cronjob test-job
 ```
 
-- Extra
+- Extra: metrics
+  - [kubernetes/kube-state-metrics](https://github.com/kubernetes/kube-state-metrics) -> kube_cronjob_next_schedule_time
+  - [Collecting metrics with built-in Kubernetes monitoring tools](https://www.datadoghq.com/blog/how-to-collect-and-graph-kubernetes-metrics/)
 
 ```batch
 sudo apt install jq

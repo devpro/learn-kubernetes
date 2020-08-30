@@ -132,6 +132,14 @@ Reference: [GitHub](https://github.com/kubernetes/kubeadm)
   ```
 </details>
 
+### Addons
+
+#### Metrics
+
+- [Kubernetes Documentation > Tasks > Monitoring, Logging, and Debugging > Resource metrics pipeline](https://kubernetes.io/docs/tasks/debug-application-cluster/resource-metrics-pipeline/)
+- [Kubernetes Documentation > Tasks > Configure Pods and Containers > Assign CPU Resources to Containers and Pods](https://kubernetes.io/docs/tasks/configure-pod-container/assign-cpu-resource/)
+- [kubernetes-sigs/metrics-server](https://github.com/kubernetes-sigs/metrics-server)
+
 ### Configuration management systems
 
 See recipes with Ansible, Chef, Puppet, Terraform.
