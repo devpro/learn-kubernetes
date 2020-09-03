@@ -90,7 +90,8 @@ Add-ons features:
   - [`cloud-controller-manager`](https://kubernetes.io/docs/tasks/administer-cluster/running-cloud-controller/): interacts with the cloud provider (if cloud-based clusters), managing resources such as load balancers and disk volumes, allows cloud vendors to evolve independently from the core Kubernetes code
 - **Worder nodes** (Linux, and Windows since 1.14 release)
   - `kubelet`: receives requests to run the containers, manages any necessary resources and watches over them on the local node, interacts with the local container engine, which is `Docker` by default, but could be `containerd` or `cri-o` (or any implementation of the Kubernetes [CRI (Container Runtime Interface)](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md))
-  - `kube-proxy`: creates and manages networking rules to expose the container on the network
+  - [`kube-proxy`](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/): creates and manages networking rules to expose the container on the network
+    - 3 proxy-modes: 'userspace' (older) or 'iptables' (faster) or 'ipvs' (or 'kernelspace' for Windows)
 
 <details>
   <summary>Overview of CRI</summary>
@@ -100,7 +101,7 @@ Add-ons features:
   <img src="https://d1sz9tkli0lfjq.cloudfront.net/items/0I3X2U0S0W3r1D1z2O0Q/Image%202016-12-19%20at%2017.13.16.png">
 </details>
 
-## Network
+### Network
 
 <details>
   <summary>Readings</summary>
@@ -109,6 +110,10 @@ Add-ons features:
   - [Understanding Kubernetes Interfaces: CRI, CNI, and CSI ](https://dzone.com/articles/understanding-kubernetes-interfaces-cri-cni-amp-cs)
   - [Kubernetes Network Plugins](https://kubedex.com/kubernetes-network-plugins/)
 </details>
+
+### Storage
+
+[Container Storage Interface (CSI) Specification](https://github.com/container-storage-interface/spec) ([Understanding the Container Storage Interface (CSI)](https://medium.com/google-cloud/understanding-the-container-storage-interface-csi-ddbeb966a3b))
 
 ### API
 
@@ -291,3 +296,5 @@ Kubernetes Objects:
 - [k9s](https://github.com/derailed/k9s): "Kubernetes CLI To Manage Your Clusters In Style!"
 
 - [Lens](https://k8slens.dev/): "Lens is the only IDE you’ll ever need to take control of your Kubernetes clusters. It's open source and free."
+
+Others: [Red Hat - 10 awesome k8s tools every user should know](https://docs.google.com/presentation/d/13k-Lhc-tVgUohrtKqAYIikaQCTsmuzzjhOe_hpwgUgw/edit#slide=id.g91ee8ae7fb_0_228)
