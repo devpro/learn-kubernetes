@@ -130,6 +130,11 @@ Reference: [GitHub](https://github.com/kubernetes/kubeadm)
   # revert any changes made to this host by kubeadm init or kubeadm join
   kubeadm reset
   ```
+  
+  Examples:
+  
+  - [herpiko/kubedingdong.md](https://gist.github.com/herpiko/9d3b984e4f7a465b3562c36e8879af55)
+  
 </details>
 
 ### Addons
