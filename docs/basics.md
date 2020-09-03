@@ -38,8 +38,11 @@ Other solutions for managing containerized applications:
 Core features:
 
 - Autoscaling
-- Load-balancing
+- Service discovery & Load-balancing
 - Self-healing
+- Secret & Configuration management
+- Automatic rollbacks & Rollouts
+- Batch execution
 
 Add-ons features:
 
@@ -95,6 +98,16 @@ Add-ons features:
   Image taken from Kubernetes blog post [Introducing Container Runtime Interface (CRI) in Kubernetes](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/)
   
   <img src="https://d1sz9tkli0lfjq.cloudfront.net/items/0I3X2U0S0W3r1D1z2O0Q/Image%202016-12-19%20at%2017.13.16.png">
+</details>
+
+## Network
+
+<details>
+  <summary>Readings</summary>
+ 
+  - [Deconstructing Kubernetes Networking](https://eevans.co/blog/deconstructing-kubernetes-networking/)
+  - [Understanding Kubernetes Interfaces: CRI, CNI, and CSI ](https://dzone.com/articles/understanding-kubernetes-interfaces-cri-cni-amp-cs)
+  - [Kubernetes Network Plugins](https://kubedex.com/kubernetes-network-plugins/)
 </details>
 
 ### API
