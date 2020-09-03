@@ -46,6 +46,12 @@ Add-ons features:
 - Centralized logging
 - Monitoring
 
+<details>
+  <summary>Going further</summary>
+
+  - [Bilgin Ibryam - Designing Cloud Native Applications With kubernetes](https://www.slideshare.net/bibryam/designing-cloud-native-applications-with-kubernetes)
+</details>
+
 ## Architecture
 
 [Community > Kubernetes Design and Architecture](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/architecture/architecture.md)
