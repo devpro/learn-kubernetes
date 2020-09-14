@@ -2,6 +2,80 @@
 
 Reference: [Release notes](https://relnotes.k8s.io/)
 
+## 1.19
+
+[Kubernetes 1.19: Accentuate the Paw-sitive](https://kubernetes.io/blog/2020/08/26/kubernetes-release-1.19-accentuate-the-paw-sitive/)
+
+1. Support for Kubernetes will be increased from 9 months (or 3 releases) to one year (stable)
+
+2. There is a defined process on how API transition from Beta to GA (stable)
+
+3. The API server will include a warning header when you use deprecated APIs (beta)
+
+4. ".status.conditions" is standardised across objects (stable)
+
+5. Standardise on "http://node-role.kubernetes.io" label (beta)
+
+6. Removed the beta APIs from the conformance tests (beta)
+
+7. Support CRI-ContainerD on Windows (beta)
+
+8. The process to obtain the kubelet certificate and rotate it as its expiration date approaches is now stable
+
+9. NodeRestriction admission plugin prevents Kubelets from self-setting labels within core namespaces (stable)
+
+10. The Certificates API includes a Registration Authority to provision certificates for non-core uses (stable)
+
+11. New kubeadm component config scheme aimed at customisable default for kubelets and core components (alpha)
+
+12. You can include patched to your Kubeadm config (alpha)
+
+13. A standard structure for Kubernetes log messages (alpha)
+
+14. Redesign Event API (stable)
+
+15. Ingress graduates to V1 (stable)
+
+16. The new EndpointSlice API will split endpoints into several Endpoint Slice resources (beta)
+
+17. The EndpointSlice API added a new AppProtocol field to allow application protocols to be specified for each port (beta)
+
+18. SCTP is now supported as an additional protocol alongside TCP and UDP in Pod, Service, Endpoint, and NetworkPolicy (beta)
+
+19. It is possible to set a pod’s hostname to its Fully Qualified Domain Name (FQDN) (alpha)
+
+20. The Kubelet isn't expected to gather metrics anymore. This is delegated to the PodResources API (alpha)
+
+21. The node topology manager is a kubelet component that centralizes the coordination of hardware resource assignments (beta)
+
+22. Seccomp provides sandboxing, it reduces the actions that a process can perform which reduces a system potential attack surface (stable)
+
+23. You can build Kubelet without Docker (stable)
+
+24. You can define a global defaultConstraints that will be applied at cluster level to all of the pods that don’t define their own topologySpreadConstraints (alpha)
+
+25. ComponentConfig is an ongoing effort to make component configuration more dynamic (beta)
+
+26. With topologySpreadConstraints, you can define rules to distribute your pods evenly across your multi-zone cluster, so high availability will work correctly and the resource utilization will be efficient (beta)
+
+27. With "PreemptionPolicy: Never" Pods can be placed in the scheduling queue ahead of lower-priority pods, but they cannot preempt other pods (beta)
+
+28. You can run the scheduler with multiple Scheduling Profiles (beta)
+
+29. New API for generic ephemeral inline volumes (alpha)
+
+30. Storage Capacity Tracking prevents pods to be scheduled on nodes connected to CSI volumes without enough free space available (alpha)
+
+31. CSI drivers can opt-in to volume ownership change (alpha)
+
+32. Immutable Secrets and ConfigMaps (beta)
+
+33. Azure disk in-tree driver is moved to CSI (beta)
+
+34. vSphere disk in-tree driver is moved to CSI (beta)
+
+[sysdig - What’s new in Kubernetes 1.19?](https://sysdig.com/blog/whats-new-kubernetes-1-19/)
+
 ## 1.18
 
 [Kubernetes 1.18: Fit & Finish](https://kubernetes.io/blog/2020/03/25/kubernetes-1-18-release-announcement/)
