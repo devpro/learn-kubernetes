@@ -68,3 +68,12 @@ Be able to:
 
   TODO
 </details>
+
+## CKAD
+
+<details>
+  <summary>External notes</summary>
+  
+  - [twajr/ckad-prep-notes](https://github.com/twajr/ckad-prep-notes)
+  - [liptanbiswas/CKAD Practice Questions](https://dev.to/liptanbiswas/ckad-practice-questions-4mpn)
+</details>
