@@ -6,6 +6,8 @@ Reference: [Release notes](https://relnotes.k8s.io/)
 
 [Kubernetes 1.19: Accentuate the Paw-sitive](https://kubernetes.io/blog/2020/08/26/kubernetes-release-1.19-accentuate-the-paw-sitive/)
 
+[Kubernetes 1.19: CNCF Webinar](https://www.cncf.io/webinars/kubernetes-1-19/)
+
 1. Support for Kubernetes will be increased from 9 months (or 3 releases) to one year (stable)
 
 2. There is a defined process on how API transition from Beta to GA (stable)
