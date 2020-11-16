@@ -79,7 +79,7 @@ General information:
 
 ### Cloud Native Computing Foundation (CNCF)
 
-- [cncf.io](https://www.cncf.io/)
+- [cncf.io](https://www.cncf.io/) ([Youtube channel](https://www.youtube.com/channel/UCvqbFHwN-nwalWPjPUKpvTA))
   - [Annoucements](https://www.cncf.io/newsroom/announcements/)
   - [Landscape](https://landscape.cncf.io/zoom=200)
     - [Introducing The Cloud Native Landscape 2.0](https://www.cncf.io/blog/2018/03/08/introducing-the-cloud-native-landscape-2-0-interactive-edition/) - March 8, 2018
@@ -89,6 +89,9 @@ General information:
 <details>
   <summary>CNCF webinars</summary>
 
+  - [K8s audit logging deep dive](https://www.cncf.io/webinars/k8s-audit-logging-deep-dive/) - October 22, 2020
+  - [Deploying Kubernetes to bare metal using cluster API](https://www.cncf.io/webinars/deploying-kubernetes-to-bare-metal-using-cluster-api/) - October 21, 2020
+  - [The abc’s of Kubernetes security](https://www.cncf.io/webinars/the-abcs-of-kubernetes-security/) - October 21, 2020
   - [Building a Cloud-Native Technology Stack That Supports Full Cycle Development ](https://www.cncf.io/webinars/building-a-cloud-native-technology-stack-that-supports-full-cycle-development/) - September 9, 2020
   - [Arm Developer Experience Spanning Cloud, 5G and IoT](https://www.cncf.io/webinars/arm-developer-experience-spanning-cloud-5g-and-iot/) - September 8, 2020
   - [Running the next generation of cloud-native applications using Open Application Model (OAM)](https://www.cncf.io/webinars/running-the-next-generation-of-cloud-native-applications-using-open-application-model-oam/) - September 3, 2020
