@@ -2,6 +2,10 @@
 
 Reference: [Release notes](https://relnotes.k8s.io/)
 
+## 1.20
+
+[Kubernetes 1.20: The Raddest Release](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/)
+
 ## 1.19
 
 [Kubernetes 1.19: Accentuate the Paw-sitive](https://kubernetes.io/blog/2020/08/26/kubernetes-release-1.19-accentuate-the-paw-sitive/)
