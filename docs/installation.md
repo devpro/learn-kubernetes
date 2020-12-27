@@ -21,7 +21,7 @@ Several options to start with a new Kubernetes cluster:
   <summary>Kind quickstart</summary>
   
   See [User Guide > Quick Start](https://kind.sigs.k8s.io/docs/user/quick-start/)
- 
+
   ```bash
   # make sure kind is available from the command line
   kind version
@@ -44,8 +44,8 @@ Several options to start with a new Kubernetes cluster:
   # delete a cluster
   kind delete cluster
   ```
-</details>
 
+</details>
 
 ### Kubernetes CLI
 
@@ -111,7 +111,7 @@ Reference: [GitHub](https://github.com/kubernetes/kubeadm)
 
 <details>
   <summary>Usual commands</summary>
- 
+
   ```bash
   # make sure swap is disabled
   swapoff -a

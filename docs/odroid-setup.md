@@ -63,7 +63,7 @@ Steps can be done in an Ubuntu (WSL on Windows 10).
   scp ca.pem ca-key.pem kubernetes-key.pem kubernetes.pem service-account-key.pem service-account.pem root@odroid1:~/
   scp ca.pem worker-0-key.pem worker-0.pem root@odroid2:~/
   ```
-    
+
 </details>
 
 ## Main node(s)s
@@ -76,7 +76,7 @@ On the control plane node.
 
 #### Install from an official version (processor must be 64bit)
 
-```
+```bash
 wget -q --show-progress --https-only --timestamping "https://github.com/etcd-io/etcd/releases/download/v3.4.10/etcd-v3.4.10-linux-arm64.tar.gz"
 tar -xvf etcd-v3.4.10-linux-arm64.tar.gz
 rm -f etcd-v3.4.10-linux-arm64.tar.gz

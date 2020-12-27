@@ -19,11 +19,12 @@ Read more:
 <details>
   <summary>Going further</summary>
 
-  - [Goocle Cloud Platform Podcast - Borg and Kubernetes with John Wilkes](https://www.gcppodcast.com/post/episode-46-borg-and-k8s-with-john-wilkes/)
+  - [Google Cloud Platform Podcast - Borg and Kubernetes with John Wilkes](https://www.gcppodcast.com/post/episode-46-borg-and-k8s-with-john-wilkes/)
   - [GitHub - Kubernetes community](https://github.com/kubernetes/community)
   - [Slack](https://slack.kubernetes.io/)
   - [StackOverflow](https://stackoverflow.com/search?q=kubernetes)
   - [Microsoft - What is Kubernetes?](https://aka.ms/k8slearning)
+
 </details>
 
 Other solutions for managing containerized applications:
@@ -55,7 +56,7 @@ Add-ons features:
   - [Bilgin Ibryam - Designing Cloud Native Applications With kubernetes](https://www.slideshare.net/bibryam/designing-cloud-native-applications-with-kubernetes)
 </details>
 
-## Architecture
+## Design & Architecture
 
 [Community > Kubernetes Design and Architecture](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/architecture/architecture.md)
 
@@ -95,20 +96,27 @@ Add-ons features:
 
 <details>
   <summary>Overview of CRI</summary>
- 
+
   Image taken from Kubernetes blog post [Introducing Container Runtime Interface (CRI) in Kubernetes](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/)
   
   <img src="https://d1sz9tkli0lfjq.cloudfront.net/items/0I3X2U0S0W3r1D1z2O0Q/Image%202016-12-19%20at%2017.13.16.png">
 </details>
 
-### Network
+### Pods
+
+- [Pods](./objects/pod.md)
+
+### Networking
+
+- [Services](./objects/service.md)
 
 <details>
   <summary>Readings</summary>
- 
+
   - [Deconstructing Kubernetes Networking](https://eevans.co/blog/deconstructing-kubernetes-networking/)
   - [Understanding Kubernetes Interfaces: CRI, CNI, and CSI ](https://dzone.com/articles/understanding-kubernetes-interfaces-cri-cni-amp-cs)
   - [Kubernetes Network Plugins](https://kubedex.com/kubernetes-network-plugins/)
+
 </details>
 
 ### Container Storage
@@ -119,15 +127,36 @@ Add-ons features:
 
 [API Overview](https://kubernetes.io/docs/concepts/overview/kubernetes-api/) > [API Reference](https://kubernetes.io/docs/reference/kubernetes-api/)
 
-### Container options
+### Controllers
 
-<details>
-  <summary>Container layers</summary>
- 
-  Image taken from Docker blog post [What is containerd?](https://www.docker.com/blog/what-is-containerd-runtime/)
-  
-  <img src="https://i0.wp.com/www.docker.com/blog/wp-content/uploads/974cd631-b57e-470e-a944-78530aaa1a23-1.jpg?w=906&ssl=1">
-</details>
+[Kubernetes Documentation/Concepts/Cluster Architecture/Controllers](https://kubernetes.io/docs/concepts/architecture/controller/)
+
+**Controllers** are a series of watch-loops which makes possible the orchestration through Kubernetes. Each **Controller** interrogates the `kube-apiserver` for a particular object state, modifying the object until the declared state matches the current state. These controllers are compiled into the `kube-controller-manager`.
+
+Samples: [kubernetes/sample-controller](https://github.com/kubernetes/sample-controller)
+
+#### Built-in controllers
+
+- [CronJobs](./objects/cronjob.md)
+- [DaemonSet](./objects/daemonset.md)
+- [Deployments](./objects/controller.md)
+- [Jobs](./objects/job.md)
+- [ReplicaSets](./objects/replicaset.md)
+- [StatefulSet](./objects/statefulset.md)
+
+#### Operators
+
+[Kubernetes Documentation/Concepts/Extending Kubernetes/Operator pattern](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/)
+
+An operator is a domain specific controller.
+
+See [Stackoverflow answer](https://stackoverflow.com/questions/47848258/kubernetes-controller-vs-kubernetes-operator#47857073), [page on Octetz](https://octetz.com/docs/2019/2019-10-13-controllers-and-operators/), [GitHub issue](https://github.com/kubeflow/tf-operator/issues/300) and [CoreOS definition](https://coreos.com/operators/).
+
+### Configuration
+
+- [Configuration Best Practices](https://kubernetes.io/docs/concepts/configuration/overview/)
+- [ConfigMaps](./objects/configmap.md)
+- [Secrets](./objects/secret.md)
 
 #### Container runtime
 
@@ -142,6 +171,14 @@ Kubernetes uses a container runtime to run containers in Pods. There are mainly 
 
 _Note_: [rktlet](https://github.com/kubernetes-retired/rktlet) and [rkt](https://github.com/rkt/rkt) projects have been ended
 
+<details>
+  <summary>Container layers</summary>
+ 
+  Image taken from Docker blog post [What is containerd?](https://www.docker.com/blog/what-is-containerd-runtime/)
+  
+  <img src="https://i0.wp.com/www.docker.com/blog/wp-content/uploads/974cd631-b57e-470e-a944-78530aaa1a23-1.jpg?w=906&ssl=1">
+</details>
+
 #### Containerized image
 
 The [Open Container Initiative (OCI)](https://opencontainers.org/) is an open governance structure for the express purpose of creating open industry standards around container formats and runtimes. Source repositories are managed inside [opencontainers](https://github.com/opencontainers) GitHub organization.
@@ -153,78 +190,12 @@ There are currently two specifications:
 
 Docker donated [runC](https://github.com/opencontainers/runc) to OCI.
 
-#### Container resources
-
-[Documentation / Concepts / Configuration / Managing Resources for Containers](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
-
 ### Probes
 
 Probe type | Reason
 ---------- | ------
 **Readiness** | Make sure the application is ready to accept traffic
 **Liveness** | Make sure the application is running ok
-
-## Kubernetes Objects
-
-[Documentation > Concepts > Cluster Administration > Managing Resources](https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/)
-
-### Workloads
-
-- [Pods](./objects/pod.md)
-
-### Controllers
-
-**Controllers** are a series of watch-loops which makes possible the orchestration through Kubernetes. Each **Controller** interrogates the `kube-apiserver` for a particular object state, modifying the object until the declared state matches the current state. These controllers are compiled into the `kube-controller-manager`.
-
-Samples: [kubernetes/sample-controller](https://github.com/kubernetes/sample-controller)
-
-- [Deployments](./objects/controller.md)
-
-#### ReplicaSet
-
-The **ReplicaSet** is a controller which deploys and restarts pods, declares to the container engine (Docker by default) to spawn or terminate a container until the requested number is running.
-
-#### StatefulSets
-
-A [**StatefulSet**](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/) is the workload API object used to manage stateful applications.
-
-See [Documentation > Tutorials > Stateful Applications > StatefulSet Basics](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/)
-
-#### DaemonSet
-
-A [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/) ensures that all (or some) Nodes run a copy of a Pod. As nodes are added to the cluster, Pods are added to them. As nodes are removed from the cluster, those Pods are garbage collected. Deleting a DaemonSet will clean up the Pods it created.
-
-#### Jobs
-
-A [**Job**](https://kubernetes.io/docs/concepts/workloads/controllers/job/) creates one or more Pods and ensures that a specified number of them successfully terminate. As pods successfully complete, the Job tracks the successful completions. When a specified number of successful completions is reached, the task (ie, Job) is complete. Deleting a Job will clean up the Pods it created.
-
-#### CronJobs
-
-A [**CronJob**](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/) creates Jobs on a repeating schedule.
-
-#### Operators
-
-An operator is a domain specific controller.
-
-See [Stackoverflow answer](https://stackoverflow.com/questions/47848258/kubernetes-controller-vs-kubernetes-operator#47857073), [page on Octetz](https://octetz.com/docs/2019/2019-10-13-controllers-and-operators/), [GitHub issue](https://github.com/kubeflow/tf-operator/issues/300) and [CoreOS definition](https://coreos.com/operators/).
-
-### Services
-
-A [Service](https://kubernetes.io/docs/concepts/services-networking/service/) is an "abstract way to expose an application running on a set of Pods as a network service".
-
-**Services** are flexible and scalable agents which connect resources together and will reconnect, should something die and a replacement is spawned. Each Service is a microservice handling a particular bit of traffic, such as a single NodePort or a LoadBalancer to distribute inbound requests among many Pods.
-
-A Service also handles access policies for inbound requests, useful for resource control, as well as for security.
-
-Service types:
-
-- NodePort
-- ClusterIP
-- LoadBalancer
-
-Read more:
-
-- [Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
 
 ### Metadata
 
@@ -235,7 +206,7 @@ To make management easier, we can use **Labels**, arbitrary strings which become
 **Label selectors** are a very powerful way to get the Kubernetes objects we want to interact with.
 
 ```bash
-kubectl -n <namespace> get --selector app=<application-name> pod
+kubectl get pod -n <namespace> --selector app=<application-name>
 ```
 
 ### Storage
@@ -247,22 +218,6 @@ A [**PersistentVolume (PV)**](https://kubernetes.io/docs/concepts/storage/persis
 #### Persistent Volume Claims
 
 A [**PersistentVolumeClaim (PVC)**](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) is a request for storage by a user. It is similar to a Pod. Pods consume node resources and PVCs consume PV resources.
-
-### Configuration
-
-#### ConfigMaps
-
-A [**ConfigMap**](https://kubernetes.io/docs/concepts/configuration/configmap/) is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume. It allows you to decouple environment-specific configuration from your container images , so that your applications are easily portable.
-
-<details>
-  <summary>CNCF webinars</summary>
-
-  - [ConfigMaps in Kubernetes: how they work and what you should remember](https://medium.com/flant-com/configmaps-in-kubernetes-f9f6d0081dcb) - Jun 23 '20
-</details>
-
-#### Secrets
-
-A [**Secret**](https://kubernetes.io/docs/concepts/configuration/secret/) is an object that contains a small amount of sensitive data such as a password, a token, or a key.
 
 ## Security
 

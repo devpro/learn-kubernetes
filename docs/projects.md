@@ -8,7 +8,7 @@ Reference: [argoproj.github.io](https://argoproj.github.io/), [argoproj/argo](ht
 
 ## Cloud Native Application Bundle (CNAB)
 
->  A spec for packaging distributed apps. CNABs facilitate the bundling, installing and managing of container-native apps — and their coupled services.
+> A spec for packaging distributed apps. CNABs facilitate the bundling, installing and managing of container-native apps — and their coupled services.
 
 Reference: [cnab.io](https://cnab.io/)
 
@@ -107,7 +107,7 @@ Get started with [interactive labs](https://www.envoyproxy.io/try/) (powered by 
 
 ## Fluentd
 
->  Fluentd is an open source data collector for unified logging layer. Fluentd allows you to unify data collection and consumption for a better use and understanding of data.
+> Fluentd is an open source data collector for unified logging layer. Fluentd allows you to unify data collection and consumption for a better use and understanding of data.
 
 Reference: [fluentd.org](https://www.fluentd.org/)
 

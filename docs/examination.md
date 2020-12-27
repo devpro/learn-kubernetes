@@ -47,6 +47,7 @@
   kubectl exec --stdin --tty shell-demo -- /bin/bash
   kubectl exec shell-demo env
   ```
+
 </details>
 
 ### Knowledge check
@@ -76,4 +77,5 @@ Be able to:
   
   - [twajr/ckad-prep-notes](https://github.com/twajr/ckad-prep-notes)
   - [liptanbiswas/CKAD Practice Questions](https://dev.to/liptanbiswas/ckad-practice-questions-4mpn)
+
 </details>

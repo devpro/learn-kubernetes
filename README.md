@@ -4,11 +4,12 @@ This is a training material to get knowledge about Kubernetes and prepare for Ku
 
 ## Content
 
-* [Basics](./docs/basics.md)
+* [Basics](./docs/basics.md):
+* [Kubectl](./docs/kubectl.md)
 * [Installation](./docs/installation.md)
 * [Projects](./docs/projects.md)
 * [Releases](./docs/releases.md)
-* [Labs](./docs/labs.md)
+* Labs:
   * [Odroid setup](./docs/odroid-setup.md)
   * [LF - Kubernetes for Developers](./docs/labs-lfd259.md)
   * [LF - Kubernetes Fundamentals](./docs/labs-lfs258.md)
@@ -17,7 +18,7 @@ This is a training material to get knowledge about Kubernetes and prepare for Ku
 ## Sandboxes
 
 * [Katacoda](https://www.katacoda.com/)
-  * [Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground) - Use Shift+Inser to paste from the clipboard in the web page interactive console
+  * [Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground) (use `Shift+Inser` to paste from the clipboard in the web page interactive console)
   * [Lab Courses](https://www.katacoda.com/learn)
 * [Play with Kubernetes](https://labs.play-with-k8s.com/)
 
@@ -124,7 +125,3 @@ General information:
 
 * [O'Reilly - Cloud Native DevOps with Kubernetes](https://www.oreilly.com/library/view/cloud-native-devops/9781492040750/)
 * [O'Reilly - Kubernetes Up and Running](https://www.oreilly.com/library/view/kubernetes-up-and/9781491935668/)
-
-### History
-
-* [RisingStack](https://blog.risingstack.com/the-history-of-kubernetes/)

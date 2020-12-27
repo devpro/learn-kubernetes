@@ -2,6 +2,8 @@
 
 Reference: [Release notes](https://relnotes.k8s.io/)
 
+Additional readings: [RisingStack - The History of Kubernetes on a Timeline](https://blog.risingstack.com/the-history-of-kubernetes/) - Jun 20, 2018
+
 ## 1.20
 
 [Kubernetes 1.20: The Raddest Release](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/)
@@ -90,8 +92,4 @@ Reference: [Release notes](https://relnotes.k8s.io/)
 
 [Kubernetes 1.17: Stability](https://kubernetes.io/blog/2019/12/09/kubernetes-1-17-release-announcement/) - Dec 09 '19
 
-<details>
-  <summary>More</summary>
-
-  - [StackRox - What’s New in Kubernetes 1.17: A Deeper Look at New Features](https://www.stackrox.com/post/2019/12/whats-new-in-kubernetes-1.17-a-deeper-look-at-new-features/) - Dec 09 '19
-</details>
+[StackRox - What’s New in Kubernetes 1.17: A Deeper Look at New Features](https://www.stackrox.com/post/2019/12/whats-new-in-kubernetes-1.17-a-deeper-look-at-new-features/) - Dec 09 '19
