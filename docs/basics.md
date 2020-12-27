@@ -62,6 +62,8 @@ Add-ons features:
 
 ### Nodes
 
+- [Nodes](./objects/node.md)
+
 <details>
   <summary>High-level view</summary>
  

@@ -18,7 +18,7 @@ Secondary container type | Usecase
 
 ### Scheduling and Eviction
 
-- Attract a Pod to a Node (AKA Node Affinity): [Assigning Pods to Nodes](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/)
+- Attract a Pod to a Node (aka Node Affinity): [Assigning Pods to Nodes](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/)
 
   - Attach label to a node
 
@@ -86,6 +86,26 @@ Secondary container type | Usecase
 ```bash
 # execute bash commands in the pod
 kubectl exec --stdin --tty <pod-name> -- bash
+```
+
+### Inject Data Into Applications
+
+- [Define a Command and Arguments for a Container](https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/)
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: command-demo
+  labels:
+    purpose: demonstrate-command
+spec:
+  containers:
+    - name: command-demo-container
+      image: debian
+      command: ["printenv"] # The command run by the container (Docker field: Entrypoint)
+      args: ["HOSTNAME", "KUBERNETES_PORT"] # The arguments passed to the command (Docker field: Cmd)
+  restartPolicy: OnFailure
 ```
 
 ### Resources
