@@ -1,0 +1,1 @@
+# Kubernetes ClusterRole object

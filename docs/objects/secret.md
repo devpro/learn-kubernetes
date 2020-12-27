@@ -1,0 +1,1 @@
+# Kubernetes Secret object

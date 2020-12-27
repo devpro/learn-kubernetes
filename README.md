@@ -7,12 +7,11 @@ This is a training material to get knowledge about Kubernetes and prepare for Ku
 * [Basics](./docs/basics.md)
 * [Installation](./docs/installation.md)
 * [Projects](./docs/projects.md)
-* [Manifests](./docs/manifests.md)
 * [Releases](./docs/releases.md)
 * [Labs](./docs/labs.md)
   * [Odroid setup](./docs/odroid-setup.md)
-  * [LF - Kubernetes for Developers](./docs/lfd259.md)
-  * [LF - Kubernetes Fundamentals](./docs/lfs258.md)
+  * [LF - Kubernetes for Developers](./docs/labs-lfd259.md)
+  * [LF - Kubernetes Fundamentals](./docs/labs-lfs258.md)
 * [Examination](./docs/examination.md)
 
 ## Sandboxes
@@ -33,13 +32,13 @@ Programs:
 <details>
   <summary>CKAD domains with their weights</summary>
 
-  - Core Concepts 13%
-  - Configuration 18%
-  - Multi-Container Pods 10%
-  - Observability 18%
-  - Pod Design 20%
-  - Services & Networking 13%
-  - State Persistence 8%
+  * Core Concepts 13%
+  * Configuration 18%
+  * Multi-Container Pods 10%
+  * Observability 18%
+  * Pod Design 20%
+  * Services & Networking 13%
+  * State Persistence 8%
 
 </details>
 
@@ -48,19 +47,20 @@ Programs:
 <details>
   <summary>CKA domains with their weights</summary>
 
-  - Application Lifecycle Management 8%
-  - Installation, Configuration & Validation 12%
-  - Core Concepts 19%
-  - Networking 11%
-  - Scheduling 5%
-  - Security 12%
-  - Cluster Maintenance 11%
-  - Logging / Monitoring 5%
-  - Storage 7%
-  - Troubleshooting 10%
+  * Application Lifecycle Management 8%
+  * Installation, Configuration & Validation 12%
+  * Core Concepts 19%
+  * Networking 11%
+  * Scheduling 5%
+  * Security 12%
+  * Cluster Maintenance 11%
+  * Logging / Monitoring 5%
+  * Storage 7%
+  * Troubleshooting 10%
 </details>
 
 General information:
+
 * [Candidate handbook](https://docs.linuxfoundation.org/tc-docs/certification/lf-candidate-handbook)
 * [Curriculum](https://github.com/cncf/curriculum)
 * [Tips](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
@@ -79,46 +79,46 @@ General information:
 
 ### Cloud Native Computing Foundation (CNCF)
 
-- [cncf.io](https://www.cncf.io/) ([Youtube channel](https://www.youtube.com/channel/UCvqbFHwN-nwalWPjPUKpvTA))
-  - [Annoucements](https://www.cncf.io/newsroom/announcements/)
-  - [Landscape](https://landscape.cncf.io/zoom=200)
-    - [Introducing The Cloud Native Landscape 2.0](https://www.cncf.io/blog/2018/03/08/introducing-the-cloud-native-landscape-2-0-interactive-edition/) - March 8, 2018
+* [cncf.io](https://www.cncf.io/) ([Youtube channel](https://www.youtube.com/channel/UCvqbFHwN-nwalWPjPUKpvTA))
+  * [Annoucements](https://www.cncf.io/newsroom/announcements/)
+  * [Landscape](https://landscape.cncf.io/zoom=200)
+    * [Introducing The Cloud Native Landscape 2.0](https://www.cncf.io/blog/2018/03/08/introducing-the-cloud-native-landscape-2-0-interactive-edition/) - March 8, 2018
 
 ### Webinars
 
 <details>
   <summary>CNCF webinars</summary>
 
-  - [K8s audit logging deep dive](https://www.cncf.io/webinars/k8s-audit-logging-deep-dive/) - October 22, 2020
-  - [Deploying Kubernetes to bare metal using cluster API](https://www.cncf.io/webinars/deploying-kubernetes-to-bare-metal-using-cluster-api/) - October 21, 2020
-  - [The abc’s of Kubernetes security](https://www.cncf.io/webinars/the-abcs-of-kubernetes-security/) - October 21, 2020
-  - [Building a Cloud-Native Technology Stack That Supports Full Cycle Development ](https://www.cncf.io/webinars/building-a-cloud-native-technology-stack-that-supports-full-cycle-development/) - September 9, 2020
-  - [Arm Developer Experience Spanning Cloud, 5G and IoT](https://www.cncf.io/webinars/arm-developer-experience-spanning-cloud-5g-and-iot/) - September 8, 2020
-  - [Running the next generation of cloud-native applications using Open Application Model (OAM)](https://www.cncf.io/webinars/running-the-next-generation-of-cloud-native-applications-using-open-application-model-oam/) - September 3, 2020
-  - [Getting started with container runtime security using Falco](https://www.cncf.io/webinars/getting-started-with-container-runtime-security-using-falco/) - September 2, 2020
-  - [Let’s untangle The Service Mesh](https://www.cncf.io/webinars/lets-untangle-the-service-mesh/) - September 1, 2020
-  - [Local development in the age of Kubernetes](https://www.cncf.io/webinars/local-development-in-the-age-of-kubernetes/) - August 26, 2020
-  - [Modern Software Development Pipeline: A Security Reference Architecture](https://www.cncf.io/webinars/modern-software-development-pipeline-a-security-reference-architecture/) - August 25, 2020
-  - [Highly Scalable SaaS Apps on Kubernetes: Real Life Case Studies](https://www.cncf.io/webinars/highly-scalable-saas-apps-on-kubernetes-real-life-case-studies/) - September 9, 2020
-  - [Comparing eBPF and Istio/Envoy for Monitoring Microservice Interactions](https://www.cncf.io/webinars/comparing-ebpf-and-istio-envoy-for-monitoring-microservice-interactions/) - August 4, 2020
-  - [Event-Driven Cloud Native Workflows Use Cases and Patterns](https://www.cncf.io/webinars/event-driven-cloud-native-workflows-use-cases-and-patterns/) - July 29, 2020
-  - [CNCF Member Webinar: Kubernetes Policies 101](https://www.cncf.io/webinars/kubernetes-policies-101/) - July 28, 2020
-  - [The top 7 most useful Kubernetes APIs for comprehensive cloud native observability](https://www.cncf.io/webinars/the-top-7-most-useful-kubernetes-apis-for-comprehensive-cloud-native-observability/) - July 9, 2020
-  - [Building Production-ready Services with Kubernetes and Serverless Architectures](https://www.cncf.io/webinars/building-production-ready-services-with-kubernetes-and-serverless-architectures/) - July 8, 2020
-  - [Optimize your Kubernetes Clusters on Azure with Built-in Best Practices](https://www.cncf.io/webinars/optimize-your-kubernetes-clusters-on-azure-with-built-in-best-practices/) - July 7, 2020
-  - [Best Practices for Running and Implementing Kubernetes](https://www.cncf.io/webinars/best-practices-for-running-and-implementing-kubernetes/) - June 30, 2020
-  - [How Alibaba Extends K8s scheduler to support AI and big data workloads](https://www.cncf.io/webinars/how-alibaba-extends-k8s-scheduler-to-support-ai-and-big-data-workloads/) - July 15, 2020
-  - [Kubernetes for storage, an overview](https://www.cncf.io/webinars/kubernetes-for-storage-an-overview/) - July 16, 2020
-  - [Implementing Canary Releases on Kubernetes w/ Spinnaker, Istio, and Prometheus](https://www.cncf.io/webinars/implementing-canary-releases-on-kubernetes-w-spinnaker-istio-and-prometheus/) - July 22, 2020
-  - [Kubernetes Secrets Management: Build Secure Apps Faster Without Secrets](https://www.cncf.io/webinars/kubernetes-secrets-management-build-secure-apps-faster-without-secrets/) - July 22, 2020
-  - [Building application management platform with Open Application Model](https://www.cncf.io/webinars/cncf-ambassador-webinar-building-application-management-platform-with-open-application-model/) - July 22, 2020
-  - [Observability of multi-party computation with OpenTelemetry](https://www.cncf.io/webinars/observability-of-multi-party-computation-with-opentelemetry/) - July 23, 2020
+  * [K8s audit logging deep dive](https://www.cncf.io/webinars/k8s-audit-logging-deep-dive/) - October 22, 2020
+  * [Deploying Kubernetes to bare metal using cluster API](https://www.cncf.io/webinars/deploying-kubernetes-to-bare-metal-using-cluster-api/) - October 21, 2020
+  * [The abc’s of Kubernetes security](https://www.cncf.io/webinars/the-abcs-of-kubernetes-security/) - October 21, 2020
+  * [Building a Cloud-Native Technology Stack That Supports Full Cycle Development ](https://www.cncf.io/webinars/building-a-cloud-native-technology-stack-that-supports-full-cycle-development/) - September 9, 2020
+  * [Arm Developer Experience Spanning Cloud, 5G and IoT](https://www.cncf.io/webinars/arm-developer-experience-spanning-cloud-5g-and-iot/) - September 8, 2020
+  * [Running the next generation of cloud-native applications using Open Application Model (OAM)](https://www.cncf.io/webinars/running-the-next-generation-of-cloud-native-applications-using-open-application-model-oam/) - September 3, 2020
+  * [Getting started with container runtime security using Falco](https://www.cncf.io/webinars/getting-started-with-container-runtime-security-using-falco/) - September 2, 2020
+  * [Let’s untangle The Service Mesh](https://www.cncf.io/webinars/lets-untangle-the-service-mesh/) - September 1, 2020
+  * [Local development in the age of Kubernetes](https://www.cncf.io/webinars/local-development-in-the-age-of-kubernetes/) - August 26, 2020
+  * [Modern Software Development Pipeline: A Security Reference Architecture](https://www.cncf.io/webinars/modern-software-development-pipeline-a-security-reference-architecture/) - August 25, 2020
+  * [Highly Scalable SaaS Apps on Kubernetes: Real Life Case Studies](https://www.cncf.io/webinars/highly-scalable-saas-apps-on-kubernetes-real-life-case-studies/) - September 9, 2020
+  * [Comparing eBPF and Istio/Envoy for Monitoring Microservice Interactions](https://www.cncf.io/webinars/comparing-ebpf-and-istio-envoy-for-monitoring-microservice-interactions/) - August 4, 2020
+  * [Event-Driven Cloud Native Workflows Use Cases and Patterns](https://www.cncf.io/webinars/event-driven-cloud-native-workflows-use-cases-and-patterns/) - July 29, 2020
+  * [CNCF Member Webinar: Kubernetes Policies 101](https://www.cncf.io/webinars/kubernetes-policies-101/) - July 28, 2020
+  * [The top 7 most useful Kubernetes APIs for comprehensive cloud native observability](https://www.cncf.io/webinars/the-top-7-most-useful-kubernetes-apis-for-comprehensive-cloud-native-observability/) - July 9, 2020
+  * [Building Production-ready Services with Kubernetes and Serverless Architectures](https://www.cncf.io/webinars/building-production-ready-services-with-kubernetes-and-serverless-architectures/) - July 8, 2020
+  * [Optimize your Kubernetes Clusters on Azure with Built-in Best Practices](https://www.cncf.io/webinars/optimize-your-kubernetes-clusters-on-azure-with-built-in-best-practices/) - July 7, 2020
+  * [Best Practices for Running and Implementing Kubernetes](https://www.cncf.io/webinars/best-practices-for-running-and-implementing-kubernetes/) - June 30, 2020
+  * [How Alibaba Extends K8s scheduler to support AI and big data workloads](https://www.cncf.io/webinars/how-alibaba-extends-k8s-scheduler-to-support-ai-and-big-data-workloads/) - July 15, 2020
+  * [Kubernetes for storage, an overview](https://www.cncf.io/webinars/kubernetes-for-storage-an-overview/) - July 16, 2020
+  * [Implementing Canary Releases on Kubernetes w/ Spinnaker, Istio, and Prometheus](https://www.cncf.io/webinars/implementing-canary-releases-on-kubernetes-w-spinnaker-istio-and-prometheus/) - July 22, 2020
+  * [Kubernetes Secrets Management: Build Secure Apps Faster Without Secrets](https://www.cncf.io/webinars/kubernetes-secrets-management-build-secure-apps-faster-without-secrets/) - July 22, 2020
+  * [Building application management platform with Open Application Model](https://www.cncf.io/webinars/cncf-ambassador-webinar-building-application-management-platform-with-open-application-model/) - July 22, 2020
+  * [Observability of multi-party computation with OpenTelemetry](https://www.cncf.io/webinars/observability-of-multi-party-computation-with-opentelemetry/) - July 23, 2020
   
 </details>
 
 ### Podcasts
 
-- [Kubernetes Podcast from Google](https://kubernetespodcast.com/)
+* [Kubernetes Podcast from Google](https://kubernetespodcast.com/)
 
 ### Books
 
@@ -127,4 +127,4 @@ General information:
 
 ### History
 
-- [RisingStack](https://blog.risingstack.com/the-history-of-kubernetes/)
+* [RisingStack](https://blog.risingstack.com/the-history-of-kubernetes/)
