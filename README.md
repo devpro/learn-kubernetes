@@ -4,7 +4,7 @@ This is a training material to get knowledge about Kubernetes and prepare for Ku
 
 ## Content
 
-* [Basics](./docs/basics.md):
+* [Basics](./docs/basics.md)
 * [Kubectl](./docs/kubectl.md)
 * [Installation](./docs/installation.md)
 * [Projects](./docs/projects.md)
