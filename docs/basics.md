@@ -141,7 +141,7 @@ Samples: [kubernetes/sample-controller](https://github.com/kubernetes/sample-con
 
 - [CronJobs](./objects/cronjob.md)
 - [DaemonSet](./objects/daemonset.md)
-- [Deployments](./objects/controller.md)
+- [Deployments](./objects/deployment.md)
 - [Jobs](./objects/job.md)
 - [ReplicaSets](./objects/replicaset.md)
 - [StatefulSet](./objects/statefulset.md)
