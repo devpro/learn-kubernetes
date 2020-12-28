@@ -1,40 +1,36 @@
-# Basics of Kubernetes
+# Kubernetes basics
+
+> **Kubernetes** (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications [(kubernetes.io)](https://kubernetes.io/)
 
 ## Introduction
 
-> [**Kubernetes** (K8s)](https://kubernetes.io/) is an open-source system for automating deployment, scaling, and management of containerized applications
+Kubernetes is an orchestration system to deploy and manage containers in order to serve decoupled and transcient services.
 
-In other words, Kubernetes is an orchestration system to deploy and manage containers in order to serve decoupled and transcient services.
+### History
 
-Kubernetes is the Greek word for Helmsman (or pilot of the ship). It has been created by Google from their experience on internal Google products called [**Borg**](https://research.google/pubs/pub43438/), which have been used during 15 years, and [**Omega**](https://research.google/pubs/pub41684/).
+Kubernetes, Greek word for Helmsman (or pilot of the ship), has been created by Google from their experience on internal Google products called [**Borg**](https://research.google/pubs/pub43438/), which has been used during 15 years, and [**Omega**](https://research.google/pubs/pub41684/) (know more by listening to [GCP Podcast episode](https://www.gcppodcast.com/post/episode-46-borg-and-k8s-with-john-wilkes/)).
 
-Kubernetes is written in Go language with an Apache license. Google donated Kubernetes to the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) within The Linux Foundation in July 2015, when Kubernetes reached the v1.0 release.
+Kubernetes is written in Go language, with the Apache license.
+
+Google donated Kubernetes to the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) within The Linux Foundation in July 2015, when Kubernetes reached the v1.0 release.
 
 Read more:
 
-- [Documentation](https://kubernetes.io/docs/home/) ([Glossary](https://kubernetes.io/docs/reference/glossary/?all=true#term-manifest))
-- [GitHub](https://github.com/kubernetes/kubernetes/)
-- [Wikipedia](https://en.wikipedia.org/wiki/Kubernetes)
+- [Documentation](https://kubernetes.io/docs/home/) ([Glossary](https://kubernetes.io/docs/reference/glossary/?all=true#term-manifest), [Wikipedia](https://en.wikipedia.org/wiki/Kubernetes))
+- [GitHub](https://github.com/kubernetes/kubernetes/) ([Community](https://github.com/kubernetes/community), [Slack](https://slack.kubernetes.io/), [StackOverflow](https://stackoverflow.com/search?q=kubernetes))
+- [What is Kubernetes? (by Microsoft)](https://aka.ms/k8slearning)
+- [Releases](./releases.md)
 
-<details>
-  <summary>Going further</summary>
+### Competitors
 
-  - [Google Cloud Platform Podcast - Borg and Kubernetes with John Wilkes](https://www.gcppodcast.com/post/episode-46-borg-and-k8s-with-john-wilkes/)
-  - [GitHub - Kubernetes community](https://github.com/kubernetes/community)
-  - [Slack](https://slack.kubernetes.io/)
-  - [StackOverflow](https://stackoverflow.com/search?q=kubernetes)
-  - [Microsoft - What is Kubernetes?](https://aka.ms/k8slearning)
-
-</details>
-
-Other solutions for managing containerized applications:
+Other solutions to manage containerized applications:
 
 - [Docker Swarm](https://docs.docker.com/engine/swarm/)
 - [Apache Mesos](https://mesos.apache.org/)
 - [HashiCorp Nomad](https://www.nomadproject.io/)
 - [Rancher](https://rancher.com/)
 
-## Main features
+### Main features
 
 Core features:
 
@@ -50,11 +46,9 @@ Add-ons features:
 - Centralized logging
 - Monitoring
 
-<details>
-  <summary>Going further</summary>
+Read more:
 
-  - [Bilgin Ibryam - Designing Cloud Native Applications With kubernetes](https://www.slideshare.net/bibryam/designing-cloud-native-applications-with-kubernetes)
-</details>
+- [Bilgin Ibryam - Designing Cloud Native Applications With kubernetes](https://www.slideshare.net/bibryam/designing-cloud-native-applications-with-kubernetes)
 
 ## Design & Architecture
 
@@ -213,13 +207,8 @@ kubectl get pod -n <namespace> --selector app=<application-name>
 
 ### Storage
 
-#### Persistent Volumes
-
-A [**PersistentVolume (PV)**](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) is a piece of storage in the cluster that has been provisioned by an administrator or dynamically provisioned using Storage Classes. It is a resource in the cluster just like a node is a cluster resource.
-
-#### Persistent Volume Claims
-
-A [**PersistentVolumeClaim (PVC)**](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) is a request for storage by a user. It is similar to a Pod. Pods consume node resources and PVCs consume PV resources.
+- [Persistent Volumes](./docs/objects/persistentvolume.md)
+- [Persistent Volume Claims](./docs/objects/persistentvolumeclaim.md)
 
 ## Security
 

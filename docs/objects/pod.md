@@ -4,6 +4,89 @@
 
 A **Pod** consists of one or more containers (containers are not managed individually). Inside a Pod we have the same IP address, same access to storage and same namespace. It is the smallest unit we can work with.
 
+## Command line examples
+
+```bash
+# create and run a particular image in a pod (since 1.18, kubectl run is only used to create pods)
+kubectl run nginx-demo --image=nginx:1.16
+
+# get all pods of the current namespace with the pod labels
+kubectl get pods --show-labels
+
+# get additional information on pods with a label selector
+kubectl get pods --selector="run=load-balancer-example" -o=wide
+
+# add a label to a specific pod
+kubectl label pods xxxxx-yyyy experimental=true
+
+# get all pods of the current namespace with a given label
+kubectl get pods -l experimental=true
+```
+
+## Manifest examples
+
+- Nginx container
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-demo
+  labels:
+    tier: frontend
+spec:
+  containers:
+    - name: nginx
+      image: nginx:1.14.2
+      ports:
+        # just for information (and EXPOSE in a Dockerfile)
+        - containerPort: 80
+```
+
+- Busybox container
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: busybox-demo
+spec:
+  containers:
+    - name: hello
+      image: busybox
+      command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
+  restartPolicy: OnFailure
+```
+
+- The following Pod has two Containers. Each Container has a request of 0.25 cpu and 64MiB (226 bytes) of memory. Each Container has a limit of 0.5 cpu and 128MiB of memory. You can say the Pod has a request of 0.5 cpu and 128 MiB of memory, and a limit of 1 cpu and 256MiB of memory.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend
+spec:
+  containers:
+    - name: app
+      image: images.my-company.example/app:v4
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
+    - name: log-aggregator
+      image: images.my-company.example/log-aggregator:v6
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
+```
+
 ## Usecases
 
 ### Multi-Container Pod
@@ -111,85 +194,3 @@ spec:
 ### Resources
 
 - [Managing Resources for Containers](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
-
-## Command line examples
-
-```bash
-# create and run a particular image in a pod (since 1.18, kubectl run is only used to create pods)
-kubectl run nginx-demo --image=nginx:1.16
-
-# get all pods of the current namespace with the pod labels
-kubectl get pods --show-labels
-
-# get additional information on pods with a label selector
-kubectl get pods --selector="run=load-balancer-example" -o=wide
-
-# add a label to a specific pod
-kubectl label pods xxxxx-yyyy experimental=true
-
-# get all pods of the current namespace with a given label
-kubectl get pods -l experimental=true
-```
-
-## Manifest examples
-
-- Nginx container
-
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx-demo
-  labels:
-    tier: frontend
-spec:
-  containers:
-    - name: nginx
-      image: nginx:1.14.2
-      ports:
-        - containerPort: 80
-```
-
-- Busybox container
-
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: busybox-demo
-spec:
-  containers:
-    - name: hello
-      image: busybox
-      command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
-  restartPolicy: OnFailure
-```
-
-- The following Pod has two Containers. Each Container has a request of 0.25 cpu and 64MiB (226 bytes) of memory. Each Container has a limit of 0.5 cpu and 128MiB of memory. You can say the Pod has a request of 0.5 cpu and 128 MiB of memory, and a limit of 1 cpu and 256MiB of memory.
-
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: frontend
-spec:
-  containers:
-    - name: app
-      image: images.my-company.example/app:v4
-      resources:
-        requests:
-          memory: "64Mi"
-          cpu: "250m"
-        limits:
-          memory: "128Mi"
-          cpu: "500m"
-    - name: log-aggregator
-      image: images.my-company.example/log-aggregator:v6
-      resources:
-        requests:
-          memory: "64Mi"
-          cpu: "250m"
-        limits:
-          memory: "128Mi"
-          cpu: "500m"
-```
