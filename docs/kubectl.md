@@ -9,6 +9,13 @@
 - Cheat sheets: [Official](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) ([Devpro](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/kubectl.md))
 - [Cluster Administration > Managing Resources](https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/)
 
+## Examples
+
+```bash
+# get all objects (pods, services, replicasets) having a specific label
+k get all --selector env=prod
+```
+
 ## Q&A
 
 ### Differences between Apply, Replace and Patch?

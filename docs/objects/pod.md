@@ -8,13 +8,19 @@ A **Pod** consists of one or more containers (containers are not managed individ
 
 ```bash
 # create and run a particular image in a pod (since 1.18, kubectl run is only used to create pods)
-kubectl run nginx-demo --image=nginx:1.16
+kubectl run nginx-demo --image=nginx:1.16 --port=80 -l mylabelkey=mylabelvalue
+
+# create pod and associated service (ClusterIP) on port 80
+kubectl run nginx-demo --image=nginx --port=80 --expose
 
 # get all pods of the current namespace with the pod labels
 kubectl get pods --show-labels
 
 # get additional information on pods with a label selector
 kubectl get pods --selector="run=load-balancer-example" -o=wide
+
+# or without the quotes and multiple entries
+k get pods --selector bu=finance,env=prod,tier=frontend
 
 # add a label to a specific pod
 kubectl label pods xxxxx-yyyy experimental=true

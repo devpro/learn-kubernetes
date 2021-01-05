@@ -2,6 +2,14 @@
 
 [Kubernetes Documentation/Reference/API Access Control/Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 
+> ClusterRole is a non-namespaced resource. The resources have different names (Role and ClusterRole) because a Kubernetes object always has to be either namespaced or not namespaced; it can't be both.
+>  
+> ClusterRoles have several uses. You can use a ClusterRole to define permissions on:
+>  
+> - namespaced resources and be granted within individual namespace(s)
+> - namespaced resources and be granted across all namespaces
+> - define permissions on cluster-scoped resources
+
 ## Manifest examples
 
 - A ClusterRole that can be used to grant read access to secrets in any particular namespace, or across all namespaces (depending on how it is bound):

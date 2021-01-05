@@ -22,4 +22,10 @@ kubectl cordon <node_name>
 
 # resume scheduling new pods onto the node
 kubectl uncordon <node_name>
+
+# create a taint on node01 with key of 'spray', value of 'mortein' and effect of 'NoSchedule'
+kubectl taint nodes node01 spray=mortein:NoSchedule
+
+# remove the taint on master/controlplane, which currently has the taint effect of NoSchedule
+kubectl taint nodes master/controlplane node-role.kubernetes.io/master:NoSchedule-
 ```
