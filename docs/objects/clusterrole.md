@@ -10,6 +10,23 @@
 > - namespaced resources and be granted across all namespaces
 > - define permissions on cluster-scoped resources
 
+## Command line examples
+
+```bash
+# count the number of clusterroles in the cluster
+k get clusterrole | wc -l
+
+# view API discovery roles
+kubectl get clusterroles system:discovery -o yaml
+
+k create clusterrole node-admin --verb=list --resource=nodes
+
+kubectl api-resources
+
+# it will automatically add the correct apigroups
+k create clusterrole storage-admin --verb=list --resource=persistentvolumes,storageclasses
+```
+
 ## Manifest examples
 
 - A ClusterRole that can be used to grant read access to secrets in any particular namespace, or across all namespaces (depending on how it is bound):

@@ -1,5 +1,7 @@
 # Kubernetes Service object
 
+Default port range: 30000-32767
+
 ## Presentation
 
 A [Service](https://kubernetes.io/docs/concepts/services-networking/service/) is an "abstract way to expose an application running on a set of Pods as a network service".

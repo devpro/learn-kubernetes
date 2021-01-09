@@ -197,6 +197,19 @@ spec:
   restartPolicy: OnFailure
 ```
 
+### Static pods
+
+Static pods are created directly by one Node Kubelet, assuming the yaml definition file is present in the static pod folder (Kubelet service argument or configuration file element). It is used by kubeadm to deploy controlplane components. As DaemonSets, static pods are ignored by the kube-scheduler.
+
+```bash
+# create a static pod named static-busybox that uses the busybox image and the command sleep 1000
+kubectl run --restart=Never --image=busybox static-busybox --dry-run=client -o yaml --command -- sleep 1000 > /etc/kubernetes/manifests/static-busybox.yaml
+```
+
+### Init Containers
+
+- [Kubernetes Documentation/Concepts/Workloads/Pods/Init Containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)
+
 ### Resources
 
 - [Managing Resources for Containers](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)

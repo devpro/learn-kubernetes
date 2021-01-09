@@ -29,6 +29,12 @@ roleRef:
 # creates or updates a manifest file containing RBAC objects, and handles deleting and recreating binding objects if required to change the role they refer to
 kubectl auth reconcile
 
-# view API discovery roles
-kubectl get clusterroles system:discovery -o yaml
+k get clusterrolebindings
+
+# see what users are binded to a clusterrolebinding
+k describe clusterrolebinding cluster-admin
+
+k create clusterrolebinding michelle-node-admin --clusterrole=node-admin --user=michelle
+
+kubectl auth can-i list nodes --as michelle
 ```

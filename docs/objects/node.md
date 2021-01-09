@@ -14,7 +14,7 @@ kubectl describe node <node_name>
 
 # safely evict all of pods of a node from a node before performing a maintenance on the node (e.g. kernel upgrade, hardware maintenance, etc.)
 # safe evictions allow the pod's containers to gracefully terminate and will respect the PodDisruptionBudgets you have specified
-kubectl drain <node_name>
+kubectl drain <node_name> --ignore-daemonsets
 
 # mark a Node unschedulable (prevents the scheduler from placing new pods onto the Node, but does not affect existing Pods on the Node)
 # this is useful as a preparatory step before a node reboot or other maintenance
@@ -28,4 +28,7 @@ kubectl taint nodes node01 spray=mortein:NoSchedule
 
 # remove the taint on master/controlplane, which currently has the taint effect of NoSchedule
 kubectl taint nodes master/controlplane node-role.kubernetes.io/master:NoSchedule-
+
+# apply a label color=blue to node node01
+k label node node01 color=blue
 ```

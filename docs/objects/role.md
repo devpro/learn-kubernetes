@@ -4,6 +4,17 @@
 
 > A Role always sets permissions within a particular namespace; when you create a Role, you have to specify the namespace it belongs in.
 
+## Command line examples
+
+```bash
+k get roles
+
+# create a role
+kubectl create role developer --verb=get --verb=create --verb=list --verb=delete --resource=pods
+
+k edit role developer -n blue
+```
+
 ## Manifest examples
 
 ```yaml

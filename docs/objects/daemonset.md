@@ -4,6 +4,15 @@
 
 > A **DaemonSet** ensures that all (or some) Nodes run a copy of a Pod. As nodes are added to the cluster, Pods are added to them. As nodes are removed from the cluster, those Pods are garbage collected. Deleting a DaemonSet will clean up the Pods it created.
 
+## Command line examples
+
+```bash
+kubectl get ds
+
+# DaemonSets cannot be created directly with kubectl create (imperative command)
+# but one could use the output of kubectl create deploy and remove replicas, strategy fields and change kind value
+```
+
 ## Manifest examples
 
 - A DaemonSet that runs the fluentd-elasticsearch Docker image
