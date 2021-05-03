@@ -10,9 +10,10 @@ This is a training material to get knowledge about Kubernetes and prepare for Ku
 * [Projects](./docs/projects.md)
 * [Releases](./docs/releases.md)
 * Labs:
-  * [Odroid setup](./docs/odroid-setup.md)
   * [LF - Kubernetes for Developers](./docs/labs-lfd259.md)
   * [LF - Kubernetes Fundamentals](./docs/labs-lfs258.md)
+  * [Odroid setup](./docs/odroid-setup.md)
+  * [Raspberry PI setup](./docs/raspberrypi-setup.md)
 * [Examination](./docs/examination.md)
 
 ## Sandboxes
