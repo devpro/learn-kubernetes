@@ -4,6 +4,11 @@ Reference: [Release notes](https://relnotes.k8s.io/)
 
 Additional readings: [RisingStack - The History of Kubernetes on a Timeline](https://blog.risingstack.com/the-history-of-kubernetes/) - Jun 20, 2018
 
+## 1.21
+
+* [Introducing Suspended Jobs](https://kubernetes.io/blog/2021/04/12/introducing-suspended-jobs/) - April 12, 2021
+* [Introducing Indexed Jobs](https://kubernetes.io/blog/2021/04/19/introducing-indexed-jobs/) - April 19, 2021
+
 ## 1.20
 
 [Kubernetes 1.20: The Raddest Release](https://kubernetes.io/blog/2020/12/08/kubernetes-1-20-release-announcement/)
