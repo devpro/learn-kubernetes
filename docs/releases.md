@@ -8,10 +8,15 @@ Additional readings: [RisingStack - The History of Kubernetes on a Timeline](htt
 
 [Kubernetes 1.21: Power to the Community](https://kubernetes.io/blog/2021/04/08/kubernetes-1-21-release-announcement/) - April 08, 2021
 
+### 1.21 Content
+
 * [Introducing Suspended Jobs](https://kubernetes.io/blog/2021/04/12/introducing-suspended-jobs/) - April 12, 2021
 * [Introducing Indexed Jobs](https://kubernetes.io/blog/2021/04/19/introducing-indexed-jobs/) - April 19, 2021
 * [PodSecurityPolicy Deprecation: Past, Present, and Future](https://kubernetes.io/blog/2021/04/06/podsecuritypolicy-deprecation-past-present-and-future/) - April 06, 2021
 
+### 1.21 Articles & webinars
+
+* [CNCF Live Webinar: Kubernetes 1.21 Release](https://community.cncf.io/events/details/cncf-cncf-online-programs-presents-cncf-live-webinar-kubernetes-121-release/) - May 20, 2021
 * [sysdig - Kubernetes 1.21 – What’s new?](https://sysdig.com/blog/kubernetes-1-21-whats-new) - March 31, 2021
 
 ## 1.20
