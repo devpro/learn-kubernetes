@@ -15,6 +15,7 @@ This is a training material to get knowledge about Kubernetes and prepare for Ku
   * [Odroid setup](./docs/odroid-setup.md)
   * [Raspberry PI setup](./docs/raspberrypi-setup.md)
 * [Examination](./docs/examination.md)
+* [Recipes](./docs/recipes.md)
 
 ## Sandboxes
 
