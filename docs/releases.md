@@ -1,12 +1,12 @@
 # Releases
 
-Reference: [Release notes](https://relnotes.k8s.io/)
+→ [Release notes](https://relnotes.k8s.io/)
 
 Additional readings: [RisingStack - The History of Kubernetes on a Timeline](https://blog.risingstack.com/the-history-of-kubernetes/) - Jun 20, 2018
 
 ## 1.21
 
-[Kubernetes 1.21: Power to the Community](https://kubernetes.io/blog/2021/04/08/kubernetes-1-21-release-announcement/) - April 08, 2021
+→ [Kubernetes 1.21: Power to the Community](https://kubernetes.io/blog/2021/04/08/kubernetes-1-21-release-announcement/) - April 08, 2021
 
 ### 1.21 Content
 
