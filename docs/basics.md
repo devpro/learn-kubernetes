@@ -26,7 +26,7 @@ Read more:
 Other solutions to manage containerized applications:
 
 - [Docker Swarm](https://docs.docker.com/engine/swarm/)
-- [Apache Mesos](https://mesos.apache.org/)
+- [Apache Mesos](https://mesos.apache.org/) ([marathon](https://mesosphere.github.io/marathon/))
 - [HashiCorp Nomad](https://www.nomadproject.io/)
 - [Rancher](https://rancher.com/)
 
