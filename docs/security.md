@@ -12,6 +12,8 @@ Two types of accounts:
     - identity services
 - Service Accounts
 
+-[A Kubernetes engineer’s guide to mTLS by Buoyant](https://buoyant.io/mtls-guide/)
+
 ## Certificates
 
 ```bash
