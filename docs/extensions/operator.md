@@ -19,3 +19,10 @@ Readings:
 * [Stackoverflow - What is the difference between a Kubernetes Controller and a Kubernetes Operator?](https://stackoverflow.com/questions/47848258/kubernetes-controller-vs-kubernetes-operator#47857073)
 * [Octetz - Controllers and Operators](https://octetz.com/docs/2019/2019-10-13-controllers-and-operators/)
 * [Kueflow - Operators vs. controller pattern](https://github.com/kubeflow/tf-operator/issues/300)
+
+## Practice
+
+### Tutorials
+
+* [Read Hat Developers - 'Hello, World' tutorial with Kubernetes Operators](https://developers.redhat.com/blog/2020/08/21/hello-world-tutorial-with-kubernetes-operators) - August 21, 2020
+* [Read Hat Developers - Build a Kubernetes Operator in six steps](https://developers.redhat.com/articles/2021/09/07/build-kubernetes-operator-six-steps) - September 7, 2021
