@@ -140,13 +140,9 @@ Samples: [kubernetes/sample-controller](https://github.com/kubernetes/sample-con
 - [ReplicaSets](./objects/replicaset.md)
 - [StatefulSet](./objects/statefulset.md)
 
-#### Operators
+### Extensions
 
-[Kubernetes Documentation/Concepts/Extending Kubernetes/Operator pattern](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/)
-
-An operator is a domain specific controller.
-
-See [Stackoverflow answer](https://stackoverflow.com/questions/47848258/kubernetes-controller-vs-kubernetes-operator#47857073), [page on Octetz](https://octetz.com/docs/2019/2019-10-13-controllers-and-operators/), [GitHub issue](https://github.com/kubeflow/tf-operator/issues/300) and [CoreOS definition](https://coreos.com/operators/).
+- [Operators](./extensions/operator.md)
 
 ### Configuration
 
