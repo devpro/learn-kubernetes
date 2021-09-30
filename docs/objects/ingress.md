@@ -1,20 +1,20 @@
 # Kubernetes Ingress object
 
-> An API object that manages external access to the services in a cluster, typically HTTP.
->  
-> Ingress may provide load balancing, SSL termination and name-based virtual hosting.
+> An API object that manages external access to the services in a cluster, typically HTTP. Ingress may provide load balancing, SSL termination and name-based virtual hosting.
 
-Reference: [Kubernetes Documentation/Concepts/Services, Load Balancing, and Networking/Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+→ [Kubernetes Documentation/Concepts/Services, Load Balancing, and Networking/Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 
 ## Controllers
 
-> In order for the Ingress resource to work, the cluster must have an ingress controller running.
->  
-> Unlike other types of controllers which run as part of the kube-controller-manager binary, Ingress controllers are not started automatically with a cluster.
+> In order for the Ingress resource to work, the cluster must have an ingress controller running. Unlike other types of controllers which run as part of the kube-controller-manager binary, Ingress controllers are not started automatically with a cluster.
 
-Reference: [Kubernetes Documentation/Concepts/Services, Load Balancing, and Networking/Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
+→ [Kubernetes Documentation/Concepts/Services, Load Balancing, and Networking/Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 
-Most known: [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/) ([code](https://github.com/kubernetes/ingress-nginx))
+### NGINX Ingress Controller
+
+* [documentation](https://kubernetes.github.io/ingress-nginx/)
+* [source code](https://github.com/kubernetes/ingress-nginx)
+* [v1.0.0](https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.0.0) - August 24, 2021
 
 ## Command line examples
 
