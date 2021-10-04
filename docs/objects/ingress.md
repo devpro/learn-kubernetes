@@ -16,6 +16,11 @@
 * [source code](https://github.com/kubernetes/ingress-nginx)
 * [v1.0.0](https://github.com/kubernetes/ingress-nginx/releases/tag/controller-v1.0.0) - August 24, 2021
 
+### Kong Ingress Controller
+
+* [Kong for Kubernetes](https://konghq.com/solutions/kubernetes-ingress/)
+* [APM With Prometheus and Grafana on Kubernetes Ingress](https://konghq.com/blog/prometheus-grafana-kubernetes/) - September 21, 2021
+
 ## Command line examples
 
 ```bash
