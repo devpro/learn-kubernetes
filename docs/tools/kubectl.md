@@ -16,6 +16,10 @@
 k get all --selector env=prod
 ```
 
+## Plugins
+
+- [Making Kubernetes Operations Easy with kubectl Plugins](https://martinheinz.dev/blog/58) - Oct 1, 2021
+
 ## Q&A
 
 ### Differences between Apply, Replace and Patch?
