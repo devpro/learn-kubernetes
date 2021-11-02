@@ -7,6 +7,7 @@ Additional readings: [RisingStack - The History of Kubernetes on a Timeline](htt
 ## 1.22
 
 * Annoucement: [Kubernetes 1.22: Reaching New Peaks](https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/) - August 04, 2021
+* CNCF Live Webinar: [Kubernetes 1.22 release](https://community.cncf.io/events/details/cncf-cncf-online-programs-presents-cncf-live-webinar-kubernetes-122-release/) - October 5, 2021
 * Sysdig: [Kubernetes 1.22 – What’s new?](https://sysdig.com/blog/kubernetes-1-22-whats-new/) - July 29, 2021
 
 ## 1.21
