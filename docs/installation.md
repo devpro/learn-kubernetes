@@ -16,36 +16,7 @@ Several options to start with a new Kubernetes cluster:
 - [K3s](https://k3s.io/) from Rancher on small devices or CI pipelines
 - [Kind (Kubernetes in Docker)](https://kind.sigs.k8s.io/) ([kubernetes-sigs/kind](https://github.com/kubernetes-sigs/kind)): fast and easy testing of clusters
   - [Kubernetes Podcast #69 kind, with Ben Elder (September 3, 2019)](https://kubernetespodcast.com/episode/069-kind/)
-
-<details>
-  <summary>Kind quickstart</summary>
-  
-  See [User Guide > Quick Start](https://kind.sigs.k8s.io/docs/user/quick-start/)
-
-  ```bash
-  # make sure kind is available from the command line
-  kind version
-  
-  # create a cluster
-  kind create cluster
-  kind get clusters
-  
-  # set kubectl context
-  kubectl cluster-info --context kind-kind
-  
-  # look at images
-  docker exec -it my-node-name crictl images
-  
-  # build an image
-  docker build -t my-custom-image:unique-tag ./my-image-dir
-  kind load docker-image my-custom-image:unique-tag
-  kubectl apply -f my-manifest-using-my-image:unique-tag
-  
-  # delete a cluster
-  kind delete cluster
-  ```
-
-</details>
+  - [everyday-cheatsheets/kind](https://github.com/devpro/everyday-cheatsheets/blob/main/docs/cncf/kind.md)
 
 ### Kubernetes CLI
 
