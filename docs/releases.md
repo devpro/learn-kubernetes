@@ -4,6 +4,12 @@
 
 Additional readings: [RisingStack - The History of Kubernetes on a Timeline](https://blog.risingstack.com/the-history-of-kubernetes/) - Jun 20, 2018
 
+## 1.23
+
+* [CNCF Live Webinar](https://community.cncf.io/events/details/cncf-cncf-online-programs-presents-cncf-live-webinar-kubernetes-123-release/) - January 4, 2022
+* [Sysdig What’s new?](https://sysdig.com/blog/kubernetes-1-23-whats-new/) - November 30, 2021
+* [Kubernetes Podcast from Google with Rey Lejano](https://kubernetespodcast.com/episode/167-kubernetes-1.23/) - December 8, 2021
+
 ## 1.22
 
 * Annoucement: [Kubernetes 1.22: Reaching New Peaks](https://kubernetes.io/blog/2021/08/04/kubernetes-1-22-release-announcement/) - August 04, 2021
