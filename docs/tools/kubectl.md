@@ -6,7 +6,7 @@
 
 ## Quick start
 
-- Cheat sheets: [Official](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) ([Devpro](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/kubectl.md))
+- Cheat sheets: [Official](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) ([everyday-cheatsheets](https://github.com/devpro/everyday-cheatsheets/blob/main/docs/cncf/kubectl.md))
 - [Cluster Administration > Managing Resources](https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/)
 
 ## Examples
