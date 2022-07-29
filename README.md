@@ -5,15 +5,14 @@ This is a training material to get knowledge about Kubernetes and prepare for Ku
 ## Content
 
 * [Basics](./docs/basics.md)
-* [Kubectl](./docs/tools/kubectl.md)
 * [Installation](./docs/installation.md)
 * [Projects](./docs/projects.md)
 * [Releases](./docs/releases.md)
 * Labs:
   * [LF - Kubernetes for Developers](./docs/labs-lfd259.md)
   * [LF - Kubernetes Fundamentals](./docs/labs-lfs258.md)
-  * [Odroid setup](./docs/odroid-setup.md)
-  * [Raspberry PI setup](./docs/raspberrypi-setup.md)
+  * [Odroid setup](./docs/labs/odroid-setup.md)
+  * [Raspberry PI setup](./docs/labs/raspberrypi-setup.md)
 * [Examination](./docs/examination.md)
 * [Recipes](./docs/recipes.md)
 

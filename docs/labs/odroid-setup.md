@@ -17,7 +17,7 @@ Value | Detail
 
 ## OS setup
 
-See [Odroid cheat sheet](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/sbd.md#odroid).
+See [Odroid cheat sheet](https://github.com/devpro/everyday-cheatsheets/blob/main/docs/odroid.md).
 
 ## Requirements
 
