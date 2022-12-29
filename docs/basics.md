@@ -21,6 +21,15 @@ Read more:
 - [What is Kubernetes? (by Microsoft)](https://aka.ms/k8slearning)
 - [Releases](./releases.md)
 
+### Main dates
+
+- 2013: Omega project starts ([publication](https://research.google/pubs/pub41684/)
+- 2014-06-07: Kubernetes first commit ([log](https://github.com/kubernetes/kubernetes/commit/2c4b3a562ce34cddc3f8218a2c4d11c7310e6d56))
+- 2015-06-21: CNCF creation ([annoucement](https://www.cncf.io/announcement/2015/06/21/new-cloud-native-computing-foundation-to-drive-alignment-among-container-technologies/))
+- 2015-07-31: Kubernetes version 1.0 ([release 1.0.1](https://github.com/kubernetes/kubernetes/releases/tag/v1.0.1))
+- 2018-03-06: First CNCF Graduated Project ([annoucement](https://www.cncf.io/announcement/2018/03/06/cloud-native-computing-foundation-announces-kubernetes-first-graduated-project/), [Blog](https://www.cncf.io/blog/2018/03/06/kubernetes-first-cncf-project-graduate/))
+- 2020-03-25: Kubernetes V1.18 release ([release note](https://github.com/kubernetes/kubernetes/releases/tag/v1.18.6))
+
 ### Competitors
 
 Other solutions to manage containerized applications:
