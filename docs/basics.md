@@ -23,7 +23,7 @@ Read more:
 
 ### Main dates
 
-- 2013: Omega project starts ([publication](https://research.google/pubs/pub41684/)
+- 2013: Omega project starts ([publication](https://research.google/pubs/pub41684/))
 - 2014-06-07: Kubernetes first commit ([log](https://github.com/kubernetes/kubernetes/commit/2c4b3a562ce34cddc3f8218a2c4d11c7310e6d56))
 - 2015-06-21: CNCF creation ([annoucement](https://www.cncf.io/announcement/2015/06/21/new-cloud-native-computing-foundation-to-drive-alignment-among-container-technologies/))
 - 2015-07-31: Kubernetes version 1.0 ([release 1.0.1](https://github.com/kubernetes/kubernetes/releases/tag/v1.0.1))
