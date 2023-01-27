@@ -4,10 +4,18 @@
 
 Additional readings: [RisingStack - The History of Kubernetes on a Timeline](https://blog.risingstack.com/the-history-of-kubernetes/) - Jun 20, 2018
 
+## v1.26: Electrifying
+
+* [Announcement](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/) - December 09, 2022
+* [Sysdig What's new](https://sysdig.com/blog/kubernetes-1-26-whats-new) - November 30, 2022
+* Main changes
+  * [Introducing Validating Admission Policies](https://kubernetes.io/blog/2022/12/20/validating-admission-policies-alpha/)
+  * [GA Support for Kubelet Credential Providers](https://kubernetes.io/blog/2022/12/22/kubelet-credential-providers/)
+
 ## 1.23
 
 * [CNCF Live Webinar](https://community.cncf.io/events/details/cncf-cncf-online-programs-presents-cncf-live-webinar-kubernetes-123-release/) - January 4, 2022
-* [Sysdig What’s new?](https://sysdig.com/blog/kubernetes-1-23-whats-new/) - November 30, 2021
+* [Sysdig What's new](https://sysdig.com/blog/kubernetes-1-23-whats-new/) - November 30, 2021
 * [Kubernetes Podcast from Google with Rey Lejano](https://kubernetespodcast.com/episode/167-kubernetes-1.23/) - December 8, 2021
 
 ## 1.22
