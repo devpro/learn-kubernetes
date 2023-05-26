@@ -1,4 +1,4 @@
-# Condensed Kubernetes
+# Learn Kubernetes
 
 This is a training material to get knowledge about Kubernetes and prepare for Kubernetes certifications (CKA & CKAD). It has been initiated in 2020.
 
@@ -8,64 +8,20 @@ This is a training material to get knowledge about Kubernetes and prepare for Ku
 * [Installation](./docs/installation.md)
 * [Projects](./docs/projects.md)
 * [Releases](./docs/releases.md)
-* Labs:
-  * [LF - Kubernetes for Developers](./docs/labs-lfd259.md)
-  * [LF - Kubernetes Fundamentals](./docs/labs-lfs258.md)
+* Labs
+  * [LF - Kubernetes for Developers](./docs/labs/labs-lfd259.md)
+  * [LF - Kubernetes Fundamentals](./docs/labs/labs-lfs258.md)
   * [Odroid setup](./docs/labs/odroid-setup.md)
   * [Raspberry PI setup](./docs/labs/raspberrypi-setup.md)
 * [Examination](./docs/examination.md)
 * [Recipes](./docs/recipes.md)
 
-## Sandboxes
+## Playgrounds
 
-* [Katacoda](https://www.katacoda.com/)
-  * [Kubernetes Playground](https://www.katacoda.com/courses/kubernetes/playground) (use `Shift+Inser` to paste from the clipboard in the web page interactive console)
-  * [Lab Courses](https://www.katacoda.com/learn)
+* [Killercoda](https://killercoda.com/)
 * [Play with Kubernetes](https://labs.play-with-k8s.com/)
 
 ## References
-
-### Certifications
-
-Programs:
-
-* [Certified Kubernetes Application Developer (CKAD)](https://www.cncf.io/certification/ckad/)
-
-<details>
-  <summary>CKAD domains with their weights</summary>
-
-  * Core Concepts 13%
-  * Configuration 18%
-  * Multi-Container Pods 10%
-  * Observability 18%
-  * Pod Design 20%
-  * Services & Networking 13%
-  * State Persistence 8%
-
-</details>
-
-* [Certified Kubernetes Administrator (CKA)](https://www.cncf.io/certification/cka/)
-
-<details>
-  <summary>CKA domains with their weights</summary>
-
-  * Application Lifecycle Management 8%
-  * Installation, Configuration & Validation 12%
-  * Core Concepts 19%
-  * Networking 11%
-  * Scheduling 5%
-  * Security 12%
-  * Cluster Maintenance 11%
-  * Logging / Monitoring 5%
-  * Storage 7%
-  * Troubleshooting 10%
-</details>
-
-General information:
-
-* [Candidate handbook](https://docs.linuxfoundation.org/tc-docs/certification/lf-candidate-handbook)
-* [Curriculum](https://github.com/cncf/curriculum)
-* [Tips](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
 
 ### Training courses
 
@@ -76,8 +32,12 @@ General information:
   * [VMWare - KubeAcademy](https://kube.academy/)
   * [Collabnix - An Ultimate Kubernetes Hands-on Labs](https://collabnix.github.io/kubelabs/) ([collabnix/kubelabs](https://github.com/collabnix/kubelabs))
 * Charged
+  * [KodeKloud](https://kodekloud.com) ([YouTube channel](https://www.youtube.com/@KodeKloud))
   * [Linux Foundation - Kubernetes Fundamentals (LFS258)](https://trainingportal.linuxfoundation.org/learn/course/kubernetes-fundamentals-lfs258/course-introduction/course-information) > [Class forum](https://forum.linuxfoundation.org/categories/lfs258-class-forum)
   * [Linux Foundation - Kubernetes for Developers (LFD259)](https://trainingportal.linuxfoundation.org/learn/course/kubernetes-for-developers-lfd259/introduction/course-information) > [Class forum](https://forum.linuxfoundation.org/categories/lfd259-class-forum)
+* Lists
+  * [List](https://docs.google.com/spreadsheets/d/10NltoF_6y3mBwUzQ4bcQLQfCE1BWSgUDcJXy-Qp2JEU/edit#gid=0) from [@kubernauts](https://twitter.com/kubernauts)
+  * [awesome-kubernetes curated list](https://ramitsurana.github.io/awesome-kubernetes/)
 
 ### Cloud Native Computing Foundation (CNCF)
 
@@ -87,6 +47,8 @@ General information:
     * [Introducing The Cloud Native Landscape 2.0](https://www.cncf.io/blog/2018/03/08/introducing-the-cloud-native-landscape-2-0-interactive-edition/) - March 8, 2018
 
 ### Webinars
+
+* [Microsoft Azure - Kubernetes Basics](https://aka.ms/k8s/lightboard)
 
 <details>
   <summary>CNCF webinars</summary>

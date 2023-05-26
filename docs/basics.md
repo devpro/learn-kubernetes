@@ -1,6 +1,8 @@
 # Kubernetes basics
 
-> **Kubernetes** (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications [(kubernetes.io)](https://kubernetes.io/)
+> **Kubernetes** (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications
+
+→ [kubernetes.io](https://kubernetes.io/)
 
 ## Introduction
 
@@ -227,15 +229,3 @@ Kubernetes Objects:
 
 - ClusterRole
 - RoleBinding
-
-## Tools
-
-- [Helm](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/helm.md): "The package manager for Kubernetes"
-
-- [Carvel (previously k14s)](https://k14s.io/): "A set of reliable, single-purpose, composable tools that aid in your application building, configuration, and deployment to Kubernetes"
-
-- [k9s](https://github.com/derailed/k9s): "Kubernetes CLI To Manage Your Clusters In Style!"
-
-- [Lens](https://k8slens.dev/): "Lens is the only IDE you’ll ever need to take control of your Kubernetes clusters. It's open source and free."
-
-Others: [Red Hat - 10 awesome k8s tools every user should know](https://docs.google.com/presentation/d/13k-Lhc-tVgUohrtKqAYIikaQCTsmuzzjhOe_hpwgUgw/edit#slide=id.g91ee8ae7fb_0_228)

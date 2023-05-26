@@ -1,8 +1,18 @@
 # Kubernetes examination
 
-## CKA
+## General information
 
-### Advices
+- CNCF
+  - [Curriculum](https://github.com/cncf/curriculum)
+- Linux Foundation
+  - [Candidate handbook](https://docs.linuxfoundation.org/tc-docs/certification/lf-candidate-handbook)
+  - [Tips](https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-ckad)
+
+## Certified Kubernetes Administrator (CKA)
+
+→ [cncf.io/certification/cka](https://www.cncf.io/certification/cka/)
+
+### CKA advices
 
 - Time flies really fast, go quickly
 - Practice troubleshooting
@@ -50,7 +60,7 @@
 
 </details>
 
-### Knowledge check
+### CKA knowledge check
 
 Be able to:
 
@@ -62,7 +72,7 @@ Be able to:
   TODO
 </details>
 
-2. Print out a list of all nodes that are Ready but not tainted with NoSchedule.
+2. Print out a list of all nodes that are Ready but not tainted with NoSchedule
 
 <details>
   <summary>Answer 2</summary>
@@ -70,12 +80,24 @@ Be able to:
   TODO
 </details>
 
-## CKAD
+### CKA external notes
 
-<details>
-  <summary>External notes</summary>
-  
-  - [twajr/ckad-prep-notes](https://github.com/twajr/ckad-prep-notes)
-  - [liptanbiswas/CKAD Practice Questions](https://dev.to/liptanbiswas/ckad-practice-questions-4mpn)
+- [Study guide from AutSoft](https://blog.autsoft.hu/certified-kubernetes-administrator/)
+- [Review from Rieckpil](https://rieckpil.de/review-ckad-certified-kubernetes-application-developer-program/)
 
-</details>
+TODO :
+
+- [Preparing for the Certified Kubernetes Administrator (CKA) Program](https://dzone.com/articles/preparing-for-the-certified-kubernetes-administrat?edition=542303&utm_source=Zone%20Newsletter&utm_medium=email&utm_campaign=cloud%202019-12-09)
+- [Kubernetes Upgrade: The Definitive Guide to Do-It-Yourself](https://dzone.com/articles/kubernetes-upgrade-the-definitive-guide-to-do-it-yourself?edition=595298)
+
+## Certified Kubernetes Application Developer (CKAD)
+
+→ [cncf.io/certification/ckad](https://www.cncf.io/certification/ckad/)
+
+### CKAD external notes
+
+- [twajr/ckad-prep-notes](https://github.com/twajr/ckad-prep-notes)
+- [liptanbiswas/CKAD Practice Questions](https://dev.to/liptanbiswas/ckad-practice-questions-4mpn)
+- [The Important things I know which helped me pass the CKAD exam](https://medium.com/@vishwas76/the-important-things-i-know-which-helped-me-pass-the-ckad-exam-d1f460aff1c2)
+
+## Kubernetes and Cloud Native Associate (KCNA)
