@@ -84,11 +84,13 @@ Be able to:
 
 - [Study guide from AutSoft](https://blog.autsoft.hu/certified-kubernetes-administrator/)
 - [Review from Rieckpil](https://rieckpil.de/review-ckad-certified-kubernetes-application-developer-program/)
+- [David-VTUK/CKA-StudyGuide](https://github.com/David-VTUK/CKA-StudyGuide)
 
 TODO :
 
 - [Preparing for the Certified Kubernetes Administrator (CKA) Program](https://dzone.com/articles/preparing-for-the-certified-kubernetes-administrat?edition=542303&utm_source=Zone%20Newsletter&utm_medium=email&utm_campaign=cloud%202019-12-09)
 - [Kubernetes Upgrade: The Definitive Guide to Do-It-Yourself](https://dzone.com/articles/kubernetes-upgrade-the-definitive-guide-to-do-it-yourself?edition=595298)
+- [ismet55555/Certified-Kubernetes-Administrator-Notes](https://github.com/ismet55555/Certified-Kubernetes-Administrator-Notes)
 
 ## Certified Kubernetes Application Developer (CKAD)
 
