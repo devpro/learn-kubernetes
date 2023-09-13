@@ -35,9 +35,10 @@ This is a training material to get knowledge about Kubernetes and prepare for Ku
   * [KodeKloud](https://kodekloud.com) ([YouTube channel](https://www.youtube.com/@KodeKloud))
   * [Linux Foundation - Kubernetes Fundamentals (LFS258)](https://trainingportal.linuxfoundation.org/learn/course/kubernetes-fundamentals-lfs258/course-introduction/course-information) > [Class forum](https://forum.linuxfoundation.org/categories/lfs258-class-forum)
   * [Linux Foundation - Kubernetes for Developers (LFD259)](https://trainingportal.linuxfoundation.org/learn/course/kubernetes-for-developers-lfd259/introduction/course-information) > [Class forum](https://forum.linuxfoundation.org/categories/lfd259-class-forum)
-* Lists
+* Community
   * [List](https://docs.google.com/spreadsheets/d/10NltoF_6y3mBwUzQ4bcQLQfCE1BWSgUDcJXy-Qp2JEU/edit#gid=0) from [@kubernauts](https://twitter.com/kubernauts)
   * [awesome-kubernetes curated list](https://ramitsurana.github.io/awesome-kubernetes/)
+  * [aiyengar2/k8s-docs](https://github.com/aiyengar2/k8s-docs)
 
 ### Cloud Native Computing Foundation (CNCF)
 
