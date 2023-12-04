@@ -5,6 +5,8 @@ This is a training material to get knowledge about Kubernetes and prepare for Ku
 ## Content
 
 * [Basics](./docs/basics.md)
+* Certifications
+  * [CKS](./docs/certifications/cks/README.md)
 * [Installation](./docs/installation.md)
 * [Projects](./docs/projects.md)
 * [Releases](./docs/releases.md)
