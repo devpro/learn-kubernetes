@@ -24,7 +24,7 @@ See also:
 
 Additional:
 
-* [Examples](examples/1.1-network-policies.md)
+* 🚀 [Examples](examples/1.1-network-policies.md)
 * [Get started with Kubernetes network policy](https://docs.projectcalico.org/security/kubernetes-network-policy)
 * [kubernetes-network-policy-recipes](https://github.com/ahmetb/kubernetes-network-policy-recipes)
 * [An Introduction to Kubernetes Network Policies for Security People](https://reuvenharrison.medium.com/an-introduction-to-kubernetes-network-policies-for-security-people-ba92dd4c809d)
@@ -38,7 +38,7 @@ Additional:
 
 Additional:
 
-* [Examples](examples/1.2-cis-benchmark.md)
+* 🚀 [Examples](examples/1.2-cis-benchmark.md)
 * [Microsoft Compliance](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-cis-benchmark)
 * [Default values on GKE](https://cloud.google.com/kubernetes-engine/docs/concepts/cis-benchmarks#default-values) 
 * [InSpec Profile](https://github.com/dev-sec/cis-kubernetes-benchmark)

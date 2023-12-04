@@ -1,4 +1,4 @@
-# Supply Chain Security
+# Supply chain security
 
 > Minimize base image footprint  
 > Secure your supply chain: whitelist allowed registries, sign and validate images  

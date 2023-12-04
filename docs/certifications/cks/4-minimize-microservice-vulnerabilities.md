@@ -1,4 +1,4 @@
-# Minimize Microservice Vulnerabilities
+# Minimize microservice vulnerabilities
 
 > Setup appropriate OS level security domains  
 > Manage Kubernetes secrets  

@@ -1,4 +1,4 @@
-# System Hardening
+# System hardening
 
 > Minimize host OS footprint (reduce attack surface)  
 > Minimize IAM roles  

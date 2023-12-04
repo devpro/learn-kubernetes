@@ -1,4 +1,4 @@
-# CKS - Cluster Hardening
+# Kubernetes cluster hardening
 
 > Restrict access to Kubernetes API  
 > Use Role Based Access Controls to minimize exposure  

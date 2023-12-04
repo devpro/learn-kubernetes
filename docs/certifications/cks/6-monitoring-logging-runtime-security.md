@@ -1,4 +1,4 @@
-# Monitoring, Logging and Runtime Security
+# Monitoring, logging and runtime security
 
 > Perform behavioral analytics of syscall process and file activities at the host and container level to detect malicious activities  
 > Detect threats within physical infrastructure, apps, networks, data, users and workloads  
@@ -17,7 +17,7 @@ Official:
 
 Additional:
 
-* [Examples](examples/6.1-syscalls.md)
+* 🚀 [Examples](examples/6.1-syscalls.md)
 
 ### Audit logs
 
@@ -27,4 +27,4 @@ Official:
 
 Additional:
 
-* [Examples](examples/6.5-auditing-examples.md)
+* 🚀 [Examples](examples/6.6-auditing-examples.md)
