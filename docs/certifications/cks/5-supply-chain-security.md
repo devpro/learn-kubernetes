@@ -1,4 +1,4 @@
-# CKS - Supply Chain Security
+# Supply Chain Security
 
 > Minimize base image footprint  
 > Secure your supply chain: whitelist allowed registries, sign and validate images  

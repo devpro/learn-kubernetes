@@ -4,7 +4,7 @@
 
 → [training.linuxfoundation.org/certification](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/)
 
-⚠ CKA certification is required to sit for this exam
+🚩 CKA certification is required to sit for this exam
 
 ## Quick links
 

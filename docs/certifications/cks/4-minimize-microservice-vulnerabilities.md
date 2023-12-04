@@ -1,4 +1,4 @@
-# CKS - Minimize Microservice Vulnerabilities
+# Minimize Microservice Vulnerabilities
 
 > Setup appropriate OS level security domains  
 > Manage Kubernetes secrets  

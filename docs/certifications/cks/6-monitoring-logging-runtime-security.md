@@ -1,4 +1,4 @@
-# CKS - Monitoring, Logging and Runtime Security
+# Monitoring, Logging and Runtime Security
 
 > Perform behavioral analytics of syscall process and file activities at the host and container level to detect malicious activities  
 > Detect threats within physical infrastructure, apps, networks, data, users and workloads  
@@ -6,8 +6,6 @@
 > Perform deep analytical investigation and identification of bad actors within environment  
 > Ensure immutability of containers at runtime  
 > Use Audit Logs to monitor access
-
-https://kubernetes.io/docs/tutorials/clusters/seccomp/
 
 ## Content
 
@@ -19,7 +17,7 @@ Official:
 
 Additional:
 
-* [Examples](6.1-syscalls.md)
+* [Examples](examples/6.1-syscalls.md)
 
 ### Audit logs
 
@@ -29,4 +27,4 @@ Official:
 
 Additional:
 
-* [Examples](6.5-auditing-examples.md)
+* [Examples](examples/6.5-auditing-examples.md)

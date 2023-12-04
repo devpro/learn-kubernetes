@@ -1,4 +1,4 @@
-# CKS - Cluster Setup
+# Kubernetes cluster setup
 
 > Use Network security policies to restrict cluster level access  
 > Use CIS benchmark to review the security configuration of Kubernetes components (etcd, kubelet, kubedns, kubeapi)  
@@ -9,16 +9,22 @@
 
 ## Content
 
-### Network policies
+### Network Policies
 
-Official:
+> NetworkPolicies are an application-centric construct which allow you to specify how a pod is allowed to communicate with various network "entities" over the network.  
+>
+> Network policies do not conflict; they are additive.  
+>
+> &mdash; <cite>[kubernetes.io/docs/concepts/services-networking/network-policies](https://kubernetes.io/docs/concepts/services-networking/network-policies)</cite>
 
-* [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies)
+See also:
+
 * [Declare Network Policy](https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/)
 * [Enforcing Network Policies in Kubernetes](https://kubernetes.io/blog/2017/10/enforcing-network-policies-in-kubernetes/)
 
 Additional:
 
+* [Examples](examples/1.1-network-policies.md)
 * [Get started with Kubernetes network policy](https://docs.projectcalico.org/security/kubernetes-network-policy)
 * [kubernetes-network-policy-recipes](https://github.com/ahmetb/kubernetes-network-policy-recipes)
 * [An Introduction to Kubernetes Network Policies for Security People](https://reuvenharrison.medium.com/an-introduction-to-kubernetes-network-policies-for-security-people-ba92dd4c809d)
@@ -26,11 +32,13 @@ Additional:
 
 ### CIS Benchmark
 
-> This Center for Internet Security (CIS) Benchmark is the product of a community consensus process and consists of secure configuration guidelines developed for Kubernetes. ([cisecurity.org/benchmark/kubernetes](https://www.cisecurity.org/benchmark/kubernetes/))
+> This Center for Internet Security (CIS) Benchmark is the product of a community consensus process and consists of secure configuration guidelines developed for Kubernetes.  
+>
+> &mdash; <cite>[cisecurity.org/benchmark/kubernetes](https://www.cisecurity.org/benchmark/kubernetes/)</cite>
 
 Additional:
 
-* [Examples](1.2-cis-benchmark-examples.md)
+* [Examples](examples/1.2-cis-benchmark.md)
 * [Microsoft Compliance](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-cis-benchmark)
 * [Default values on GKE](https://cloud.google.com/kubernetes-engine/docs/concepts/cis-benchmarks#default-values) 
 * [InSpec Profile](https://github.com/dev-sec/cis-kubernetes-benchmark)
@@ -48,7 +56,6 @@ Additional:
 * [secure an Ingress by specifying a Secret that contains a TLS private key and certificate](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls) 
 * [How to deploy NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx/blob/master/docs/deploy/index.md)
 * [TLS/HTTPS](https://github.com/kubernetes/ingress-nginx/blob/master/docs/user-guide/tls.md)
-
 
 ### Node metadata and endpoints protection
 
