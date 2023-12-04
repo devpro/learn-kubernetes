@@ -1,18 +1,14 @@
-#  CKS
+#  CKS (Certified Kubernetes Security Specialist)
 
-> The Certified Kubernetes Security Specialist program provides assurance that a CKS has the skills, knowledge, and competence on a broad range of best practices for securing container-based applications and Kubernetes platforms during build, deployment and runtime.
+> The program provides assurance that a CKS has the skills, knowledge, and competence on a broad range of best practices for securing container-based applications and Kubernetes platforms during build, deployment and runtime.
+>
+> &mdash; <cite>[training.linuxfoundation.org/certification](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/)</cite>
 
-→ [training.linuxfoundation.org/certification](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/)
+🚩 A valid CKA certification is required to try this exam
 
-🚩 CKA certification is required to sit for this exam
+🌐 [Training Portal (Linux Foundation)](https://trainingportal.linuxfoundation.org/learn/dashboard), [PSI Exams Portal](https://test-takers.psiexams.com/linux/manage/my-tests), [Exam Instructions](https://docs.linuxfoundation.org/tc-docs/certification/important-instructions-cks)
 
-## Quick links
-
-* [Linux Foundation Training Portal](https://trainingportal.linuxfoundation.org/learn/dashboard)
-* [PSI Exams Portal](https://test-takers.psiexams.com/linux/manage/my-tests)
-* [Exam Instructions](https://docs.linuxfoundation.org/tc-docs/certification/important-instructions-cks)
-
-## Content
+## Curriculum
 
 * [1. Cluster Setup](1-cluster-setup.md)
 * [2. Cluster Hardening](2-cluster-hardening.md)
@@ -23,20 +19,30 @@
 
 ## Allowed web content
 
-* Kubernetes: [kubernetes.io/docs](https://kubernetes.io/docs/), [kubernetes.io/blog](https://kubernetes.io/blog/)
-* Trivy: [aquasecurity.github.io/trivy](https://aquasecurity.github.io/trivy/)
-* Falco: [falco.org/docs](https://falco.org/docs/)
-* etcd: [etcd.io/docs](https://etcd.io/docs/)
-* AppArmor: [gitlab.com/apparmor/apparmor/-/wikis/Documentation](https://gitlab.com/apparmor/apparmor/-/wikis/Documentation)
+Component      | Links
+---------------|-----------------------------------------------------------------------------------------------------------------
+**Kubernetes** | [kubernetes.io/docs](https://kubernetes.io/docs/), [kubernetes.io/blog](https://kubernetes.io/blog/)
+**etcd**       | [etcd.io/docs](https://etcd.io/docs/)
+**AppArmor**   | [gitlab.com/apparmor/apparmor/-/wikis/Documentation](https://gitlab.com/apparmor/apparmor/-/wikis/Documentation)
+**Falco**      | [falco.org/docs](https://falco.org/docs/)
+**Trivy**      | [aquasecurity.github.io/trivy](https://aquasecurity.github.io/trivy/)
+
+📌 [Resources Allowed: All LF Certification Programs](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-security-specialist-cks)
 
 ## Training
 
-* [A Cloud Guru - Kubernetes Security](https://learn.acloud.guru/course/7d2c29e7-cdb2-4f44-8744-06332f47040e/dashboard)
-* [A Cloud Guru - CKS](https://learn.acloud.guru/course/certified-kubernetes-security-specialist/dashboard)
-* [KodeKloud - CKS](https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/)
-* [KodeKloud - CKS – Challenges (Free)](https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/)
-* [LinkedIn Learning - Securing Containers and Kubernetes Ecosystem](https://www.linkedin.com/learning/securing-containers-and-kubernetes-ecosystem/protect-your-containers-and-kubernetes-ecosystem)
-* [Udemy - CKS 2023](https://www.udemy.com/course/certified-kubernetes-security-specialist/)
+* **A Cloud Guru**: [Kubernetes Security](https://learn.acloud.guru/course/7d2c29e7-cdb2-4f44-8744-06332f47040e/dashboard), [CKS](https://learn.acloud.guru/course/certified-kubernetes-security-specialist/dashboard)
+* **KodeKloud**: [CKS](https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/), [CKS Challenges (Free)](https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/)
+* **LinkedIn Learning**: [Securing Containers and Kubernetes Ecosystem](https://www.linkedin.com/learning/securing-containers-and-kubernetes-ecosystem/protect-your-containers-and-kubernetes-ecosystem)
+* **Udemy**: [CKS 2023](https://www.udemy.com/course/certified-kubernetes-security-specialist/)
+
+## Tools
+
+* [AppArmor](tools/apparmor.md)
+* [Falco](tools/falco.md)
+* [kube-bench](tools/kube-bench.md)
+* [seccomp](tools/seccomp.md)
+* [Trivy](tools/trivy.md)
 
 ## Other resources
 

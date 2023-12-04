@@ -53,9 +53,7 @@ Official:
 
 Additional:
 
-* [secure an Ingress by specifying a Secret that contains a TLS private key and certificate](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls) 
-* [How to deploy NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx/blob/master/docs/deploy/index.md)
-* [TLS/HTTPS](https://github.com/kubernetes/ingress-nginx/blob/master/docs/user-guide/tls.md)
+* Ingress-Nginx Controller: [Installation Guide](https://kubernetes.github.io/ingress-nginx/deploy/), [TLS/HTTPS](https://kubernetes.github.io/ingress-nginx/user-guide/tls/)
 
 ### Node metadata and endpoints protection
 
