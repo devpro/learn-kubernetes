@@ -11,35 +11,39 @@
 
 ### Network policies
 
-Official documentation:
+Official:
 
 * [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies)
 * [Declare Network Policy](https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/)
 * [Enforcing Network Policies in Kubernetes](https://kubernetes.io/blog/2017/10/enforcing-network-policies-in-kubernetes/)
 
-Additional resources:
+Additional:
 
 * [Get started with Kubernetes network policy](https://docs.projectcalico.org/security/kubernetes-network-policy)
 * [kubernetes-network-policy-recipes](https://github.com/ahmetb/kubernetes-network-policy-recipes)
+* [An Introduction to Kubernetes Network Policies for Security People](https://reuvenharrison.medium.com/an-introduction-to-kubernetes-network-policies-for-security-people-ba92dd4c809d)
+* [test-network-policies](https://github.com/Tufin/test-network-policies)
 
-### Center for Internet Security (CIS) Benchmark
+### CIS Benchmark
 
-Additional resources:
+> This Center for Internet Security (CIS) Benchmark is the product of a community consensus process and consists of secure configuration guidelines developed for Kubernetes. ([cisecurity.org/benchmark/kubernetes](https://www.cisecurity.org/benchmark/kubernetes/))
 
-* [CIS benchmark for Kubernetes](https://www.cisecurity.org/benchmark/kubernetes/)
+Additional:
+
+* [Examples](1.2-cis-benchmark-examples.md)
 * [Microsoft Compliance](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-cis-benchmark)
-* [kube-bench](https://github.com/aquasecurity/kube-bench): tool that checks whether Kubernetes is deployed securely
 * [Default values on GKE](https://cloud.google.com/kubernetes-engine/docs/concepts/cis-benchmarks#default-values) 
+* [InSpec Profile](https://github.com/dev-sec/cis-kubernetes-benchmark)
 
-### Ingress objects with security control
+### Ingress
 
-Official documentation:
+Official:
 
 * [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 * [Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 * [Set up Ingress on Minikube with the NGINX Ingress Controller](https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/)
 
-Additional resources:
+Additional:
 
 * [secure an Ingress by specifying a Secret that contains a TLS private key and certificate](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls) 
 * [How to deploy NGINX Ingress Controller](https://github.com/kubernetes/ingress-nginx/blob/master/docs/deploy/index.md)
@@ -48,12 +52,12 @@ Additional resources:
 
 ### Node metadata and endpoints protection
 
-Official documentation:
+Official:
 
 * [Restricting cloud metadata API access](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#restricting-cloud-metadata-api-access)
 * [Kubelet authentication/authorization](https://kubernetes.io/docs/reference/access-authn-authz/kubelet-authn-authz/)
 
-Additional resources:
+Additional:
 
 * [Kubelet API](https://www.deepnetwork.com/blog/2020/01/13/kubelet-api.html)
 * [Setting up secure endpoints in Kubernetes](https://blog.cloud66.com/setting-up-secure-endpoints-in-kubernetes)
@@ -63,11 +67,11 @@ Additional resources:
 
 ### GUI elements restriction
 
-Official documentation:
+Official:
 
 * [Deploy and Access the Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 
-Additional resources:
+Additional:
 
 * [Dashboard Access control](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/README.md)
 * [Dashboard Creating sample user](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md)
@@ -75,6 +79,6 @@ Additional resources:
 
 ### Verify platform binaries before deploying
 
-Additional resources:
+Additional :
 
 * [Kubernetes platform binaries](https://github.com/kubernetes/kubernetes/releases)

@@ -1,8 +1,10 @@
 #  CKS
 
-> The Certified Kubernetes Security Specialist program provides assurance that a CKS has the skills, knowledge, and competence on a broad range of best practices for securing container-based applications and Kubernetes platforms during build, deployment and runtime. CKA certification is required to sit for this exam.
+> The Certified Kubernetes Security Specialist program provides assurance that a CKS has the skills, knowledge, and competence on a broad range of best practices for securing container-based applications and Kubernetes platforms during build, deployment and runtime.
 
 → [training.linuxfoundation.org/certification](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/)
+
+⚠ CKA certification is required to sit for this exam
 
 ## Quick links
 
