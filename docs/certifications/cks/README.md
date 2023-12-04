@@ -41,26 +41,19 @@
 ### Platforms
 
 * [Killercoda](https://killercoda.com/killer-shell-cks)
-
 * [Killer Shell](https://github.com/killer-sh/cks-course-environment)
-
 * [CKS CLI](https://cks.kubernetes.tn/)
-
 * [Kubernetes Goat](https://madhuakula.com/kubernetes-goat/)
 
 ### Inviduals
 
+* [Alessandro Vozza](https://medium.com/@ams0): [script](https://gist.githubusercontent.com/ams0/0e57d15d53782c2c2259cce8545caa70/raw/d4e0686e4dc068ea146717af5d5a7be3dab97a4c/kubeadm-containerd.sh), [Terraform](https://github.com/ams0/CKS/blob/main/kubeadm-containerd-multinode/readme.md)
 * [Kim Wuestkamp](https://wuestkamp.medium.com/): [UCKS Exam Series #1 Create Cluster & Security Best Practices](https://itnext.io/cks-exam-series-1-create-cluster-security-best-practices-50e35aaa67ae)
-
 * [Ibrahim Jelliti](https://github.com/ibrahimjelliti/CKSS-Certified-Kubernetes-Security-Specialist)
-
 * Piotr Zaniewski: [Kubernetes related networking commands](https://gist.github.com/Piotr1215/23cf678d74079f98dc7be731e6a3f1d1#file-cka-networking-commands-md), [kubectl commands and tips & tricks](https://gist.github.com/Piotr1215/443fb83c89958139f0c67ec70b111da2#file-kubectl-commands-md), [K8s bookmarks](https://gist.github.com/Piotr1215/016ba7218a1a949574786fb9b92382c1#file-k8s-bookmarks-cka-ckad-html)
-
+* [Scott Hawkins](https://github.com/echoboomer/k8s-cks-notes)
 * [Viktar Mikalayeu](https://github.com/ViktorUJ/cks)
-
 * [Walid Shaari](https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist)
-
-https://medium.com/cooking-with-azure/certified-kubernetes-security-specialist-cks-exam-guide-a8fc2b4c47ea
 
 ### Companies
 

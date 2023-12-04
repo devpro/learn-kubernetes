@@ -7,3 +7,9 @@ detect malicious activities
 > Perform deep analytical investigation and identification of bad actors within environment  
 > Ensure immutability of containers at runtime  
 > Use Audit Logs to monitor access
+
+[Auditing](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/)
+
+## Examples
+
+* [Auditing](6.1-auditing-examples.md)
