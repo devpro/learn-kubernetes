@@ -40,6 +40,8 @@ Component      | Links
 
 * [AppArmor](tools/apparmor.md)
 * [Falco](tools/falco.md)
+* [gVizor](tools/gvizor.md)
+* [Kata Containers](tools/katacontainers.md)
 * [kube-bench](tools/kube-bench.md)
 * [seccomp](tools/seccomp.md)
 * [SELinux](tools/selinux.md)

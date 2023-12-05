@@ -1,23 +1,16 @@
 # Kubernetes cluster setup
 
-> Use Network security policies to restrict cluster level access  
-> Use CIS benchmark to review the security configuration of Kubernetes components (etcd, kubelet, kubedns, kubeapi)  
-> Properly set up Ingress objects with security control  
-> Protect node metadata and endpoints  
-> Minimize use of, and access to, GUI elements  
-> Verify platform binaries before deploying
-
 ## Content
 
 ### Network Policies
 
-> NetworkPolicies are an application-centric construct which allow you to specify how a pod is allowed to communicate with various network "entities" over the network.  
->
-> Network policies do not conflict; they are additive.  
->
-> &mdash; <cite>[kubernetes.io/docs/concepts/services-networking/network-policies](https://kubernetes.io/docs/concepts/services-networking/network-policies)</cite>
+> Use Network security policies to restrict cluster level access  
 
-See also:
+Official:
+
+* [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies)
+  > An application-centric construct which allow you to specify how a pod is allowed to communicate with various network "entities" over the network.  
+  > Network policies do not conflict; they are additive.
 
 * [Declare Network Policy](https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/)
 * [Enforcing Network Policies in Kubernetes](https://kubernetes.io/blog/2017/10/enforcing-network-policies-in-kubernetes/)
@@ -32,18 +25,20 @@ Additional:
 
 ### CIS Benchmark
 
-> This Center for Internet Security (CIS) Benchmark is the product of a community consensus process and consists of secure configuration guidelines developed for Kubernetes.  
->
-> &mdash; <cite>[cisecurity.org/benchmark/kubernetes](https://www.cisecurity.org/benchmark/kubernetes/)</cite>
+> Use CIS benchmark to review the security configuration of Kubernetes components (etcd, kubelet, kubedns, kubeapi)
 
 Additional:
 
+* [CIS Kubernetes Benchmarks](https://www.cisecurity.org/benchmark/kubernetes/)
+  > This Center for Internet Security (CIS) Benchmark is the product of a community consensus process and consists of secure configuration guidelines developed for Kubernetes.
 * 🚀 [Examples](examples/1.2-cis-benchmark.md)
 * [Microsoft Compliance](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-cis-benchmark)
 * [Default values on GKE](https://cloud.google.com/kubernetes-engine/docs/concepts/cis-benchmarks#default-values) 
 * [InSpec Profile](https://github.com/dev-sec/cis-kubernetes-benchmark)
 
 ### Ingress
+
+> Properly set up Ingress objects with security control
 
 Official:
 
@@ -55,7 +50,9 @@ Additional:
 
 * Ingress-Nginx Controller: [Installation Guide](https://kubernetes.github.io/ingress-nginx/deploy/), [TLS/HTTPS](https://kubernetes.github.io/ingress-nginx/user-guide/tls/)
 
-### Node metadata and endpoints protection
+### Node metadata and endpoints
+
+> Protect node metadata and endpoints
 
 Official:
 
@@ -70,7 +67,9 @@ Additional:
 * [Retrieving EC2 instance metadata](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html)
 * [EC2 Instance user data](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html)
 
-### GUI elements restriction
+### GUI restriction
+
+> Minimize use of, and access to, GUI elements
 
 Official:
 
@@ -82,7 +81,9 @@ Additional:
 * [Dashboard Creating sample user](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md)
 * [On Securing the Kubernetes Dashboard](https://blog.heptio.com/on-securing-the-kubernetes-dashboard-16b09b1b7aca)
 
-### Verify platform binaries before deploying
+### Platform binaries
+
+> Verify platform binaries before deploying
 
 Additional :
 

@@ -1,13 +1,10 @@
 # System hardening
 
-> Minimize host OS footprint (reduce attack surface)  
-> Minimize IAM (Identity and Access Management) roles  
-> Minimize external access to the network  
-> Appropriately use kernel hardening tools such as AppArmor, seccomp  
-
 ## Content
 
 ### OS footprint
+
+> Minimize host OS footprint (reduce attack surface) 
 
 Official:
 * [Preventing containers from loading unwanted kernel modules](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#preventing-containers-from-loading-unwanted-kernel-modules)
@@ -19,12 +16,16 @@ Additional:
 
 ### IAM roles
 
+> Minimize IAM (Identity and Access Management) roles
+
 * Principle of least privilege
 
 Additional:
 * [AWS Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 
 ### External access
+
+> Minimize external access to the network
 
 Additional:
 * [Amazon EC2 security groups for Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
@@ -34,6 +35,8 @@ Additional:
 * OS firewall
 
 ### Kernel hardening
+
+> Appropriately use kernel hardening tools such as AppArmor, seccomp  
 
 * [AppArmor](tools/apparmor.md)
 * [seccomp](tools/seccomp.md)

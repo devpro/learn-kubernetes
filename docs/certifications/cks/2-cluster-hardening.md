@@ -1,11 +1,8 @@
 # Kubernetes cluster hardening
 
-> Restrict access to Kubernetes API  
-> Use Role Based Access Controls to minimize exposure  
-> Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones  
-> Update Kubernetes frequently  
-
 ## Content
+
+> Restrict access to Kubernetes API
 
 ### Kubernetes API access
 
@@ -24,6 +21,8 @@ Additional:
 
 ### RBAC
 
+> Use Role Based Access Controls to minimize exposure
+
 Official:
 
 * [Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
@@ -36,6 +35,8 @@ Additional:
 * [Manage Role Based Access Control](https://github.com/David-VTUK/CKA-StudyGuide/blob/master/RevisionTopics/01-Cluster%20Architcture%2C%20Installation%20and%20Configuration.md)
 
 ### Service Accounts
+
+> Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones
 
 Official:
 
@@ -50,7 +51,9 @@ Additional:
 * [Kubernetes Access Control: Exploring Service Accounts](https://thenewstack.io/kubernetes-access-control-exploring-service-accounts/)
 * [Securing Kubernetes Clusters by Eliminating Risky Permissions](https://www.cyberark.com/resources/threat-research-blog/securing-kubernetes-clusters-by-eliminating-risky-permissions)
 
-## Frequent updates
+## Kubernetes updates
+
+> Update Kubernetes frequently
 
 Official:
 
