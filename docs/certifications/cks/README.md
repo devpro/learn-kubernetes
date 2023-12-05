@@ -42,6 +42,7 @@ Component      | Links
 * [Falco](tools/falco.md)
 * [kube-bench](tools/kube-bench.md)
 * [seccomp](tools/seccomp.md)
+* [SELinux](tools/selinux.md)
 * [Trivy](tools/trivy.md)
 
 ## Other resources
