@@ -62,7 +62,6 @@ This is a training material to get knowledge about Kubernetes and prepare for Ku
   * [Building a Cloud-Native Technology Stack That Supports Full Cycle Development ](https://www.cncf.io/webinars/building-a-cloud-native-technology-stack-that-supports-full-cycle-development/) - September 9, 2020
   * [Arm Developer Experience Spanning Cloud, 5G and IoT](https://www.cncf.io/webinars/arm-developer-experience-spanning-cloud-5g-and-iot/) - September 8, 2020
   * [Running the next generation of cloud-native applications using Open Application Model (OAM)](https://www.cncf.io/webinars/running-the-next-generation-of-cloud-native-applications-using-open-application-model-oam/) - September 3, 2020
-  * [Getting started with container runtime security using Falco](https://www.cncf.io/webinars/getting-started-with-container-runtime-security-using-falco/) - September 2, 2020
   * [Let’s untangle The Service Mesh](https://www.cncf.io/webinars/lets-untangle-the-service-mesh/) - September 1, 2020
   * [Local development in the age of Kubernetes](https://www.cncf.io/webinars/local-development-in-the-age-of-kubernetes/) - August 26, 2020
   * [Modern Software Development Pipeline: A Security Reference Architecture](https://www.cncf.io/webinars/modern-software-development-pipeline-a-security-reference-architecture/) - August 25, 2020

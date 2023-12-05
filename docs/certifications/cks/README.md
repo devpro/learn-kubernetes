@@ -10,12 +10,12 @@
 
 ## Curriculum
 
-* [1. Cluster Setup](1-cluster-setup.md)
-* [2. Cluster Hardening](2-cluster-hardening.md)
-* [3. Cluster Setup](3-system-hardening.md)
-* [4. Minimize Microservice Vulnerabilities](4-minimize-microservice-vulnerabilities.md)
-* [5. Supply Chain Security](5-supply-chain-security.md)
-* [6. Monitoring, Logging and Runtime Security](6-monitoring-logging-runtime-security.md)
+* [1. Cluster setup](1-cluster-setup.md)
+* [2. Cluster hardening](2-cluster-hardening.md)
+* [3. System hardening](3-system-hardening.md)
+* [4. Minimize microservice vulnerabilities](4-minimize-microservice-vulnerabilities.md)
+* [5. Supply chain security](5-supply-chain-security.md)
+* [6. Monitoring, logging and runtime security](6-monitoring-logging-runtime-security.md)
 
 ## Allowed web content
 
