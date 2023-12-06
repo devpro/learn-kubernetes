@@ -34,12 +34,11 @@ Read more:
 
 ### Competitors
 
-Other solutions to manage containerized applications:
+Other solutions to manage containerized workload:
 
 - [Docker Swarm](https://docs.docker.com/engine/swarm/)
 - [Apache Mesos](https://mesos.apache.org/) ([marathon](https://mesosphere.github.io/marathon/))
 - [HashiCorp Nomad](https://www.nomadproject.io/)
-- [Rancher](https://rancher.com/)
 
 ### Main features
 
@@ -199,10 +198,10 @@ Docker donated [runC](https://github.com/opencontainers/runc) to OCI.
 
 ### Probes
 
-Probe type | Reason
----------- | ------
+Probe type    | Reason
+--------------| ----------------------------------------------------
 **Readiness** | Make sure the application is ready to accept traffic
-**Liveness** | Make sure the application is running ok
+**Liveness**  | Make sure the application is running ok
 
 ### Metadata
 

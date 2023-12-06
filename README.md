@@ -1,11 +1,13 @@
 # Learn Kubernetes
 
-This is a training material to get knowledge about Kubernetes and prepare for Kubernetes certifications (CKA & CKAD). It has been initiated in 2020.
+Here you'll find some training material about Kubernetes. It has been initiated in 2020 to prepare for CKA & CKAD exams, updated in 2023 to prepare for CKS.
 
 ## Content
 
 * [Basics](./docs/basics.md)
 * Certifications
+  * [CKA](./docs/certifications/cka/README.md)
+  * [CKS](./docs/certifications/ckad/README.md)
   * [CKS](./docs/certifications/cks/README.md)
 * [Installation](./docs/installation.md)
 * [Projects](./docs/projects.md)
@@ -15,7 +17,6 @@ This is a training material to get knowledge about Kubernetes and prepare for Ku
   * [LF - Kubernetes Fundamentals](./docs/labs/labs-lfs258.md)
   * [Odroid setup](./docs/labs/odroid-setup.md)
   * [Raspberry PI setup](./docs/labs/raspberrypi-setup.md)
-* [Examination](./docs/examination.md)
 * [Recipes](./docs/recipes.md)
 
 ## Playgrounds
