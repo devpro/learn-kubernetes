@@ -7,7 +7,7 @@ Here you'll find some training material about Kubernetes. It has been initiated 
 * [Basics](./docs/basics.md)
 * Certifications
   * [CKA](./docs/certifications/cka/README.md)
-  * [CKS](./docs/certifications/ckad/README.md)
+  * [CKAD](./docs/certifications/ckad/README.md)
   * [CKS](./docs/certifications/cks/README.md)
 * [Installation](./docs/installation.md)
 * [Projects](./docs/projects.md)
