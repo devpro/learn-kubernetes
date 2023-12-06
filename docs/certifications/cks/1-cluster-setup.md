@@ -9,6 +9,7 @@
 Official:
 
 * [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies)
+  
   > An application-centric construct which allow you to specify how a pod is allowed to communicate with various network "entities" over the network.  
   > Network policies do not conflict; they are additive.
 
@@ -30,11 +31,14 @@ Additional:
 Additional:
 
 * [CIS Kubernetes Benchmarks](https://www.cisecurity.org/benchmark/kubernetes/)
+  
   > This Center for Internet Security (CIS) Benchmark is the product of a community consensus process and consists of secure configuration guidelines developed for Kubernetes.
+  
 * 🚀 [Examples](examples/1.2-cis-benchmark.md)
 * [Microsoft Compliance](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-cis-benchmark)
 * [Default values on GKE](https://cloud.google.com/kubernetes-engine/docs/concepts/cis-benchmarks#default-values) 
 * [InSpec Profile](https://github.com/dev-sec/cis-kubernetes-benchmark)
+* 🗃️ [Kube-bench](tools/kube-bench.md)
 
 ### Ingress
 
@@ -42,7 +46,7 @@ Additional:
 
 Official:
 
-* [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+* [Ingress > TLS](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls)
 * [Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 * [Set up Ingress on Minikube with the NGINX Ingress Controller](https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/)
 
@@ -85,6 +89,4 @@ Additional:
 
 > Verify platform binaries before deploying
 
-Additional :
-
-* [Kubernetes platform binaries](https://github.com/kubernetes/kubernetes/releases)
+Perform MD5 checks on binaries against [official releases](https://github.com/kubernetes/kubernetes/releases). See [Learn How to Generate and Verify Files with MD5 Checksum in Linux](https://www.tecmint.com/generate-verify-check-files-md5-checksum-linux/).

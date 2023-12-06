@@ -33,8 +33,8 @@ Official:
 Additional:
 
 * [Secrets Store CSI Driver](https://secrets-store-csi-driver.sigs.k8s.io/)
-* [Spacelift - How to Manage Secrets in Kubernetes](https://spacelift.io/blog/kubernetes-secrets) - October 25, 2022
-* [Weaveworks - Managing Secrets in Kubernetes](https://www.weave.works/blog/managing-secrets-in-kubernetes) - January 15, 2019
+* [How to Manage Secrets in Kubernetes, by Spacelift](https://spacelift.io/blog/kubernetes-secrets) - October 25, 2022
+* [Managing Secrets in Kubernetes, Weaveworks](https://www.weave.works/blog/managing-secrets-in-kubernetes) - January 15, 2019
 
 ### Sandboxes
 
@@ -65,3 +65,4 @@ Additonal:
 * [Using Istio to Improve End-to-End Security](https://istio.io/latest/blog/2017/0.1-auth/) - May 25, 2017
 * [A Kubernetes engineer’s guide to mTLS by Buoyant](https://buoyant.io/mtls-guide)
 * [Automatic mTLS by Linkerd](https://linkerd.io/2/features/automatic-mtls/)
+* [Mutual TLS: Securing Microservices in Service Mesh](https://thenewstack.io/mutual-tls-microservices-encryption-for-service-mesh/) - February 1, 2021

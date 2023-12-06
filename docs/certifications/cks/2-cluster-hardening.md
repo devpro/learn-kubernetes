@@ -2,9 +2,9 @@
 
 ## Content
 
-> Restrict access to Kubernetes API
-
 ### Kubernetes API access
+
+> Restrict access to Kubernetes API
 
 Official:
 
