@@ -9,6 +9,7 @@
 Official:
 
 * [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
+* [API Access Control](https://kubernetes.io/docs/reference/access-authn-authz/)
 * [Controlling Access to the Kubernetes API](https://kubernetes.io/docs/concepts/security/controlling-access/)
 * [How to issue a certificate for a user](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#normal-user)
 * [Generate Certificates Manually](https://kubernetes.io/docs/tasks/administer-cluster/certificates/)

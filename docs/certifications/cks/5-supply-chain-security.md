@@ -33,6 +33,7 @@ Additional:
 * [How to reject docker registries in Kubernetes?](https://stackoverflow.com/questions/54463125/how-to-reject-docker-registries-in-kubernetes)
 * [Policy Primer via Examples](https://www.openpolicyagent.org/docs/latest/kubernetes-primer/)
 * [Container Image Signatures in Kubernetes](https://medium.com/sse-blog/container-image-signatures-in-kubernetes-19264ac5d8ce) - August 7, 2020
+* [kube-image-bouncer](https://github.com/flavio/kube-image-bouncer)
 
 ### Static analysis
 

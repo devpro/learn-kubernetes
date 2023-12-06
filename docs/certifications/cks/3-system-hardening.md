@@ -37,7 +37,8 @@ Additional:
 * [Amazon EKS security group considerations](https://docs.aws.amazon.com/eks/latest/userguide/sec-group-reqs.html)
 * [AWS Control traffic to subnets using network ACLs (Access Control List)](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
 * [Azure Security concepts for applications and clusters in AKS](https://learn.microsoft.com/en-us/azure/aks/concepts-security)
-* OS firewall
+* [Managing firewalls with UFW on Kubernetes](https://community.replicated.com/t/managing-firewalls-with-ufw-on-kubernetes/230)
+* [IP Tables (iptables) Cheat Sheet](https://gist.github.com/davydany/0ad377f6de3c70056d2bd0f1549e1017)
 
 ### Kernel hardening
 

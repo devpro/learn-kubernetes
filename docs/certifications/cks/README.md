@@ -38,9 +38,11 @@ Component      | Links
 
 * Kubernetes
   * [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
+* AWS
+  * [EKS best practices guide for security](https://aws.github.io/aws-eks-best-practices/security/docs/)
 * Google Cloud
-  * [GKE > Security overview](https://cloud.google.com/kubernetes-engine/docs/concepts/security-overview)
-  * [GKE > Harden your cluster's security](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster)
+  * [GKE security overview](https://cloud.google.com/kubernetes-engine/docs/concepts/security-overview)
+  * [Harden your GKE cluster's security](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster)
 
 ## Training
 
@@ -74,6 +76,7 @@ Component      | Links
 
 ### Companies
 
+* [K21Academy - Step-by-Step Activity Guide (Hands-on Lab)](https://k21academy.com/docker-kubernetes/certified-kubernetes-security-specialist-cks-step-by-step-activity-guide-hands-on-lab/#)
 * [StackRox - CKS Study Guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide)
 * [Sumologic - Kubernetes DevSecOps vulnerabilities and best practices](https://www.sumologic.com/blog/kubernetes-devsecops/) - December 8, 2022
 
@@ -92,6 +95,7 @@ Component      | Links
   * [CKS crash course](https://github.com/bmuschko/cks-crash-course)
   * [CKS study guide](https://github.com/bmuschko/cks-study-guide)
 * [DevOpsCube - How to Setup Kubernetes Cluster on Vagrant VMs](https://devopscube.com/kubernetes-cluster-vagrant/)
+* [Dmitri Lerko - Exam Preparation Guide](https://deploy.live/blog/cks-certified-kubernetes-security-specialist-exam-preparation-guide/)
 * [Kim Wuestkamp](https://wuestkamp.medium.com/): [UCKS Exam Series #1 Create Cluster & Security Best Practices](https://itnext.io/cks-exam-series-1-create-cluster-security-best-practices-50e35aaa67ae)
 * [Ibrahim Jelliti](https://github.com/ibrahimjelliti/CKSS-Certified-Kubernetes-Security-Specialist)
 * [Jaxon](https://github.com/theJaxon/CKS)

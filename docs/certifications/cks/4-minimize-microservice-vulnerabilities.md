@@ -34,7 +34,7 @@ Additional:
 
 * [Secrets Store CSI Driver](https://secrets-store-csi-driver.sigs.k8s.io/)
 * [How to Manage Secrets in Kubernetes, by Spacelift](https://spacelift.io/blog/kubernetes-secrets) - October 25, 2022
-* [Managing Secrets in Kubernetes, Weaveworks](https://www.weave.works/blog/managing-secrets-in-kubernetes) - January 15, 2019
+* [Managing Secrets in Kubernetes, by Weaveworks](https://www.weave.works/blog/managing-secrets-in-kubernetes) - January 15, 2019
 
 ### Sandboxes
 

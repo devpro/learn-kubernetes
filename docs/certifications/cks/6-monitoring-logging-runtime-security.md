@@ -11,6 +11,7 @@ Additional:
 * [How to detect a Kubernetes vulnerability using Falco](https://sysdig.com/blog/how-to-detect-kubernetes-vulnerability-cve-2019-11246-using-falco/)
 * [Kubernetes Security monitoring at scale](https://medium.com/@SkyscannerEng/kubernetes-security-monitoring-at-scale-with-sysdig-falco-a60cfdb0f67a)
 * [seccomp](tools/seccomp.md)
+* [Falco](tools/falco.md)
 * 🚀 [Practice](practice/6.1-syscalls.md)
 * [strace](https://strace.io/)
 
@@ -70,11 +71,9 @@ Additional:
 
 * 🚀 [Practice](practice/6.6-auditing-examples.md)
 
-#### Allowed Ressources
 * [Kubernetes Audit](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
 * [Kubernetes Audit logging](https://docs.sysdig.com/en/kubernetes-audit-logging.html)
 
-#### 3rd Party Ressources
 * [How to monitor Kubernetes audit logs?](https://www.datadoghq.com/blog/monitor-kubernetes-audit-logs/)
 * [Kubernetes Audit: Making Log Auditing a Viable Practice Again](https://blog.alcide.io/kubernetes-audit-making-log-auditing-a-viable-practice-again)
 
