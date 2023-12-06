@@ -45,7 +45,7 @@ Official:
 
 Additional:
 
-* 🚀 [Examples](examples/2.3-service-accounts.md)
+* 🚀 [Practice](practice/2.3-service-accounts.md)
 * [Kubernetes should not mount default service account credentials by default](https://github.com/kubernetes/kubernetes/issues/57601)
 * [Kubernetes: Creating Service Accounts and Kubeconfigs](https://docs.armory.io/docs/armory-admin/manual-service-account/)
 * [Kubernetes Access Control: Exploring Service Accounts](https://thenewstack.io/kubernetes-access-control-exploring-service-accounts/)

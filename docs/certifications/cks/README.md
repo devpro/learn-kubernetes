@@ -34,6 +34,14 @@ Component      | Links
 
 📌 [Resources Allowed: All LF Certification Programs](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-security-specialist-cks)
 
+## General documentation
+
+* Kubernetes
+  * [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
+* Google Cloud
+  * [GKE > Security overview](https://cloud.google.com/kubernetes-engine/docs/concepts/security-overview)
+  * [GKE > Harden your cluster's security](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster)
+
 ## Training
 
 * **A Cloud Guru**: [Kubernetes Security](https://learn.acloud.guru/course/7d2c29e7-cdb2-4f44-8744-06332f47040e/dashboard), [CKS](https://learn.acloud.guru/course/certified-kubernetes-security-specialist/dashboard)
