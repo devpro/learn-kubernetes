@@ -4,6 +4,8 @@
 >
 > &mdash; <cite>[gvisor.dev](https://gvisor.dev/)</cite>
 
+✨ [Runtime Class > CRI Configuration](https://kubernetes.io/docs/concepts/containers/runtime-class/#cri-configuration)
+
 🌐 [docs](https://gvisor.dev/docs/), [code](https://github.com/google/gvisor)
 
 ![](https://miro.medium.com/v2/resize:fit:640/format:webp/1*MMeK2KHQM3bKGz-zKdf1cw.png)

@@ -32,9 +32,11 @@ Additional:
 * [Container Image Signatures in Kubernetes](https://medium.com/sse-blog/container-image-signatures-in-kubernetes-19264ac5d8ce) - August 7, 2020
 * [kube-image-bouncer](https://github.com/flavio/kube-image-bouncer)
 
-## Static analysis
+## Workload static analysis
 
-> Use static analysis of user workloads (e.g.Kubernetes resources, Docker files)
+> Use static analysis of user workloads (e.g. Kubernetes resources, Docker files)
+
+⚗️ [Practice](practice/5.3-workload-static-analysis)
 
 🚀 [Trivy](tools/trivy.md)
 

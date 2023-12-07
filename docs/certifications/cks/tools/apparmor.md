@@ -41,9 +41,9 @@ metadata:
     container.apparmor.security.beta.kubernetes.io/password-db: localhost/k8s-deny-write
 spec:
   containers:
-  - name: password-db
-    image: radial/busyboxplus:curl
-    command: ['sh', '-c', 'while true; do if echo "The password is hunter2" > password.txt; then echo "Password hunter2 logged."; else echo "Password log attempt blocked."; fi; sleep 5; done']
+    - name: password-db
+      image: radial/busyboxplus:curl
+      command: ['sh', '-c', 'while true; do if echo "The password is hunter2" > password.txt; then echo "Password hunter2 logged."; else echo "Password log attempt blocked."; fi; sleep 5; done']
 ```
 
 Example of a command line to see if the file has been written:

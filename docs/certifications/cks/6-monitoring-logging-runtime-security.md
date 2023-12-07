@@ -1,10 +1,10 @@
 # Monitoring, logging and runtime security
 
-## Syscalls
+## Behavioral analytics
 
 > Perform behavioral analytics of syscall process and file activities at the host and container level to detect malicious activities
 
-⚗️ [Practice](practice/6.1-syscalls.md)
+⚗️ [Practice](practice/6.1-behavioral-analytics.md)
 
 🚀 [Falco](tools/falco.md), [seccomp](tools/seccomp.md)
 

@@ -38,8 +38,9 @@ Component      | Links
 ## General documentation
 
 * Kubernetes
-  * [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
+  * [Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
   * [Policies](https://kubernetes.io/docs/concepts/policy/)
+  * [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
   * [11 Ways (Not) to Get Hacked: statically-analyse-yaml](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/)
 * AWS
   * [EKS best practices guide for security](https://aws.github.io/aws-eks-best-practices/security/docs/)
@@ -60,7 +61,7 @@ Component      | Links
 
 * [AppArmor](tools/apparmor.md)
 * [Falco](tools/falco.md)
-* [gVizor](tools/gvizor.md)
+* [gVisor](tools/gvisor.md)
 * [Kata Containers](tools/katacontainers.md)
 * [kube-bench](tools/kube-bench.md)
 * [seccomp](tools/seccomp.md)
