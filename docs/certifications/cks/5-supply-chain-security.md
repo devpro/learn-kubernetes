@@ -1,8 +1,6 @@
 # Supply chain security
 
-## Content
-
-### Base image
+## Base image
 
 > Minimize base image footprint
 
@@ -18,11 +16,13 @@ Additional:
 * [Tips to Reduce Docker Image Sizes](https://hackernoon.com/tips-to-reduce-docker-image-sizes-876095da3b34) by HackerNoon - June 23, 2017
 * [3 simple tricks for smaller Docker images](https://learnk8s.io/blog/smaller-docker-images) by learnk8s - April, 2019
 
-### Securization
+## Image securization
 
 > Secure your supply chain: whitelist allowed registries, sign and validate images
 
 ✨ [Admission Controllers Reference > ImagePolicyWebhook](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook), [Dynamic Admission Control](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/), [A Guide to Kubernetes Admission Controllers](https://kubernetes.io/blog/2019/03/21/a-guide-to-kubernetes-admission-controllers/)
+
+⚗️ [Practice](practice/5.2-image-securization.md)
 
 Additional:
 
@@ -32,7 +32,7 @@ Additional:
 * [Container Image Signatures in Kubernetes](https://medium.com/sse-blog/container-image-signatures-in-kubernetes-19264ac5d8ce) - August 7, 2020
 * [kube-image-bouncer](https://github.com/flavio/kube-image-bouncer)
 
-### Static analysis
+## Static analysis
 
 > Use static analysis of user workloads (e.g.Kubernetes resources, Docker files)
 
@@ -46,8 +46,12 @@ Additional:
 * [Kubesec](https://kubesec.io/)
 * [Kubernetes static code analysis with Checkov](https://bridgecrew.io/blog/kubernetes-static-code-analysis-with-checkov/) - June 24, 2020
 
-### Image scanning
+## Image scanning
 
 > Scan images for known vulnerabilities
 
 🚀 [Trivy](tools/trivy.md)
+
+---
+
+🧵 Next: [Monitoring, logging and chain security](6-monitoring-logging-runtime-security.md)

@@ -1,23 +1,20 @@
 # Monitoring, logging and runtime security
 
-## Content
-
-### Syscalls
+## Syscalls
 
 > Perform behavioral analytics of syscall process and file activities at the host and container level to detect malicious activities
 
 ⚗️ [Practice](practice/6.1-syscalls.md)
 
-🚀 [Falco](tools/falco.md)
+🚀 [Falco](tools/falco.md), [seccomp](tools/seccomp.md)
 
 Additional:
 
 * [How to detect a Kubernetes vulnerability using Falco](https://sysdig.com/blog/how-to-detect-kubernetes-vulnerability-cve-2019-11246-using-falco/)
 * [Kubernetes Security monitoring at scale](https://medium.com/@SkyscannerEng/kubernetes-security-monitoring-at-scale-with-sysdig-falco-a60cfdb0f67a)
-* [seccomp](tools/seccomp.md)
 * [strace](https://strace.io/)
 
-### Threat detection
+## Threat detection
 
 > Detect threats within physical infrastructure, apps, networks, data, users and workloads
 
@@ -27,7 +24,7 @@ Additional:
 * [Common Kubernetes config security threats](https://www.cncf.io/blog/2020/08/07/common-kubernetes-config-security-threats/) - August 7, 2020
 * [Guidance on Kubernetes Threat Modeling, by Trend Micro](https://www.trendmicro.com/vinfo/us/security/news/virtualization-and-cloud/guidance-on-kubernetes-threat-modeling) - April 27, 2020
 
-### Attack phases
+## Attack phases
 
 > Detect all phases of attack regardless where it occurs and how it spreads
 
@@ -39,13 +36,13 @@ Additional:
 * [MITRE ATT&CK framework for container runtime security with Falco](https://sysdig.com/blog/mitre-attck-framework-for-container-runtime-security-with-sysdig-falco/)
 * [Mitigating Kubernetes attacks](https://www.youtube.com/watch?v=HWv8ZKLCawM)
 
-### Analysis
+## Analysis
 
 > Perform deep analytical investigation and identification of bad actors within environment
 
 * [Kubernetes security 101: Risks and Best practices](https://www.stackrox.com/post/2020/05/kubernetes-security-101/)
 
-### Immutability
+## Immutability
 
 > Ensure immutability of containers at runtime
 
@@ -59,11 +56,7 @@ Additional:
 
 * [Container security and immutability](https://gianarb.it/blog/container-security-immutability) - June 5, 2017
 
-* [Leverage Kubernetes to ensure that containers are immutable](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_atomic_host/7/html/container_security_guide/keeping_containers_fresh_and_updateable#leveraging_kubernetes_and_openshift_to_ensure_that_containers_are_immutable)
-* [Why I think we should all use immutable Docker images](https://medium.com/sroze/why-i-think-we-should-all-use-immutable-docker-images-9f4fdcb5212f)
-* [With immutable infrastructure, your systems can rise from the dead](https://techbeacon.com/enterprise-it/immutable-infrastructure-your-systems-can-rise-dead)
-
-### Audit logs
+## Audit logs
 
 > Use Audit Logs to monitor access
 
@@ -73,9 +66,9 @@ Additional:
 
 Additional:
 
-* [Kubernetes Audit](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
-* [Kubernetes Audit logging](https://docs.sysdig.com/en/kubernetes-audit-logging.html)
+* [Sysdig Kubernetes Audit Logging](https://docs.sysdig.com/en/docs/sysdig-secure/secure-events/kubernetes-audit-logging/)
+* [Datadog How to monitor Kubernetes audit logs](https://www.datadoghq.com/blog/monitor-kubernetes-audit-logs/)
 
-* [How to monitor Kubernetes audit logs?](https://www.datadoghq.com/blog/monitor-kubernetes-audit-logs/)
-* [Kubernetes Audit: Making Log Auditing a Viable Practice Again](https://blog.alcide.io/kubernetes-audit-making-log-auditing-a-viable-practice-again)
+---
 
+🧵 Next: [Home](README.md)

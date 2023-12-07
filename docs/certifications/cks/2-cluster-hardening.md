@@ -1,8 +1,6 @@
 # Kubernetes cluster hardening
 
-## Content
-
-### Kubernetes API access
+## Kubernetes API access
 
 > Restrict access to Kubernetes API
 
@@ -14,7 +12,7 @@ Additional:
 * [Kubernetes RBAC and TLS certificates – Kubernetes security guide](https://sysdig.com/blog/kubernetes-security-rbac-tls/)
 * [Securing Your Kubernetes API Server](https://tufin.medium.com/protecting-your-kubernetes-api-server-5eefeea4cf8a)
 
-### RBAC
+## RBAC
 
 > Use Role Based Access Controls to minimize exposure
 
@@ -28,7 +26,7 @@ Additional:
 * [Understand Role-Based Access Control in Kubernetes](https://www.youtube.com/watch?v=G3R24JSlGjY)
 * [Manage Role Based Access Control](https://github.com/David-VTUK/CKA-StudyGuide/blob/master/RevisionTopics/01-Cluster%20Architcture%2C%20Installation%20and%20Configuration.md)
 
-### Service Accounts
+## Service Accounts
 
 > Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones
 
@@ -48,3 +46,7 @@ Additional:
 > Update Kubernetes frequently
 
 ✨ [Upgrade A Cluster](https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/), [Upgrading kubeadm clusters](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)
+
+---
+
+🧵 Next: [System hardening](3-system-hardening.md)

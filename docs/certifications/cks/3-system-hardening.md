@@ -1,8 +1,6 @@
 # System hardening
 
-## Content
-
-### OS footprint
+## OS footprint
 
 > Minimize host OS footprint (reduce attack surface) 
 
@@ -19,7 +17,7 @@ Additional:
   * [Ubuntu Linux](https://www.cisecurity.org/benchmark/ubuntu_linux)
 * [Kubernetes Security Practices You Should Follow, by Sonatype](https://blog.sonatype.com/kubesecops-kubernetes-security-practices-you-should-follow) - August 29, 2019
 
-### IAM roles
+## IAM roles
 
 > Minimize IAM (Identity and Access Management) roles
 
@@ -33,7 +31,7 @@ Additional:
 * [Azure Best practices for Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices)
 * [Google Cloud Use IAM securely](https://cloud.google.com/iam/docs/using-iam-securely)
 
-### External access
+## External access
 
 > Minimize external access to the network
 
@@ -46,8 +44,12 @@ Additional:
 * [Managing firewalls with UFW on Kubernetes](https://community.replicated.com/t/managing-firewalls-with-ufw-on-kubernetes/230)
 * [IP Tables (iptables) Cheat Sheet](https://gist.github.com/davydany/0ad377f6de3c70056d2bd0f1549e1017)
 
-### Kernel hardening
+## Kernel hardening
 
 > Appropriately use kernel hardening tools such as AppArmor, seccomp  
 
 🚀 [AppArmor](tools/apparmor.md), [seccomp](tools/seccomp.md)
+
+---
+
+🧵 Next: [Minimize microservice vulnerabilities](4-minimize-microservice-vulnerabilities.md)

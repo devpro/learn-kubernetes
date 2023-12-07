@@ -21,6 +21,7 @@
 
 * [`kubectl` cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 * [`kubectl` commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
+* [Debugging Kubernetes nodes with `crictl`](https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/) (`crictl -r /var/run/containerd/containerd.sock ps`)
 
 ## Allowed web content
 

@@ -90,3 +90,7 @@ Additional:
 
 * [Learn How to Generate and Verify Files with MD5 Checksum in Linux](https://www.tecmint.com/generate-verify-check-files-md5-checksum-linux/)
 * [Ubuntu how-to sha256sum](https://help.ubuntu.com/community/HowToSHA256SUM).
+
+---
+
+🧵 Next: [Cluster hardening](2-cluster-hardening.md)

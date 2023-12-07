@@ -1,8 +1,6 @@
 # Minimize microservice vulnerabilities
 
-## Content
-
-### Security domains
+## Security domains
 
 > Setup appropriate OS level security domains
 
@@ -20,7 +18,7 @@ Additional:
 * [KubeCon 2019 - Open Policy Agent Introduction](https://www.youtube.com/watch?v=Yup1FUc2Qn0)
 * [OPA Gatekeeper: Overview & Architecture](https://www.openpolicyagent.org/docs/latest/kubernetes-introduction/)
 
-### Secrets
+## Secrets
 
 > Manage Kubernetes secrets
 
@@ -32,7 +30,7 @@ Additional:
 * [How to Manage Secrets in Kubernetes, by Spacelift](https://spacelift.io/blog/kubernetes-secrets) - October 25, 2022
 * [Managing Secrets in Kubernetes, by Weaveworks](https://www.weave.works/blog/managing-secrets-in-kubernetes) - January 15, 2019
 
-### Sandboxes
+## Sandboxes
 
 > Use container runtime sandboxes in multi-tenant environments (e.g. gvisor, kata containers)
 
@@ -46,7 +44,7 @@ Additional:
 
 * [sig-node/585-runtime-class/examples](https://github.com/kubernetes/enhancements/blob/master/keps/sig-node/585-runtime-class/README.md#examples)
 
-### Encryption
+## Encryption
 
 > Implement pod to pod encryption by use of mTLS (mutual Transport Layer Security)
 
@@ -60,3 +58,7 @@ Additonal:
 * [A Kubernetes engineer’s guide to mTLS by Buoyant](https://buoyant.io/mtls-guide)
 * [Automatic mTLS by Linkerd](https://linkerd.io/2/features/automatic-mtls/)
 * [Mutual TLS: Securing Microservices in Service Mesh](https://thenewstack.io/mutual-tls-microservices-encryption-for-service-mesh/) - February 1, 2021
+
+---
+
+🧵 Next: [Supply chain security](5-supply-chain-security.md)
