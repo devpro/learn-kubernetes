@@ -23,6 +23,8 @@ Additional:
 
 > Minimize IAM (Identity and Access Management) roles
 
+Tips:
+
 * Principle of least privilege
 
 Additional:

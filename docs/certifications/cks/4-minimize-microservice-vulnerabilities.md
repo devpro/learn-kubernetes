@@ -8,6 +8,12 @@
 
 ✨ [Pod Security Admission](https://kubernetes.io/docs/concepts/security/pod-security-admission/), ~~[Pod Security Policies](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)~~, [Configure a Security Context for a Pod or Container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/), [OPA Gatekeeper: Policy and Governance for Kubernetes](https://kubernetes.io/blog/2019/08/06/opa-gatekeeper-policy-and-governance-for-kubernetes/)
 
+⚗️ [Practice](practice/4.1-security-domains.md)
+
+Tips:
+
+* Make sure to review the values of sensitive fields of SecurityContext: runAsUser, allowPrivilegeEscalation, readOnlyRootFilesystem
+
 Additional:
 
 * [Kubernetes security context, security policy, and network policy – Kubernetes security guide (part 2)](https://sysdig.com/blog/kubernetes-security-psp-network-policy/) - April 4, 2018
@@ -31,6 +37,8 @@ Additional:
 > Use container runtime sandboxes in multi-tenant environments (e.g. gvisor, kata containers)
 
 ✨ [Runtime Class](https://kubernetes.io/docs/concepts/containers/runtime-class/)
+
+⚗️ [Practice](practice/4.3-sandboxes.md)
 
 🚀 [gVizor](tools/gvizor.md), [Kata Containers](tools/katacontainers.md)
 

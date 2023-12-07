@@ -5,3 +5,9 @@
 > &mdash; <cite>[aquasecurity.github.io/trivy](https://aquasecurity.github.io/trivy)</cite>
 
 🌐 [code](https://github.com/aquasecurity/trivy)
+
+## Scan images
+
+```bash
+trivy image --severity HIGH,CRITICAL alpine:3.13.4
+```

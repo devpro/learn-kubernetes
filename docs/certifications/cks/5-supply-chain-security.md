@@ -9,6 +9,7 @@
 Additional:
 
 * [Overview of best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+* [Sysdig top 20 Dockerfile best practices](https://sysdig.com/blog/dockerfile-best-practices/) - March 9, 2021
 * [Kubernetes best practices: How and why to build small container images](https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-best-practices-how-and-why-to-build-small-container-images) - February 28, 2023
 * [Best practices for building containers by Google](https://cloud.google.com/architecture/best-practices-for-building-containers)
 * [7 Google best practices for building containers by Google](https://cloud.google.com/blog/products/containers-kubernetes/7-best-practices-for-building-containers) - July 10, 2018

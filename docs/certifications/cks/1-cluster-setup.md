@@ -4,9 +4,7 @@
 
 > Use Network security policies to restrict cluster level access  
 
-[Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies) are "an application-centric construct which allow you to specify how a pod is allowed to communicate with various network _entities_ over the network". They "do not conflict; they are additive".
-
-✨ [Declare Network Policy](https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/), [Enforcing Network Policies in Kubernetes](https://kubernetes.io/blog/2017/10/enforcing-network-policies-in-kubernetes/)
+✨ [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies), [Declare Network Policy](https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/), [Enforcing Network Policies in Kubernetes](https://kubernetes.io/blog/2017/10/enforcing-network-policies-in-kubernetes/)
 
 ⚗️ [Practice](practice/1.1-network-policies.md)
 
@@ -23,10 +21,13 @@ Additional:
 
 > Use CIS benchmark to review the security configuration of Kubernetes components (etcd, kubelet, kubedns, kubeapi)
 
-This [Center for Internet Security (CIS) Kubernetes Benchmark](https://www.cisecurity.org/benchmark/kubernetes/) is the product of a community consensus process and consists of secure configuration guidelines developed for Kubernetes.
-
 ⚗️ [Practice](practice/1.2-cis-benchmark.md)
+
 🚀 [Kube-bench](tools/kube-bench.md)
+
+Tips:
+
+* The [Center for Internet Security (CIS) Kubernetes Benchmark](https://www.cisecurity.org/benchmark/kubernetes/) is the product of a community consensus process and consists of secure configuration guidelines developed for Kubernetes.
 
 Additional:
 
