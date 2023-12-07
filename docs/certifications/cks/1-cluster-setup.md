@@ -46,11 +46,13 @@ Additional:
 
 * Ingress-Nginx Controller: [Installation Guide](https://kubernetes.github.io/ingress-nginx/deploy/), [TLS/HTTPS](https://kubernetes.github.io/ingress-nginx/user-guide/tls/)
 
-## Node metadata and endpoints
+## Node protection
 
 > Protect node metadata and endpoints
 
 ✨ [Restricting cloud metadata API access](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#restricting-cloud-metadata-api-access), [Kubelet authentication/authorization](https://kubernetes.io/docs/reference/access-authn-authz/kubelet-authn-authz/), [Set Kubelet Parameters Via A Configuration File](https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/)
+
+⚗️ [Practice](practice/1.4-node-protection.md)
 
 Additional:
 
