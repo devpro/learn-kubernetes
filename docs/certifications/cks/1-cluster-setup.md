@@ -30,6 +30,7 @@ This [Center for Internet Security (CIS) Kubernetes Benchmark](https://www.cisec
 
 Additional:
 
+* [Aqua > Kubernetes CIS Benchmark Best Practices](https://www.aquasec.com/cloud-native-academy/kubernetes-in-production/kubernetes-cis-benchmark-best-practices-in-brief/)
 * [Microsoft Compliance](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-cis-benchmark)
 * [GKE > CIS Benchmarks](https://cloud.google.com/kubernetes-engine/docs/concepts/cis-benchmarks) 
 * [InSpec Profile](https://github.com/dev-sec/cis-kubernetes-benchmark)
@@ -78,4 +79,13 @@ Additional:
 
 > Verify platform binaries before deploying
 
-Perform MD5 checks on binaries against [official releases](https://github.com/kubernetes/kubernetes/releases). See [Learn How to Generate and Verify Files with MD5 Checksum in Linux](https://www.tecmint.com/generate-verify-check-files-md5-checksum-linux/) or [Ubuntu how-to sha256sum](https://help.ubuntu.com/community/HowToSHA256SUM).
+✨ [Install and Set Up kubectl on Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+
+Tips:
+
+* Perform MD5 checks on binaries against [official releases](https://github.com/kubernetes/kubernetes/releases).
+
+Additional:
+
+* [Learn How to Generate and Verify Files with MD5 Checksum in Linux](https://www.tecmint.com/generate-verify-check-files-md5-checksum-linux/)
+* [Ubuntu how-to sha256sum](https://help.ubuntu.com/community/HowToSHA256SUM).

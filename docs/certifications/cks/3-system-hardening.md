@@ -28,6 +28,8 @@ Additional:
 Additional:
 
 * [AWS Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+* [Azure Best practices for Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices)
+* [Google Cloud Use IAM securely](https://cloud.google.com/iam/docs/using-iam-securely)
 
 ### External access
 

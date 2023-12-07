@@ -18,11 +18,7 @@ Additional:
 
 > Manage Kubernetes secrets
 
-Official:
-
-* [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
-* [Encrypting Confidential Data at Rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/)
-* [Using a KMS provider for data encryption](https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/)
+✨ [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/), [Encrypting Confidential Data at Rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/), [Using a KMS provider for data encryption](https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/)
 
 Additional:
 
@@ -34,23 +30,19 @@ Additional:
 
 > Use container runtime sandboxes in multi-tenant environments (e.g. gvisor, kata containers)
 
-Official:
+✨ [Runtime Class](https://kubernetes.io/docs/concepts/containers/runtime-class/)
 
-* [Runtime Class](https://kubernetes.io/docs/concepts/containers/runtime-class/)
+🚀 [gVizor](tools/gvizor.md), [Kata Containers](tools/katacontainers.md)
 
 Additional:
 
 * [sig-node/585-runtime-class/examples](https://github.com/kubernetes/enhancements/blob/master/keps/sig-node/585-runtime-class/README.md#examples)
-* [gVizor](tools/gvizor.md)
-* [Kata Containers](tools/katacontainers.md)
 
 ### Encryption
 
 > Implement pod to pod encryption by use of mTLS (mutual Transport Layer Security)
 
-Official:
-
-* [Manage TLS Certificates in a Cluster](https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/)
+✨ [Manage TLS Certificates in a Cluster](https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/)
 
 Additonal:
 

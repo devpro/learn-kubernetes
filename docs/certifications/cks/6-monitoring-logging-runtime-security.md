@@ -6,13 +6,15 @@
 
 > Perform behavioral analytics of syscall process and file activities at the host and container level to detect malicious activities
 
+⚗️ [Practice](practice/6.1-syscalls.md)
+
+🚀 [Falco](tools/falco.md)
+
 Additional:
 
 * [How to detect a Kubernetes vulnerability using Falco](https://sysdig.com/blog/how-to-detect-kubernetes-vulnerability-cve-2019-11246-using-falco/)
 * [Kubernetes Security monitoring at scale](https://medium.com/@SkyscannerEng/kubernetes-security-monitoring-at-scale-with-sysdig-falco-a60cfdb0f67a)
 * [seccomp](tools/seccomp.md)
-* [Falco](tools/falco.md)
-* 🚀 [Practice](practice/6.1-syscalls.md)
 * [strace](https://strace.io/)
 
 ### Threat detection
@@ -47,9 +49,11 @@ Additional:
 
 > Ensure immutability of containers at runtime
 
-* ["ReadOnlyRootFilesystem" (securityContext, PSP)](https://kubernetes.io/docs/concepts/policy/pod-security-policy/#volumes-and-file-systems)
-* ["readOnly" volume mount](https://kubernetes.io/docs/concepts/policy/pod-security-policy/#volumes-and-file-systems)
-* [Principles of Container-based Application Design](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/)
+✨ [Configure a Security Context for a Pod or Container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/), ["readOnly" volume mount](https://kubernetes.io/docs/concepts/policy/pod-security-policy/#volumes-and-file-systems), [Principles of Container-based Application Design](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/)
+
+Tips:
+
+* Use `readOnlyRootFilesystem` to mount the container's root filesystem as read-only.
 
 Additional:
 
@@ -63,13 +67,11 @@ Additional:
 
 > Use Audit Logs to monitor access
 
-Official:
+✨ [Auditing](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/)
 
-* [Auditing](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/)
+⚗️ [Practice](practice/6.6-auditing.md)
 
 Additional:
-
-* 🚀 [Practice](practice/6.6-auditing-examples.md)
 
 * [Kubernetes Audit](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
 * [Kubernetes Audit logging](https://docs.sysdig.com/en/kubernetes-audit-logging.html)

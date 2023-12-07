@@ -39,6 +39,7 @@ Component      | Links
 * Kubernetes
   * [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
   * [Policies](https://kubernetes.io/docs/concepts/policy/)
+  * [11 Ways (Not) to Get Hacked: statically-analyse-yaml](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/)
 * AWS
   * [EKS best practices guide for security](https://aws.github.io/aws-eks-best-practices/security/docs/)
 * Google Cloud

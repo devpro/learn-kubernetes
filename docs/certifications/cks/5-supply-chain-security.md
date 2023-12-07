@@ -21,11 +21,7 @@ Additional:
 
 > Secure your supply chain: whitelist allowed registries, sign and validate images
 
-Official:
-
-* [Admission Controllers Reference > ImagePolicyWebhook](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook)
-* [Dynamic Admission Control](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/)
-* [A Guide to Kubernetes Admission Controllers](https://kubernetes.io/blog/2019/03/21/a-guide-to-kubernetes-admission-controllers/)
+✨ [Admission Controllers Reference > ImagePolicyWebhook](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook), [Dynamic Admission Control](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/), [A Guide to Kubernetes Admission Controllers](https://kubernetes.io/blog/2019/03/21/a-guide-to-kubernetes-admission-controllers/)
 
 Additional:
 
@@ -39,9 +35,7 @@ Additional:
 
 > Use static analysis of user workloads (e.g.Kubernetes resources, Docker files)
 
-Official:
-
-* [11 Ways (Not) to Get Hacked: statically-analyse-yaml](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - July 18, 2018
+🚀 [Trivy](tools/trivy.md)
 
 Additional:
 
@@ -49,13 +43,10 @@ Additional:
 * [kube-hunter](https://github.com/aquasecurity/kube-hunter)
 * [kube-score](https://kube-score.com/)
 * [Kubesec](https://kubesec.io/)
-* 🗃️ [Trivy](tools/trivy.md)
 * [Kubernetes static code analysis with Checkov](https://bridgecrew.io/blog/kubernetes-static-code-analysis-with-checkov/) - June 24, 2020
 
 ### Image scanning
 
 > Scan images for known vulnerabilities
 
-Additioal:
-
-* 🗃️ [Trivy](tools/trivy.md)
+🚀 [Trivy](tools/trivy.md)
