@@ -38,6 +38,7 @@ Component      | Links
 
 * Kubernetes
   * [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
+  * [Policies](https://kubernetes.io/docs/concepts/policy/)
 * AWS
   * [EKS best practices guide for security](https://aws.github.io/aws-eks-best-practices/security/docs/)
 * Google Cloud

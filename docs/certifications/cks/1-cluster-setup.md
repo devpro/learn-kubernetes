@@ -6,9 +6,9 @@
 
 [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies) are "an application-centric construct which allow you to specify how a pod is allowed to communicate with various network _entities_ over the network". They "do not conflict; they are additive".
 
-See also: [Declare Network Policy](https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/), [Enforcing Network Policies in Kubernetes](https://kubernetes.io/blog/2017/10/enforcing-network-policies-in-kubernetes/)
+✨ [Declare Network Policy](https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/), [Enforcing Network Policies in Kubernetes](https://kubernetes.io/blog/2017/10/enforcing-network-policies-in-kubernetes/)
 
-🚀 [Practice](practice/1.1-network-policies.md)
+⚗️ [Practice](practice/1.1-network-policies.md)
 
 Additional:
 
@@ -25,8 +25,8 @@ Additional:
 
 This [Center for Internet Security (CIS) Kubernetes Benchmark](https://www.cisecurity.org/benchmark/kubernetes/) is the product of a community consensus process and consists of secure configuration guidelines developed for Kubernetes.
 
-🚀 [Practice](practice/1.2-cis-benchmark.md)
-🗃️ [Kube-bench](tools/kube-bench.md)
+⚗️ [Practice](practice/1.2-cis-benchmark.md)
+🚀 [Kube-bench](tools/kube-bench.md)
 
 Additional:
 
@@ -38,13 +38,9 @@ Additional:
 
 > Properly set up Ingress objects with security control
 
-Official:
+✨ [Ingress > TLS](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls), [Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/), [Set up Ingress on Minikube with the NGINX Ingress Controller](https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/)
 
-* [Ingress > TLS](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls)
-* [Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
-* [Set up Ingress on Minikube with the NGINX Ingress Controller](https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/)
-
-🚀 [Practice](practice/1.3-ingress.md)
+⚗️ [Practice](practice/1.3-ingress.md)
 
 Additional:
 
@@ -54,11 +50,7 @@ Additional:
 
 > Protect node metadata and endpoints
 
-Official:
-
-* [Restricting cloud metadata API access](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#restricting-cloud-metadata-api-access)
-* [Kubelet authentication/authorization](https://kubernetes.io/docs/reference/access-authn-authz/kubelet-authn-authz/)
-* [Set Kubelet Parameters Via A Configuration File](https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/)
+✨ [Restricting cloud metadata API access](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#restricting-cloud-metadata-api-access), [Kubelet authentication/authorization](https://kubernetes.io/docs/reference/access-authn-authz/kubelet-authn-authz/), [Set Kubelet Parameters Via A Configuration File](https://kubernetes.io/docs/tasks/administer-cluster/kubelet-config-file/)
 
 Additional:
 
@@ -72,9 +64,7 @@ Additional:
 
 > Minimize use of, and access to, GUI elements
 
-Official:
-
-* [Deploy and Access the Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
+✨ [Deploy and Access the Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 
 Additional:
 

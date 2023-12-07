@@ -6,13 +6,7 @@
 
 > Restrict access to Kubernetes API
 
-Official:
-
-* [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
-* [API Access Control](https://kubernetes.io/docs/reference/access-authn-authz/)
-* [Controlling Access to the Kubernetes API](https://kubernetes.io/docs/concepts/security/controlling-access/)
-* [How to issue a certificate for a user](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#normal-user)
-* [Generate Certificates Manually](https://kubernetes.io/docs/tasks/administer-cluster/certificates/)
+✨[API Access Control](https://kubernetes.io/docs/reference/access-authn-authz/), [Controlling Access to the Kubernetes API](https://kubernetes.io/docs/concepts/security/controlling-access/), [How to issue a certificate for a user](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#normal-user), [Generate Certificates Manually](https://kubernetes.io/docs/tasks/administer-cluster/certificates/)
 
 Additional:
 
@@ -24,10 +18,7 @@ Additional:
 
 > Use Role Based Access Controls to minimize exposure
 
-Official:
-
-* [Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
-* [Authorization Overview](https://kubernetes.io/docs/reference/access-authn-authz/authorization/)
+✨ [Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/), [Authorization Overview](https://kubernetes.io/docs/reference/access-authn-authz/authorization/)
 
 Additional:
 
@@ -39,14 +30,12 @@ Additional:
 
 > Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones
 
-Official:
+✨ [Managing Service Accounts](https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/), [Configure Service Accounts for Pods](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
 
-* [Managing Service Accounts](https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/)
-* [Configure Service Accounts for Pods](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
+⚗️ [Practice](practice/2.3-service-accounts.md)
 
 Additional:
 
-* 🚀 [Practice](practice/2.3-service-accounts.md)
 * [Kubernetes should not mount default service account credentials by default](https://github.com/kubernetes/kubernetes/issues/57601)
 * [Kubernetes: Creating Service Accounts and Kubeconfigs](https://docs.armory.io/docs/armory-admin/manual-service-account/)
 * [Kubernetes Access Control: Exploring Service Accounts](https://thenewstack.io/kubernetes-access-control-exploring-service-accounts/)
@@ -56,6 +45,4 @@ Additional:
 
 > Update Kubernetes frequently
 
-Official:
-
-* [Upgrading kubeadm clusters](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)
+✨ [Upgrading kubeadm clusters](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)

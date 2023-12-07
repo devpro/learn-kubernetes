@@ -6,9 +6,11 @@
 
 > Minimize host OS footprint (reduce attack surface) 
 
-Official:
+✨ [Preventing containers from loading unwanted kernel modules](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#preventing-containers-from-loading-unwanted-kernel-modules)
 
-* [Preventing containers from loading unwanted kernel modules](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#preventing-containers-from-loading-unwanted-kernel-modules)
+Tips:
+
+* Careful with PodSpec `hostPID`, `hostPIC` and `hostNetwork`, and `securityContext.privileged` flags.
 
 Additional:
 
@@ -44,5 +46,4 @@ Additional:
 
 > Appropriately use kernel hardening tools such as AppArmor, seccomp  
 
-* [AppArmor](tools/apparmor.md)
-* [seccomp](tools/seccomp.md)
+🚀 [AppArmor](tools/apparmor.md), [seccomp](tools/seccomp.md)
