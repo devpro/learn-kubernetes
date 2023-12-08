@@ -8,7 +8,7 @@
 
 Tips:
 
-* Careful with PodSpec `hostPID`, `hostPIC` and `hostNetwork`, and `securityContext.privileged` flags.
+* Careful with PodSpec `hostPID`, `hostIPC` and `hostNetwork`, and `securityContext.privileged` flags.
 
 Additional:
 
