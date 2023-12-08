@@ -8,52 +8,6 @@
 
 🌐 [apparmor.net](https://www.apparmor.net/)
 
-## Quick start
-
-Profiles can be stored in files on the disk and must be enabled on all servers running the workload (or the Pod won't be able to start).
-
-Example of a profile preventing the program from writing any data to the disk:
-
-```ini
-#include <tunables/global>
-profile k8s-deny-write flags=(attach_disconnected) {
-    #include <abstractions/base>
-    file,
-    # Deny all file writes.
-    deny /** w,
-}
-```
-
-Example of a command line to apply the profile (use "-C" flag for complain mode):
-
-```bash
-sudo apparmor_parser /path/to/file
-```
-
-Example of Pod definition using the profile:
-
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: test-pod
-  annotations:
-    container.apparmor.security.beta.kubernetes.io/password-db: localhost/k8s-deny-write
-spec:
-  containers:
-    - name: password-db
-      image: radial/busyboxplus:curl
-      command: ['sh', '-c', 'while true; do if echo "The password is hunter2" > password.txt; then echo "Password hunter2 logged."; else echo "Password log attempt blocked."; fi; sleep 5; done']
-```
-
-Example of a command line to see if the file has been written:
-
-```bash
-kubectl exec test-pod -n demo -- cat password.txt
-```
-
-In this example, the profile won't be loaded after a server reboot. The file must be copied to `/etc/apparmor.d` directory and its file owner/permission changed accordingly.
-
 ## Commands
 
 ```bash
@@ -72,5 +26,7 @@ sudo apparmor_status
 
 ## Directories
 
-* `/etc/apparmor/` contains global and system settings
-* `/etc/apparmor.d/` contains all the profiles, as well as profile 'chunks' that are commonly shared between profiles, that AppArmor will load on next boot
+Path               | Content
+-------------------|--------
+`/etc/apparmor/`   | Global and system settings
+`/etc/apparmor.d/` | All the profiles, as well as profile 'chunks' that are commonly shared between profiles, that AppArmor will load on next boot

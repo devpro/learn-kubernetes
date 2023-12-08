@@ -6,7 +6,11 @@
 >
 > &mdash; <cite>[falco.org](https://falco.org/)</cite>
 
-🌐 [sysdig.com/opensource/falco](https://sysdig.com/opensource/falco/)
+✨ [docs](https://falco.org/docs/)
+
+🌐 [code](https://github.com/falcosecurity/falco), [sysdig.com/opensource/falco](https://sysdig.com/opensource/falco/)
+
+![](https://falco.org/docs/getting-started/images/falco-architecture-v2.png)
 
 ## Releases
 

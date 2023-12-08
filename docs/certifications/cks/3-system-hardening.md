@@ -48,6 +48,8 @@ Additional:
 
 > Appropriately use kernel hardening tools such as AppArmor, seccomp  
 
+⚗️ [Practice](practice/3.4-kernel-hardening.md)
+
 🚀 [AppArmor](tools/apparmor.md), [seccomp](tools/seccomp.md)
 
 ---

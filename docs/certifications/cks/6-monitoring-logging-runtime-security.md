@@ -6,7 +6,7 @@
 
 ⚗️ [Practice](practice/6.1-behavioral-analytics.md)
 
-🚀 [Falco](tools/falco.md), [seccomp](tools/seccomp.md)
+🚀 [Falco](tools/falco.md)
 
 Additional:
 
@@ -28,6 +28,8 @@ Additional:
 
 > Detect all phases of attack regardless where it occurs and how it spreads
 
+Additional:
+
 * [Investigating Kubernetes attack scenarios in Threat Stack](https://www.threatstack.com/blog/kubernetes-attack-scenarios-part-1)
 * [Anatomy of a Kubernetes attack – How untrusted Docker images fails us](https://www.optiv.com/explore-optiv-insights/source-zero/anatomy-kubernetes-attack-how-untrusted-docker-images-fail-us)
 * [Investigating Kubernetes Attack Scenarios in Threat Stack (part 1)](https://www.threatstack.com/blog/kubernetes-attack-scenarios-part-1)
@@ -39,6 +41,8 @@ Additional:
 ## Analysis
 
 > Perform deep analytical investigation and identification of bad actors within environment
+
+Additional:
 
 * [Kubernetes security 101: Risks and Best practices](https://www.stackrox.com/post/2020/05/kubernetes-security-101/)
 

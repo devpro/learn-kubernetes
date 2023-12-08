@@ -17,13 +17,9 @@
 * [5. Supply chain security](5-supply-chain-security.md)
 * [6. Monitoring, logging and runtime security](6-monitoring-logging-runtime-security.md)
 
-## Helpers
+## Examination resources
 
-* [`kubectl` cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-* [`kubectl` commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
-* [Debugging Kubernetes nodes with `crictl`](https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/) (`crictl -r /var/run/containerd/containerd.sock ps`)
-
-## Allowed web content
+### Allowed websites
 
 Component      | Links
 ---------------|-----------------------------------------------------------------------------------------------------------------
@@ -33,7 +29,13 @@ Component      | Links
 **Falco**      | [falco.org/docs](https://falco.org/docs/)
 **Trivy**      | [aquasecurity.github.io/trivy](https://aquasecurity.github.io/trivy/)
 
-📌 [Resources Allowed: All LF Certification Programs](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-security-specialist-cks)
+📌 Source: [Resources Allowed: All LF Certification Programs](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-security-specialist-cks)
+
+### Helpers
+
+* [`kubectl` cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+* [`kubectl` commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
+* [Debugging Kubernetes nodes with `crictl`](https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/) (`crictl -r /var/run/containerd/containerd.sock ps`)
 
 ## General documentation
 
@@ -59,14 +61,16 @@ Component      | Links
 
 ## Tools
 
-* [AppArmor](tools/apparmor.md)
-* [Falco](tools/falco.md)
-* [gVisor](tools/gvisor.md)
-* [Kata Containers](tools/katacontainers.md)
-* [kube-bench](tools/kube-bench.md)
-* [seccomp](tools/seccomp.md)
-* [SELinux](tools/selinux.md)
-* [Trivy](tools/trivy.md)
+Name                                       | Paragraph                                                                                 | Kubernetes definition
+-------------------------------------------|-------------------------------------------------------------------------------------------|---------------------------------------------------------------
+[AppArmor](tools/apparmor.md)              | [3.4 Kernel hardening](3-system-hardening.md#kernel-hardening)                            | annotations.`container.apparmor.security.beta.kubernetes.io`
+[Falco](tools/falco.md)                    | [6.1 Behavioral analytics](6-monitoring-logging-runtime-security.md#behavioral-analytics) | 
+[gVisor](tools/gvisor.md)                  | [4.3 Sandboxes](4-minimize-microservice-vulnerabilities.md#sandboxes)                     | spec.`runtimeClassName`
+[Kata Containers](tools/katacontainers.md) | [4.3 Sandboxes](4-minimize-microservice-vulnerabilities.md#sandboxes)                     |
+[kube-bench](tools/kube-bench.md)          | [1.2 CIS benchmark](1-cluster-setup.md#cis-benchmark)                                     |
+[seccomp](tools/seccomp.md)                | [3.4 Kernel hardening](3-system-hardening.md#kernel-hardening)                            | securityContext.`seccompProfile`
+[SELinux](tools/selinux.md)                |                                                                                           |
+[Trivy](tools/trivy.md)                    | [5. Supply chain security](5-supply-chain-security.md#workload-static-analysis)           |
 
 ## Lab platforms
 

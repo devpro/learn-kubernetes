@@ -24,6 +24,8 @@ Additional:
 
 ⚗️ [Practice](practice/5.2-image-securization.md)
 
+🚀 [Trivy](tools/trivy.md)
+
 Additional:
 
 * [Content trust in Docker](https://docs.docker.com/engine/security/trust/)
