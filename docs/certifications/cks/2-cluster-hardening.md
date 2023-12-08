@@ -4,7 +4,11 @@
 
 > Restrict access to Kubernetes API
 
-✨ [API Access Control](https://kubernetes.io/docs/reference/access-authn-authz/), [Controlling Access to the Kubernetes API](https://kubernetes.io/docs/concepts/security/controlling-access/), [How to issue a certificate for a user](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#normal-user), [Generate Certificates Manually](https://kubernetes.io/docs/tasks/administer-cluster/certificates/), [kube-apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
+✨ [API Access Control](https://kubernetes.io/docs/reference/access-authn-authz/),
+[Controlling Access to the Kubernetes API](https://kubernetes.io/docs/concepts/security/controlling-access/),
+[How to issue a certificate for a user](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#normal-user),
+[Generate Certificates Manually](https://kubernetes.io/docs/tasks/administer-cluster/certificates/),
+[kube-apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
 
 ⚗️ [Practice](practice/2.1-kubernetes-api-access.md)
 
@@ -18,7 +22,8 @@ Additional:
 
 > Use Role Based Access Controls to minimize exposure
 
-✨ [Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/), [Authorization Overview](https://kubernetes.io/docs/reference/access-authn-authz/authorization/)
+✨ [Using RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/),
+[Authorization Overview](https://kubernetes.io/docs/reference/access-authn-authz/authorization/)
 
 ⚗️ [Practice](practice/2.2-rbac.md)
 
@@ -32,7 +37,8 @@ Additional:
 
 > Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones
 
-✨ [Managing Service Accounts](https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/), [Configure Service Accounts for Pods](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
+✨ [Managing Service Accounts](https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/),
+[Configure Service Accounts for Pods](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
 
 ⚗️ [Practice](practice/2.3-service-accounts.md)
 
@@ -47,7 +53,8 @@ Additional:
 
 > Update Kubernetes frequently
 
-✨ [Upgrade A Cluster](https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/), [Upgrading kubeadm clusters](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)
+✨ [Upgrade A Cluster](https://kubernetes.io/docs/tasks/administer-cluster/cluster-upgrade/),
+[Upgrading kubeadm clusters](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)
 
 ---
 

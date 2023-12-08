@@ -58,6 +58,7 @@ Add-ons features:
 
 Read more:
 
+- [Principles of Container-based Application Design](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/)
 - [Bilgin Ibryam - Designing Cloud Native Applications With kubernetes](https://www.slideshare.net/bibryam/designing-cloud-native-applications-with-kubernetes)
 
 ## Design & Architecture

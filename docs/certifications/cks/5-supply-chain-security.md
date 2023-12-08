@@ -8,14 +8,17 @@
 
 Tips:
 
+* Minimal image
+* No-latest (use a specific tag in the base image)
 * Multi-stage
 * No-root (last user shouldn't be root)
 * No-secrets (no sensitive data, use kubernetes secrets instead)
 * No-shell
 * Package versions
-* No-latest (use a specific tag in the base image)
 * Install as few software as possible and remove the unwanted
 * Read-only filesystem
+* Prefer COPY over ADD
+* Use .dockerignore
 
 Additional:
 

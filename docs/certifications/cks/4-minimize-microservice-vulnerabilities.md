@@ -4,9 +4,14 @@
 
 > Setup appropriate OS level security domains
 
-✨ [Pod Security Admission](https://kubernetes.io/docs/concepts/security/pod-security-admission/), ~~[Pod Security Policies](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)~~, [Configure a Security Context for a Pod or Container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/), [OPA Gatekeeper: Policy and Governance for Kubernetes](https://kubernetes.io/blog/2019/08/06/opa-gatekeeper-policy-and-governance-for-kubernetes/)
+✨ [Pod Security Admission](https://kubernetes.io/docs/concepts/security/pod-security-admission/),
+~~[Pod Security Policies](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)~~,
+[Configure a Security Context for a Pod or Container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/),
+[OPA Gatekeeper: Policy and Governance for Kubernetes](https://kubernetes.io/blog/2019/08/06/opa-gatekeeper-policy-and-governance-for-kubernetes/)
 
 ⚗️ [Practice](practice/4.1-security-domains.md)
+
+🚀 [OPA Gatekeeper](tools/opa-gatekeeper.md)
 
 Tips:
 
@@ -22,7 +27,9 @@ Additional:
 
 > Manage Kubernetes secrets
 
-✨ [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/), [Encrypting Confidential Data at Rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/), [Using a KMS provider for data encryption](https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/)
+✨ [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/),
+[Encrypting Confidential Data at Rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/),
+[Using a KMS provider for data encryption](https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/)
 
 ⚗️ [Practice](practice/4.2-secrets.md)
 

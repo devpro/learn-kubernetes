@@ -16,6 +16,7 @@ Additional:
 * [Network policies testing, by Tufin](https://github.com/Tufin/test-network-policies)
 * [Anthos security blueprint: Restricting traffic](https://github.com/GoogleCloudPlatform/anthos-security-blueprints/tree/master/restricting-traffic)
 * [Kubernetes Network Policies Viewer](https://orca.tufin.io/netpol/)
+* [Network Policy Editor](https://editor.networkpolicy.io/)
 
 ## CIS Benchmark
 

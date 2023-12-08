@@ -72,6 +72,7 @@ Name                                       | Paragraph                          
 [gVisor](tools/gvisor.md)                  | [4.3 Sandboxes](4-minimize-microservice-vulnerabilities.md#sandboxes)                     | spec.`runtimeClassName`
 [Kata Containers](tools/katacontainers.md) | [4.3 Sandboxes](4-minimize-microservice-vulnerabilities.md#sandboxes)                     | spec.`runtimeClassName`
 [kube-bench](tools/kube-bench.md)          | [1.2 CIS benchmark](1-cluster-setup.md#cis-benchmark)                                     |
+[OPA Gatekeeper](tools/opa-gatekeeper.md)  | [4.1 Security domains](4-minimize-microservice-vulnerabilities.md#security-domains)       | `ConstraintTemplate`
 [seccomp](tools/seccomp.md)                | [3.4 Kernel hardening](3-system-hardening.md#kernel-hardening)                            | securityContext.`seccompProfile`
 [SELinux](tools/selinux.md)                |                                                                                           |
 [Trivy](tools/trivy.md)                    | [5. Supply chain security](5-supply-chain-security.md#workload-static-analysis)           |
@@ -102,16 +103,13 @@ Name                                       | Paragraph                          
 
 ### Inviduals
 
-* [Benjamin Muschko CKS crash course](https://github.com/bmuschko/cks-crash-course)
-* [Jaxon](https://github.com/theJaxon/CKS)
-* [Jayendra Patil - CKS Learning path](https://jayendrapatil.com/certified-kubernetes-security-specialist-cks-learning-path/)
-  * [Kubernetes exercise](https://github.com/jayendrapatil/kubernetes-exercises)
-* [Mohamed Abukar - CKS Exercises](https://github.com/moabukar/CKS-Exercises-Certified-Kubernetes-Security-Specialist)
-* Piotr Zaniewski: [Kubernetes related networking commands](https://gist.github.com/Piotr1215/23cf678d74079f98dc7be731e6a3f1d1#file-cka-networking-commands-md), [kubectl commands and tips & tricks](https://gist.github.com/Piotr1215/443fb83c89958139f0c67ec70b111da2#file-kubectl-commands-md), [K8s bookmarks](https://gist.github.com/Piotr1215/016ba7218a1a949574786fb9b92382c1#file-k8s-bookmarks-cka-ckad-html)
+* [Benjamin Muschko - CKS crash course](https://github.com/bmuschko/cks-crash-course)
+* [Jaxon - CKS notes](https://github.com/theJaxon/CKS)
+* [Jayendra Patil - CKS learning path](https://jayendrapatil.com/certified-kubernetes-security-specialist-cks-learning-path/) ([Kubernetes exercises](https://github.com/jayendrapatil/kubernetes-exercises))
+* [Mohamed Abukar - CKS exercises](https://github.com/moabukar/CKS-Exercises-Certified-Kubernetes-Security-Specialist)
 * [Scott Hawkins](https://github.com/echoboomer/k8s-cks-notes)
 * [Snigdha Sambit Aryakumar](https://github.com/snigdhasambitak/cks)
 * [Viktar Mikalayeu](https://github.com/ViktorUJ/cks)
-* [Walid Shaari - CKS Resource list](https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist)
 
 ### Videos
 
