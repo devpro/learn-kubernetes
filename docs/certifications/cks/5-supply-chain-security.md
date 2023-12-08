@@ -4,6 +4,16 @@
 
 > Minimize base image footprint
 
+⚗️ [Practice](practice/5.1-base-image.md)
+
+Tips:
+
+* Multi-stage
+* No-root
+* No-shell
+* Package versions
+* Read-only filesystem
+
 Additional:
 
 * [Overview of best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)

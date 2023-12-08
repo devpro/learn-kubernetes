@@ -52,6 +52,8 @@ Additional:
 
 ✨ [Configure a Security Context for a Pod or Container](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/), ["readOnly" volume mount](https://kubernetes.io/docs/concepts/policy/pod-security-policy/#volumes-and-file-systems), [Principles of Container-based Application Design](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/)
 
+⚗️ [Practice](practice/6.5-immutability.md)
+
 Tips:
 
 * Use `readOnlyRootFilesystem` to mount the container's root filesystem as read-only.

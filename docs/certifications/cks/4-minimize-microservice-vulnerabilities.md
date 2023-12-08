@@ -24,7 +24,7 @@ Additional:
 
 ✨ [Secrets](https://kubernetes.io/docs/concepts/configuration/secret/), [Encrypting Confidential Data at Rest](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/), [Using a KMS provider for data encryption](https://kubernetes.io/docs/tasks/administer-cluster/kms-provider/)
 
-[Practice](practice/4.2-secrets.md)
+⚗️ [Practice](practice/4.2-secrets.md)
 
 Additional:
 

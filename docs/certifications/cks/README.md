@@ -1,5 +1,9 @@
 #  CKS (Certified Kubernetes Security Specialist)
 
+You'll find here everything to know to pass the CKS exam. It has been written in December 2023, with the intention to be complete and straight to the essential information.
+
+## About the exam
+
 > The program provides assurance that a CKS has the skills, knowledge, and competence on a broad range of best practices for securing container-based applications and Kubernetes platforms during build, deployment and runtime.
 >
 > &mdash; <cite>[training.linuxfoundation.org/certification](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist/)</cite>

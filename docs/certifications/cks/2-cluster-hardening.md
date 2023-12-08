@@ -6,6 +6,8 @@
 
 ✨ [API Access Control](https://kubernetes.io/docs/reference/access-authn-authz/), [Controlling Access to the Kubernetes API](https://kubernetes.io/docs/concepts/security/controlling-access/), [How to issue a certificate for a user](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#normal-user), [Generate Certificates Manually](https://kubernetes.io/docs/tasks/administer-cluster/certificates/), [kube-apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
 
+⚗️ [Practice](practice/2.1-kubernetes-api-access.md)
+
 Additional:
 
 * [Hardening your GKE cluster's security](https://cloud.google.com/anthos/clusters/docs/on-prem/latest/how-to/hardening-your-cluster)
