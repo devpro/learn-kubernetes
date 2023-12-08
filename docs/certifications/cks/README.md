@@ -117,3 +117,5 @@ Name                                       | Paragraph                          
 * [Kubesimplify - Kubernetes security concepts and demos](https://youtu.be/VjlvS-qiz_U) - September 25, 2020
 * [CNCF Tutorial - Getting Started With Cloud Native Security](https://youtu.be/MisS3wSds40) - September 4, 2020
 * [Kubernetes Forum Seoul 2019 - Kubernetes Security Best Practices](https://youtu.be/wqsUfvRyYpw) - Dec 10, 2019
+* [Code in Action - Learn Kubernetes Security](https://www.youtube.com/playlist?list=PLeLcvrwLe1859Rje9gHrD1KEp4y5OXApB) - Jul 8, 2020
+* [Spectro Cloud Webinar - Certified Kubernetes Security Specialist](https://www.youtube.com/watch?v=Qqoe-PbuQcs) - May 4, 2022

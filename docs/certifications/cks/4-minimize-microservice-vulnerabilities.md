@@ -59,6 +59,8 @@ Additional:
 
 ✨ [Manage TLS Certificates in a Cluster](https://kubernetes.io/docs/tasks/tls/managing-tls-in-a-cluster/)
 
+[Practice](practice/4.4-encryption.md)
+
 Additonal:
 
 * [What is mutual TLS (mTLS)? by Cloudflare](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/)
