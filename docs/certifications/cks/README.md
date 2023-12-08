@@ -70,7 +70,7 @@ Name                                       | Paragraph                          
 [AppArmor](tools/apparmor.md)              | [3.4 Kernel hardening](3-system-hardening.md#kernel-hardening)                            | annotations.`container.apparmor.security.beta.kubernetes.io`
 [Falco](tools/falco.md)                    | [6.1 Behavioral analytics](6-monitoring-logging-runtime-security.md#behavioral-analytics) | 
 [gVisor](tools/gvisor.md)                  | [4.3 Sandboxes](4-minimize-microservice-vulnerabilities.md#sandboxes)                     | spec.`runtimeClassName`
-[Kata Containers](tools/katacontainers.md) | [4.3 Sandboxes](4-minimize-microservice-vulnerabilities.md#sandboxes)                     |
+[Kata Containers](tools/katacontainers.md) | [4.3 Sandboxes](4-minimize-microservice-vulnerabilities.md#sandboxes)                     | spec.`runtimeClassName`
 [kube-bench](tools/kube-bench.md)          | [1.2 CIS benchmark](1-cluster-setup.md#cis-benchmark)                                     |
 [seccomp](tools/seccomp.md)                | [3.4 Kernel hardening](3-system-hardening.md#kernel-hardening)                            | securityContext.`seccompProfile`
 [SELinux](tools/selinux.md)                |                                                                                           |
@@ -102,14 +102,7 @@ Name                                       | Paragraph                          
 
 ### Inviduals
 
-* [Alessandro Vozza](https://medium.com/@ams0): [script](https://gist.githubusercontent.com/ams0/0e57d15d53782c2c2259cce8545caa70/raw/d4e0686e4dc068ea146717af5d5a7be3dab97a4c/kubeadm-containerd.sh), [Terraform](https://github.com/ams0/CKS/blob/main/kubeadm-containerd-multinode/readme.md)
-* Benjamin Muschko:
-  * [CKS crash course](https://github.com/bmuschko/cks-crash-course)
-  * [CKS study guide](https://github.com/bmuschko/cks-study-guide)
-* [DevOpsCube - How to Setup Kubernetes Cluster on Vagrant VMs](https://devopscube.com/kubernetes-cluster-vagrant/)
-* [Dmitri Lerko - Exam Preparation Guide](https://deploy.live/blog/cks-certified-kubernetes-security-specialist-exam-preparation-guide/)
-* [Kim Wuestkamp](https://wuestkamp.medium.com/): [UCKS Exam Series #1 Create Cluster & Security Best Practices](https://itnext.io/cks-exam-series-1-create-cluster-security-best-practices-50e35aaa67ae)
-* [Ibrahim Jelliti](https://github.com/ibrahimjelliti/CKSS-Certified-Kubernetes-Security-Specialist)
+* [Benjamin Muschko CKS crash course](https://github.com/bmuschko/cks-crash-course)
 * [Jaxon](https://github.com/theJaxon/CKS)
 * [Jayendra Patil - CKS Learning path](https://jayendrapatil.com/certified-kubernetes-security-specialist-cks-learning-path/)
   * [Kubernetes exercise](https://github.com/jayendrapatil/kubernetes-exercises)
