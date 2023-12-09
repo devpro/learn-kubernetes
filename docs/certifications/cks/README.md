@@ -37,9 +37,9 @@ Component      | Links
 
 ### Helpers
 
-* [`kubectl` cheat sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-* [`kubectl` commands](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
-* [Debugging Kubernetes nodes with `crictl`](https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/) (`crictl -r /var/run/containerd/containerd.sock ps`)
+✨ [`kubectl` cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/), [`kubectl` reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands), [`crictl` for debugging](https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/)
+
+⚗️ Commands: [Linux](practice/0.1-linux-commands.md), [Kubernetes](practice/0.2-kubernetes-commands.md)
 
 ## General documentation
 
@@ -87,12 +87,6 @@ Name                                       | Paragraph                          
 
 ## Other resources
 
-### Companies
-
-* [K21Academy - Step-by-Step Activity Guide (Hands-on Lab)](https://k21academy.com/docker-kubernetes/certified-kubernetes-security-specialist-cks-step-by-step-activity-guide-hands-on-lab/#)
-* [StackRox - CKS Study Guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide)
-* [Sumologic - Kubernetes DevSecOps vulnerabilities and best practices](https://www.sumologic.com/blog/kubernetes-devsecops/) - December 8, 2022
-
 ### Documents
 
 * [CNCF Cloud Native Security Whitepaper](https://github.com/cncf/tag-security/tree/main/security-whitepaper)
@@ -101,15 +95,18 @@ Name                                       | Paragraph                          
   * [PDF file (2022-08)](https://media.defense.gov/2022/Aug/29/2003066362/-1/-1/0/CTR_KUBERNETES_HARDENING_GUIDANCE_1.2_20220829.PDF)
 * [Sysdig Kubernetes Security Guide](https://sysdig.com/s-kubernetes-security-guide/)
 
-### Inviduals
+### Study notes
 
-* [Benjamin Muschko - CKS crash course](https://github.com/bmuschko/cks-crash-course)
-* [Jaxon - CKS notes](https://github.com/theJaxon/CKS)
 * [Jayendra Patil - CKS learning path](https://jayendrapatil.com/certified-kubernetes-security-specialist-cks-learning-path/) ([Kubernetes exercises](https://github.com/jayendrapatil/kubernetes-exercises))
-* [Mohamed Abukar - CKS exercises](https://github.com/moabukar/CKS-Exercises-Certified-Kubernetes-Security-Specialist)
 * [Scott Hawkins](https://github.com/echoboomer/k8s-cks-notes)
+
+### Exam question examples
+
+* [Benjamin Muschko](https://github.com/bmuschko/cks-crash-course)
+* [Jaxon](https://github.com/theJaxon/CKS)
+* [Mohamed Abukar](https://github.com/moabukar/CKS-Exercises-Certified-Kubernetes-Security-Specialist)
 * [Snigdha Sambit Aryakumar](https://github.com/snigdhasambitak/cks)
-* [Viktar Mikalayeu](https://github.com/ViktorUJ/cks)
+* [Viktar Mikalayeu](https://github.com/ViktorUJ/cks/tree/master/tasks/cks/labs)
 
 ### Videos
 
