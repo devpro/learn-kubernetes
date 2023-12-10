@@ -1,6 +1,6 @@
 #  CKS (Certified Kubernetes Security Specialist)
 
-You'll find here everything to know to pass the CKS exam. It has been written in December 2023, with the intention to be complete and straight to the essential information.
+You'll find here everything to know for the CKS exam. It has been written in December 2023, with the intention to be straight to point.
 
 ## About the exam
 
@@ -47,7 +47,8 @@ Component      | Links
   * [Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
   * [Policies](https://kubernetes.io/docs/concepts/policy/)
   * [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
-  * [11 Ways (Not) to Get Hacked: statically-analyse-yaml](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/)
+* Kubernetes blog
+  * [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/)
 * AWS
   * [EKS best practices guide for security](https://aws.github.io/aws-eks-best-practices/security/docs/)
 * Google Cloud
