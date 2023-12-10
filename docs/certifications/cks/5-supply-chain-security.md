@@ -6,7 +6,7 @@
 
 ⚗️ [Practice](practice/5.1-base-image.md)
 
-Tips:
+💡 Tips:
 
 * Minimal image
 * No-latest (use a specific tag in the base image)
@@ -20,7 +20,7 @@ Tips:
 * Prefer COPY over ADD
 * Use .dockerignore
 
-Additional:
+📝 Read more:
 
 * [Overview of best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 * [Sysdig top 20 Dockerfile best practices](https://sysdig.com/blog/dockerfile-best-practices/) - March 9, 2021
@@ -42,7 +42,7 @@ Additional:
 
 🚀 [Trivy](tools/trivy.md)
 
-Additional:
+📝 Read more:
 
 * [Content trust in Docker](https://docs.docker.com/engine/security/trust/)
 * [How to reject docker registries in Kubernetes?](https://stackoverflow.com/questions/54463125/how-to-reject-docker-registries-in-kubernetes)
@@ -58,7 +58,7 @@ Additional:
 
 🚀 [Trivy](tools/trivy.md)
 
-Additional:
+📝 Read more:
 
 * [Clair](https://quay.github.io/clair/)
 * [kube-hunter](https://github.com/aquasecurity/kube-hunter)

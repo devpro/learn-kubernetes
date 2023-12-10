@@ -13,11 +13,11 @@
 
 🚀 [OPA Gatekeeper](tools/opa-gatekeeper.md)
 
-Tips:
+💡 Tips:
 
 * Make sure to review the values of sensitive fields of SecurityContext: runAsUser, allowPrivilegeEscalation, readOnlyRootFilesystem
 
-Additional:
+📝 Read more:
 
 * [Kubernetes security context, security policy, and network policy – Kubernetes security guide (part 2)](https://sysdig.com/blog/kubernetes-security-psp-network-policy/) - April 4, 2018
 * [KubeCon 2019 - Open Policy Agent Introduction](https://www.youtube.com/watch?v=Yup1FUc2Qn0)
@@ -33,7 +33,7 @@ Additional:
 
 ⚗️ [Practice](practice/4.2-secrets.md)
 
-Additional:
+📝 Read more:
 
 * [Secrets Store CSI Driver](https://secrets-store-csi-driver.sigs.k8s.io/)
 * [How to Manage Secrets in Kubernetes, by Spacelift](https://spacelift.io/blog/kubernetes-secrets) - October 25, 2022
@@ -49,7 +49,7 @@ Additional:
 
 🚀 [gVisor](tools/gvisor.md), [Kata Containers](tools/katacontainers.md)
 
-Additional:
+📝 Read more:
 
 * [sig-node/585-runtime-class/examples](https://github.com/kubernetes/enhancements/blob/master/keps/sig-node/585-runtime-class/README.md#examples)
 
@@ -61,7 +61,7 @@ Additional:
 
 [Practice](practice/4.4-encryption.md)
 
-Additonal:
+📝 Read more:
 
 * [What is mutual TLS (mTLS)? by Cloudflare](https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/)
 * [Traffic encryption using mTLS with Istio](https://www.istioworkshop.io/11-security/01-mtls/)

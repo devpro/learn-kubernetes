@@ -12,7 +12,7 @@
 
 ⚗️ [Practice](practice/2.1-kubernetes-api-access.md)
 
-Additional:
+📝 Read more:
 
 * [Hardening your GKE cluster's security](https://cloud.google.com/anthos/clusters/docs/on-prem/latest/how-to/hardening-your-cluster)
 * [Kubernetes RBAC and TLS certificates – Kubernetes security guide](https://sysdig.com/blog/kubernetes-security-rbac-tls/)
@@ -27,7 +27,7 @@ Additional:
 
 ⚗️ [Practice](practice/2.2-rbac.md)
 
-Additional:
+📝 Read more:
 
 * [RBAC.dev](https://rbac.dev/)
 * [Understand Role-Based Access Control in Kubernetes](https://www.youtube.com/watch?v=G3R24JSlGjY)
@@ -43,7 +43,7 @@ Additional:
 
 ⚗️ [Practice](practice/2.3-service-accounts.md)
 
-Additional:
+📝 Read more:
 
 * [Kubernetes should not mount default service account credentials by default](https://github.com/kubernetes/kubernetes/issues/57601)
 * [Kubernetes: Creating Service Accounts and Kubeconfigs](https://docs.armory.io/docs/armory-admin/manual-service-account/)

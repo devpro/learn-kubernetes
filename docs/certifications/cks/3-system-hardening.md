@@ -6,11 +6,11 @@
 
 ✨ [Preventing containers from loading unwanted kernel modules](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#preventing-containers-from-loading-unwanted-kernel-modules)
 
-Tips:
+💡 Tips:
 
 * Careful with PodSpec `hostPID`, `hostIPC` and `hostNetwork`, and `securityContext.privileged` flags.
 
-Additional:
+📝 Read more:
 
 * [CIS Benchmarks](https://www.cisecurity.org/benchmark)
   * [Distribution Independent Linux](https://www.cisecurity.org/benchmark/distribution_independent_linux/)
@@ -21,11 +21,11 @@ Additional:
 
 > Minimize IAM (Identity and Access Management) roles
 
-Tips:
+⚡️ Notes:
 
 * Principle of least privilege
 
-Additional:
+📝 Read more:
 
 * [AWS Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 * [Azure Best practices for Azure RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/best-practices)
@@ -35,7 +35,7 @@ Additional:
 
 > Minimize external access to the network
 
-Additional:
+📝 Read more:
 
 * [Amazon EC2 security groups for Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
 * [Amazon EKS security group considerations](https://docs.aws.amazon.com/eks/latest/userguide/sec-group-reqs.html)

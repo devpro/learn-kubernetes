@@ -8,7 +8,7 @@
 
 🚀 [Falco](tools/falco.md)
 
-Additional:
+📝 Read more:
 
 * [How to detect a Kubernetes vulnerability using Falco](https://sysdig.com/blog/how-to-detect-kubernetes-vulnerability-cve-2019-11246-using-falco/)
 * [Kubernetes Security monitoring at scale](https://medium.com/@SkyscannerEng/kubernetes-security-monitoring-at-scale-with-sysdig-falco-a60cfdb0f67a)
@@ -18,7 +18,7 @@ Additional:
 
 > Detect threats within physical infrastructure, apps, networks, data, users and workloads
 
-Additional:
+📝 Read more:
 
 * [Threat matrix for Kubernetes, by Microsoft](https://www.microsoft.com/en-us/security/blog/2020/04/02/attack-matrix-kubernetes/) - May 10, 2021
 * [Common Kubernetes config security threats](https://www.cncf.io/blog/2020/08/07/common-kubernetes-config-security-threats/) - August 7, 2020
@@ -28,7 +28,7 @@ Additional:
 
 > Detect all phases of attack regardless where it occurs and how it spreads
 
-Additional:
+📝 Read more:
 
 * [Investigating Kubernetes attack scenarios in Threat Stack](https://www.threatstack.com/blog/kubernetes-attack-scenarios-part-1)
 * [Anatomy of a Kubernetes attack – How untrusted Docker images fails us](https://www.optiv.com/explore-optiv-insights/source-zero/anatomy-kubernetes-attack-how-untrusted-docker-images-fail-us)
@@ -42,7 +42,7 @@ Additional:
 
 > Perform deep analytical investigation and identification of bad actors within environment
 
-Additional:
+📝 Read more:
 
 * [Kubernetes security 101: Risks and Best practices](https://www.stackrox.com/post/2020/05/kubernetes-security-101/)
 
@@ -56,12 +56,12 @@ Additional:
 
 ⚗️ [Practice](practice/6.5-immutability.md)
 
-Tips:
+💡 Tips:
 
 * Use `readOnlyRootFilesystem` to mount the container's root filesystem as read-only.
 * Use `readOnly: true` in volumeMounts
 
-Additional:
+📝 Read more:
 
 * [Container security and immutability](https://gianarb.it/blog/container-security-immutability) - June 5, 2017
 
@@ -73,7 +73,7 @@ Additional:
 
 ⚗️ [Practice](practice/6.6-auditing.md)
 
-Additional:
+📝 Read more:
 
 * [Sysdig Kubernetes Audit Logging](https://docs.sysdig.com/en/docs/sysdig-secure/secure-events/kubernetes-audit-logging/)
 * [Datadog How to monitor Kubernetes audit logs](https://www.datadoghq.com/blog/monitor-kubernetes-audit-logs/)

@@ -5,8 +5,7 @@
 > Use network security policies to restrict cluster level access  
 
 ✨ [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies),
-[Declare Network Policy](https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/),
-[Enforcing Network Policies in Kubernetes](https://kubernetes.io/blog/2017/10/enforcing-network-policies-in-kubernetes/)
+[Declare Network Policy](https://kubernetes.io/docs/tasks/administer-cluster/declare-network-policy/)
 
 ⚡️ Notes:
 
@@ -61,8 +60,7 @@
 > Properly set up Ingress objects with security control
 
 ✨ [Ingress > TLS](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls),
-[Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/),
-[Set up Ingress on Minikube with the NGINX Ingress Controller](https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/)
+[Generate Certificates Manually > openssl](https://kubernetes.io/docs/tasks/administer-cluster/certificates/#openssl)
 
 💡 Tips:
 
@@ -73,6 +71,8 @@
 
 📝 Read more:
 
+* [Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
+* [Set up Ingress on Minikube with the NGINX Ingress Controller](https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/)
 * Ingress-Nginx Controller: [Installation Guide](https://kubernetes.github.io/ingress-nginx/deploy/), [TLS/HTTPS](https://kubernetes.github.io/ingress-nginx/user-guide/tls/)
 
 ## Node protection
