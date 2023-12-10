@@ -4,9 +4,15 @@
 
 > Perform behavioral analytics of syscall process and file activities at the host and container level to detect malicious activities
 
-⚗️ [Practice](practice/6.1-behavioral-analytics.md)
+✨ [Falco binary](https://falco.org/docs/install-operate/running/#falco-binary)
 
 🚀 [Falco](tools/falco.md)
+
+💡 Tips:
+
+* Learn to use Falco from the command line and write Falco rule file
+
+⚗️ [Practice](practice/6.1-behavioral-analytics.md)
 
 📝 Read more:
 
