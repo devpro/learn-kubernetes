@@ -2,7 +2,7 @@
 
 > **kube-bench** is a tool that checks whether Kubernetes is deployed securely by running the checks documented in the **CIS Kubernetes Benchmark**.
 >
-> &mdash; <cite>[github.com/aquasecurity/kube-bench](https://github.com/aquasecurity/kube-bench)</cite>
+> &mdash; _[github.com/aquasecurity/kube-bench](https://github.com/aquasecurity/kube-bench)_
 
 ## Usage
 

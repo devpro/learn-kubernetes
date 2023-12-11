@@ -74,7 +74,7 @@ Name                                       | Paragraph                          
 [kube-bench](tools/kube-bench.md)          | [1.2 CIS benchmark](1-cluster-setup.md#cis-benchmark)                                     |
 [OPA Gatekeeper](tools/opa-gatekeeper.md)  | [4.1 Security domains](4-minimize-microservice-vulnerabilities.md#security-domains)       | `ConstraintTemplate`
 [seccomp](tools/seccomp.md)                | [3.4 Kernel hardening](3-system-hardening.md#kernel-hardening)                            | securityContext.`seccompProfile`
-[SELinux](tools/selinux.md)                |                                                                                           |
+[SELinux](tools/selinux.md)                |                                                                                           | securityContext.`seLinuxOptions`
 [Trivy](tools/trivy.md)                    | [5. Supply chain security](5-supply-chain-security.md#workload-static-analysis)           |
 
 ## Free lab platforms

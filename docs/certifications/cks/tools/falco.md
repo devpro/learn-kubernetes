@@ -4,7 +4,7 @@
 >
 > **Falco** helps you gain visibility into abnormal behavior, potential security threats, and compliance violations, contributing to comprehensive runtime security.  
 >
-> &mdash; <cite>[falco.org](https://falco.org/)</cite>
+> &mdash; _[falco.org](https://falco.org/)_
 
 ✨ [docs](https://falco.org/docs/)
 

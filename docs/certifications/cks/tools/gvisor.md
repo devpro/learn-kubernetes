@@ -2,7 +2,7 @@
 
 > **gVisor** is an open-source Linux-compatible sandbox that runs anywhere existing container tooling does. It enables cloud-native container security and portability.
 >
-> &mdash; <cite>[gvisor.dev](https://gvisor.dev/)</cite>
+> &mdash; _[gvisor.dev](https://gvisor.dev/)_
 
 ✨ [Runtime Class > CRI Configuration](https://kubernetes.io/docs/concepts/containers/runtime-class/#cri-configuration)
 

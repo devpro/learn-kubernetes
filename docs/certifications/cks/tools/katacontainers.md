@@ -2,7 +2,7 @@
 
 > **Kata Containers** is an open source community working to build a secure container runtime with lightweight virtual machines that feel and perform like containers, but provide stronger workload isolation using hardware virtualization technology as a second layer of defense.
 >
-> &mdash; <cite>[katacontainers.io](https://katacontainers.io/)</cite>
+> &mdash; _[katacontainers.io](https://katacontainers.io/)_
 
 🌐 [code](https://github.com/kata-containers/kata-containers), [docs](https://github.com/kata-containers/kata-containers/tree/main/docs), [openinfra.dev](https://openinfra.dev/)
 
