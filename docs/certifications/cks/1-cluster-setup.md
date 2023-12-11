@@ -16,7 +16,7 @@
 
 💡 Tips:
 
-* Create a default deny all network policy (in & out) in the namespace
+* Explain given YAML with online tools, like [Isovalent: Network Policy Editor](https://editor.networkpolicy.io/) or [Tufin: Kubernetes Network Policies Viewer](https://orca.tufin.io/netpol/)
 
 ⚗️ [Practice](practice/1.1-network-policies.md)
 
@@ -25,9 +25,7 @@
 * [Anthos security blueprint: Restricting traffic](https://github.com/GoogleCloudPlatform/anthos-security-blueprints/tree/master/restricting-traffic)
 * [Ahmet Alp Balkan: Kubernetes Network Policy Recipes](https://github.com/ahmetb/kubernetes-network-policy-recipes)
 * [Calico: Get started with Kubernetes network policy](https://docs.projectcalico.org/security/kubernetes-network-policy)
-* [Isovalent: Network Policy Editor](https://editor.networkpolicy.io/)
 * [Security People: An Introduction to Kubernetes Network Policies](https://reuvenharrison.medium.com/an-introduction-to-kubernetes-network-policies-for-security-people-ba92dd4c809d)
-* [Tufin: Kubernetes Network Policies Viewer](https://orca.tufin.io/netpol/)
 
 ## CIS Benchmark
 
