@@ -57,7 +57,8 @@ Component      | Links
 
 ## Training
 
-* ✅ **A Cloud Guru**: [Kubernetes Security](https://learn.acloud.guru/course/7d2c29e7-cdb2-4f44-8744-06332f47040e/dashboard), [CKS](https://learn.acloud.guru/course/certified-kubernetes-security-specialist/dashboard)
+* ✅ **A Cloud Guru**: [CKS](https://learn.acloud.guru/course/certified-kubernetes-security-specialist/dashboard) ([code](https://github.com/linuxacademy/content-cks-resources))
+* **A Cloud Guru**: [Kubernetes Security](https://learn.acloud.guru/course/7d2c29e7-cdb2-4f44-8744-06332f47040e/dashboard)
 * **KodeKloud**: [CKS](https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/) ([Course notes](https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course))
 * **LinkedIn Learning**: [Securing Containers and Kubernetes Ecosystem](https://www.linkedin.com/learning/securing-containers-and-kubernetes-ecosystem/protect-your-containers-and-kubernetes-ecosystem)
 * ~~**Linux Foundation**: [Kubernetes Security Essentials (LFS260)](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/)~~ (doesn't help passing the certification)
@@ -83,8 +84,8 @@ Name                                       | Paragraph                          
 
 * [CKS CLI](https://cks.kubernetes.tn/)
 * [Cloud Native Security Tutorial](https://tutorial.kubernetes-security.info/)
-* [Killercoda](https://killercoda.com/killer-shell-cks)
-* [KodeKloud CKS Challenges](https://kodekloud.com/courses/cks-challenges/)
+* ✅ [Killercoda](https://killercoda.com/killer-shell-cks)
+* ✅ [KodeKloud CKS Challenges](https://kodekloud.com/courses/cks-challenges/)
 * [Kubernetes Goat](https://madhuakula.com/kubernetes-goat/)
 
 ## Other resources
