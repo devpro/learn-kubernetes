@@ -1,6 +1,6 @@
 #  CKS (Certified Kubernetes Security Specialist)
 
-You'll find here everything to know for the CKS exam. It has been written in December 2023, with the intention to be straight to point.
+You'll find here everything to know for the CKS exam. It has been written in December 2023, with the intention to be straight to the point.
 
 ## About the exam
 
@@ -69,6 +69,7 @@ Component      | Links
 Name                                       | Paragraph                                                                                 | Kubernetes definition
 -------------------------------------------|-------------------------------------------------------------------------------------------|---------------------------------------------------------------
 [AppArmor](tools/apparmor.md)              | [3.4 Kernel hardening](3-system-hardening.md#kernel-hardening)                            | annotations.`container.apparmor.security.beta.kubernetes.io`
+[etcd](tools/etcd.md)                      |                                                                                           |
 [Falco](tools/falco.md)                    | [6.1 Behavioral analytics](6-monitoring-logging-runtime-security.md#behavioral-analytics) | 
 [gVisor](tools/gvisor.md)                  | [4.3 Sandboxes](4-minimize-microservice-vulnerabilities.md#sandboxes)                     | spec.`runtimeClassName`
 [Kata Containers](tools/katacontainers.md) | [4.3 Sandboxes](4-minimize-microservice-vulnerabilities.md#sandboxes)                     | spec.`runtimeClassName`
@@ -80,7 +81,7 @@ Name                                       | Paragraph                          
 
 ## Free lab platforms
 
-💡 CKS exam gives access to 2 sessions with [Killer Shell](https://github.com/killer-sh/cks-course-environment)
+💡 CKS exam gives access to 2 sessions with [Killer Shell](https://github.com/killer-sh/cks-course-environment) ([example](practice/9.1-exam-cks-simulator.md))
 
 * [CKS CLI](https://cks.kubernetes.tn/)
 * [Cloud Native Security Tutorial](https://tutorial.kubernetes-security.info/)
@@ -108,7 +109,6 @@ Name                                       | Paragraph                          
 * [Benjamin Muschko](https://github.com/bmuschko/cks-crash-course)
 * [Jaxon](https://github.com/theJaxon/CKS)
 * [Mohamed Abukar](https://github.com/moabukar/CKS-Exercises-Certified-Kubernetes-Security-Specialist)
-* [Snigdha Sambit Aryakumar](https://github.com/snigdhasambitak/cks)
 * [Viktar Mikalayeu](https://github.com/ViktorUJ/cks/tree/master/tasks/cks/labs)
 
 ### Videos
