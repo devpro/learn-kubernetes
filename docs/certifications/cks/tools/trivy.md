@@ -4,7 +4,9 @@
 >
 > &mdash; _[aquasecurity.github.io/trivy](https://aquasecurity.github.io/trivy)_
 
-🌐 [code](https://github.com/aquasecurity/trivy)
+✨ [docs](https://aquasecurity.github.io/trivy)
+
+Read more: [IT Guide](https://github.com/devpro/information-technology-guide/blob/main/docs/companies/aqua/trivy.md)
 
 ## Scan images
 

@@ -35,11 +35,23 @@ Component      | Links
 
 📌 Source: [Resources Allowed: All LF Certification Programs](https://docs.linuxfoundation.org/tc-docs/certification/certification-resources-allowed#certified-kubernetes-security-specialist-cks)
 
-### Helpers
+### Command line
 
 ✨ [`kubectl` cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/), [`kubectl` reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands), [`crictl` for debugging](https://kubernetes.io/docs/tasks/debug/debug-cluster/crictl/)
 
-⚗️ Commands: [Linux](practice/0.1-linux-commands.md), [Kubernetes](practice/0.2-kubernetes-commands.md)
+⚗️ Refresher: [Linux](practice/0.1-linux-commands.md), [Kubernetes](practice/0.2-kubernetes-commands.md)
+
+### Copy/paste
+
+Always works (but slow): copy/paste right mouse context menu actions
+
+In the Terminal: `Ctrl`+`Shift`+`C` and `Ctrl`+`Shift`+`V`
+
+Other apps like Firefox: `Ctrl`+`C` and `Ctrl`+`V`
+
+In the Terminal also: mark text with the mouse and then press the mouse-middle key to insert (only works while staying in the Terminal)
+
+You can try with this [Killercoda scenario](https://killercoda.com/kimwuestkamp/scenario/cks-cka-ckad-remote-desktop).
 
 ## General documentation
 

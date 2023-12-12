@@ -10,7 +10,7 @@
 
 ![](https://falco.org/docs/getting-started/images/falco-architecture-v2.png)
 
-Read more: [IT Guide](https://github.com/devpro/information-technology-guide/blob/main/docs/companies/sysdig/falco.md)
+Read more: [IT Guide](https://github.com/devpro/information-technology-guide/blob/main/docs/foundations/cncf/falco.md)
 
 ## Configuration
 
