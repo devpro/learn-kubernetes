@@ -36,11 +36,17 @@
 
 > Secure your supply chain: whitelist allowed registries, sign and validate images
 
-✨ [Admission Controllers Reference > ImagePolicyWebhook](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook), [Dynamic Admission Control](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/), [A Guide to Kubernetes Admission Controllers](https://kubernetes.io/blog/2019/03/21/a-guide-to-kubernetes-admission-controllers/)
-
-⚗️ [Practice](practice/5.2-image-securization.md)
+✨ [Admission Controllers Reference](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/),
+[Dynamic Admission Control](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/),
+[A Guide to Kubernetes Admission Controllers](https://kubernetes.io/blog/2019/03/21/a-guide-to-kubernetes-admission-controllers/)
 
 🚀 [Trivy](tools/trivy.md)
+
+💡 Tips:
+
+* Be able to configure an [ImagePolicyWebhook](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook)
+
+⚗️ [Practice](practice/5.2-image-securization.md)
 
 📝 Read more:
 
