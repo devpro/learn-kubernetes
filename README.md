@@ -17,6 +17,7 @@ Here you'll find some training material about Kubernetes. It has been initiated 
   * [LF - Kubernetes Fundamentals](./docs/labs/labs-lfs258.md)
   * [Odroid setup](./docs/labs/odroid-setup.md)
   * [Raspberry PI setup](./docs/labs/raspberrypi-setup.md)
+  * [Vagrant Ansible setup](docs/labs/vagrant-ansible-setup.md)
 * [Recipes](./docs/recipes.md)
 
 ## Playgrounds
