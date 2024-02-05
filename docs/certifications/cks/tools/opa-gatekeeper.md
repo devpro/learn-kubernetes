@@ -4,4 +4,4 @@
 >
 > &mdash; _[open-policy-agent.github.io/gatekeeper](https://open-policy-agent.github.io/gatekeeper/website/)_
 
-🌐 [docs](https://ngrok.com/docs/using-ngrok-with/k8s/), [code](https://github.com/open-policy-agent/gatekeeper)
+🌐 [docs](https://open-policy-agent.github.io/gatekeeper/website/docs/), [code](https://github.com/open-policy-agent/gatekeeper)
