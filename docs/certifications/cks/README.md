@@ -74,8 +74,8 @@ You can try with this [Killercoda scenario](https://killercoda.com/kimwuestkamp/
 * **KodeKloud**: [CKS](https://kodekloud.com/courses/certified-kubernetes-security-specialist-cks/) ([Course notes](https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course))
 * **LinkedIn Learning**: [Securing Containers and Kubernetes Ecosystem](https://www.linkedin.com/learning/securing-containers-and-kubernetes-ecosystem/protect-your-containers-and-kubernetes-ecosystem)
 * ~~**Linux Foundation**: [Kubernetes Security Essentials (LFS260)](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/)~~ (doesn't help passing the certification)
-* **Udemy**: [CKS 2023](https://www.udemy.com/course/certified-kubernetes-security-specialist/?referralCode=D9329DEE203E7FEBE86B&couponCode=K8S-CKS-22)
 * O'Reilly: [CKS certification guide](https://learning.oreilly.com/certifications/guides/Certified-Kubernetes-Security-Specialist-(CKS)/0636920886143/)
+* **Udemy**: [CKS 2023](https://www.udemy.com/course/certified-kubernetes-security-specialist/?referralCode=D9329DEE203E7FEBE86B&couponCode=K8S-CKS-22)
 
 ## Tools
 
