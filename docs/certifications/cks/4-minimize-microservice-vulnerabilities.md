@@ -22,6 +22,7 @@
 * [Kubernetes security context, security policy, and network policy – Kubernetes security guide (part 2)](https://sysdig.com/blog/kubernetes-security-psp-network-policy/) - April 4, 2018
 * [KubeCon 2019 - Open Policy Agent Introduction](https://www.youtube.com/watch?v=Yup1FUc2Qn0)
 * [OPA Gatekeeper: Overview & Architecture](https://www.openpolicyagent.org/docs/latest/kubernetes-introduction/)
+* [Kubernetes Hardening Tutorial Part 1: Pods](https://blog.gitguardian.com/kubernetes-tutorial-part-1-pods/) by GitGuardian Blog - 10 December 2021
 
 ## Secrets
 
