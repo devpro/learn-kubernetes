@@ -117,6 +117,8 @@ Name                                       | Paragraph                          
 * [Jayendra Patil - CKS learning path](https://jayendrapatil.com/certified-kubernetes-security-specialist-cks-learning-path/) ([Kubernetes exercises](https://github.com/jayendrapatil/kubernetes-exercises))
 * [Scott Hawkins](https://github.com/echoboomer/k8s-cks-notes)
 
+<!-- TODO: https://github.com/ruzickap/cks-notes -->
+
 ### Exam question examples
 
 * [Benjamin Muschko](https://github.com/bmuschko/cks-crash-course)

@@ -4,21 +4,22 @@ Here you'll find some training material about Kubernetes. It has been initiated 
 
 ## Content
 
-* [Basics](./docs/basics.md)
+* [Basics](docs/basics.md)
 * Certifications
-  * [CKA](./docs/certifications/cka/README.md)
-  * [CKAD](./docs/certifications/ckad/README.md)
-  * [CKS](./docs/certifications/cks/README.md)
-* [Installation](./docs/installation.md)
-* [Projects](./docs/projects.md)
-* [Releases](./docs/releases.md)
+  * [CKA](docs/certifications/cka/README.md)
+  * [CKAD](docs/certifications/ckad/README.md)
+  * [CKS](docs/certifications/cks/README.md)
+* [Installation](docs/installation.md)
+* [Networking](docs/networking.md)
+* [Projects](docs/projects.md)
+* [Releases](docs/releases.md)
 * Labs
-  * [LF - Kubernetes for Developers](./docs/labs/labs-lfd259.md)
-  * [LF - Kubernetes Fundamentals](./docs/labs/labs-lfs258.md)
-  * [Odroid setup](./docs/labs/odroid-setup.md)
-  * [Raspberry PI setup](./docs/labs/raspberrypi-setup.md)
+  * [LF - Kubernetes for Developers](docs/labs/labs-lfd259.md)
+  * [LF - Kubernetes Fundamentals](docs/labs/labs-lfs258.md)
+  * [Odroid setup](docs/labs/odroid-setup.md)
+  * [Raspberry PI setup](docs/labs/raspberrypi-setup.md)
   * [Vagrant Ansible setup](docs/labs/vagrant-ansible-setup.md)
-* [Recipes](./docs/recipes.md)
+* [Recipes](docs/recipes.md)
 
 ## Playgrounds
 
