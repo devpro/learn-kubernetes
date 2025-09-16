@@ -51,6 +51,8 @@ kubectl delete svc,deploy nginx
 ## Plugins
 
 - [Making Kubernetes Operations Easy with kubectl Plugins](https://martinheinz.dev/blog/58) - Oct 1, 2021
+- kubectl krew install resource-capacity
+- kubectl krew install lineage
 
 ## Q&A
 

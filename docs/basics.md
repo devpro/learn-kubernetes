@@ -2,7 +2,7 @@
 
 > **Kubernetes** (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications
 
-→ [kubernetes.io](https://kubernetes.io/)
+[kubernetes.io](https://kubernetes.io/), [code](https://github.com/kubernetes/kubernetes/), [docs](https://kubernetes.io/docs/home/)
 
 ## Introduction
 
@@ -18,11 +18,11 @@ Google donated Kubernetes to the [Cloud Native Computing Foundation (CNCF)](http
 
 Read more:
 
-- [Documentation](https://kubernetes.io/docs/home/) ([Glossary](https://kubernetes.io/docs/reference/glossary/?all=true#term-manifest), [Wikipedia](https://en.wikipedia.org/wiki/Kubernetes))
-- [GitHub](https://github.com/kubernetes/kubernetes/) ([Community](https://github.com/kubernetes/community), [Slack](https://slack.kubernetes.io/), [StackOverflow](https://stackoverflow.com/search?q=kubernetes))
+- [Glossary](https://kubernetes.io/docs/reference/glossary/)
+- [Slack](https://slack.kubernetes.io/)
 - [What is Kubernetes? (by Microsoft)](https://aka.ms/k8slearning)
-- [Releases](./releases.md)
 - [From Google to the world: The Kubernetes origin story](https://cloud.google.com/blog/products/containers-kubernetes/from-google-to-the-world-the-kubernetes-origin-story) - Craig McLuckie (2016)
+- [RisingStack - The History of Kubernetes on a Timeline](https://blog.risingstack.com/the-history-of-kubernetes/) - Jun 20, 2018
 
 ### Main dates
 
@@ -33,13 +33,11 @@ Read more:
 - 2018-03-06: First CNCF Graduated Project ([annoucement](https://www.cncf.io/announcement/2018/03/06/cloud-native-computing-foundation-announces-kubernetes-first-graduated-project/), [Blog](https://www.cncf.io/blog/2018/03/06/kubernetes-first-cncf-project-graduate/))
 - 2020-03-25: Kubernetes V1.18 release ([release note](https://github.com/kubernetes/kubernetes/releases/tag/v1.18.6))
 
-### Competitors
+### Alternatives
 
 Other solutions to manage containerized workload:
 
-- [Docker Swarm](https://docs.docker.com/engine/swarm/)
-- [Apache Mesos](https://mesos.apache.org/) ([marathon](https://mesosphere.github.io/marathon/))
-- [HashiCorp Nomad](https://www.nomadproject.io/)
+
 
 ### Main features
 
@@ -63,8 +61,6 @@ Read more:
 - [Bilgin Ibryam - Designing Cloud Native Applications With kubernetes](https://www.slideshare.net/bibryam/designing-cloud-native-applications-with-kubernetes)
 
 ## Design & Architecture
-
-[Community > Kubernetes Design and Architecture](https://github.com/kubernetes/community/blob/master/contributors/design-proposals/architecture/architecture.md)
 
 ### Nodes
 

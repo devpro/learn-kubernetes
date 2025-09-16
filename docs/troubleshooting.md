@@ -1,11 +1,30 @@
 # Troubleshooting
 
+[kubernetes.io/docs/tasks/debug](https://kubernetes.io/docs/tasks/debug/)
+
+## Debug pod
+
+[Troubleshooting Applications](https://kubernetes.io/docs/tasks/debug/debug-application/)
+
 ```bash
-k cluster-info
-k get nodes
+kubectl get pods [-o yaml]
+kubectl describe pod xxx
+kubectl get events [–field-selector type=Warning]
+kubectl logs [--previous] xxx
+kubectl exec [-it] xxx -- yyy
+kubectl debug -it xxx --image=busybox:1.28 --target=yyy
+```
+
+## Debug node
+
+[Troubleshooting Clusters](https://kubernetes.io/docs/tasks/debug/debug-cluster/)
+
+```bash
+kubectl cluster-info
+kubectl get nodes -o wide
 
 # if a node is not Ready
-k describe node <node-name>
+kubectl describe node <node-name>
 ssh <node-name>
 top
 df -h

@@ -1,16 +1,42 @@
-# Releases
+# Versions
 
-→ [Release notes](https://relnotes.k8s.io/)
+[Release notes](https://relnotes.k8s.io/)
 
-Additional readings: [RisingStack - The History of Kubernetes on a Timeline](https://blog.risingstack.com/the-history-of-kubernetes/) - Jun 20, 2018
+## v1.32 (Penelope)
 
-## v1.26: Electrifying
+* [Announcement](https://kubernetes.io/blog/2024/12/11/kubernetes-v1-32-release/) - December 11, 2024
+* [Sysdig What's new](https://www.sysdig.com/blog/kubernetes-1-32-whats-new) - December 5, 2024
+* Enhancements promoted to Stable:
+  * Structured Authorization Configuration
+  * Bound service account token improvements
+  * Custom Resource Field Selectors
+  * Retry Generate Name
+  * Make Kubernetes aware of the LoadBalancer behaviour
+  * Field status.hostIPs added for Pod
+  * [Custom profile in kubectl debug](https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/#custom-profile)
+  * Memory Manager
+  * Support to size memory backed volumes
+  * Improved multi-numa alignment in Topology Manager
+  * Add job creation timestamp to job annotations
+  * Add Pod Index Label for StatefulSets and Indexed Jobs
+  * Auto remove PVCs created by StatefulSet
+
+## v1.26 (Electrifying)
 
 * [Announcement](https://kubernetes.io/blog/2022/12/09/kubernetes-v1-26-release/) - December 09, 2022
 * [Sysdig What's new](https://sysdig.com/blog/kubernetes-1-26-whats-new) - November 30, 2022
 * Main changes
   * [Introducing Validating Admission Policies](https://kubernetes.io/blog/2022/12/20/validating-admission-policies-alpha/)
   * [GA Support for Kubelet Credential Providers](https://kubernetes.io/blog/2022/12/22/kubelet-credential-providers/)
+
+## v1.25 (Combiner)
+
+* [Announcement](https://kubernetes.io/blog/2022/08/23/kubernetes-v1-25-release/) - August 23, 2022
+* Major Themes
+  * Pod Security Admission (PodSecurityPolicy is removed)
+  * [Ephemeral Containers](https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/)
+  * Support for [cgroups v2](https://kubernetes.io/docs/concepts/architecture/cgroups/)
+  * endPort in Network Policy
 
 ## 1.23
 
