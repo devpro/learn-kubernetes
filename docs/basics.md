@@ -22,6 +22,7 @@ Read more:
 - [GitHub](https://github.com/kubernetes/kubernetes/) ([Community](https://github.com/kubernetes/community), [Slack](https://slack.kubernetes.io/), [StackOverflow](https://stackoverflow.com/search?q=kubernetes))
 - [What is Kubernetes? (by Microsoft)](https://aka.ms/k8slearning)
 - [Releases](./releases.md)
+- [From Google to the world: The Kubernetes origin story](https://cloud.google.com/blog/products/containers-kubernetes/from-google-to-the-world-the-kubernetes-origin-story) - Craig McLuckie (2016)
 
 ### Main dates
 

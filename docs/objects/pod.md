@@ -213,3 +213,4 @@ kubectl run --restart=Never --image=busybox static-busybox --dry-run=client -o y
 ### Resources
 
 - [Managing Resources for Containers](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
+- [Docker Containers vs. Kubernetes Pods - Taking a Deeper Look](https://iximiuz.com/en/posts/containers-vs-pods/) - Ivan Velichko (2024)

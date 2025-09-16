@@ -4,27 +4,29 @@
 
 Several options to start with a new Kubernetes cluster:
 
-- Managed Kubernetes Services by Cloud Provider
+- Managed Kubernetes services (by Cloud Provider):
   - [Amazon Elastic Kubernetes Service (EKS)](https://aws.amazon.com/eks/)
   - [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/en-us/products/kubernetes-service/)
   - [Google Kubernetes Engine (GKE)](https://cloud.google.com/kubernetes-engine/)
-- Kubernetes Management Solution
-  - [Rancher](https://www.rancher.com/)
-  - [Red Hat OpenShift](https://www.openshift.com/)
-  - [VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid) (replaced Pivotal Container Service, aka PKS, with the acquisition of Pivotal of VMware)
-- Kubernetes distributions
-  - [K3s](https://k3s.io/) from Rancher on small devices or CI pipelines
-- Kubernetes on workstations
-  - [Docker Desktop](https://www.docker.com/products/kubernetes)  on Windows and MacOS
+- Kubernetes management tools:
+  - [Broadcom VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid) (replaced Pivotal Container Service, aka PKS, with the acquisition of Pivotal of VMware)
+  - [IBM Red Hat OpenShift](https://www.openshift.com/)
+  - [SUSE Rancher](https://www.rancher.com/)
+- [Kubernetes distributions](distributions)
+- Kubernetes installation tools for Production-grade clusters:
+  - kubeadm
+  - kops
+  - kubespray
+- Test clusters
   - [Kind (Kubernetes in Docker)](https://kind.sigs.k8s.io/) ([kubernetes-sigs/kind](https://github.com/kubernetes-sigs/kind)): fast and easy testing of clusters
     - [Kubernetes Podcast #69 kind, with Ben Elder (September 3, 2019)](https://kubernetespodcast.com/episode/069-kind/)
     - [everyday-cheatsheets/kind](https://github.com/devpro/everyday-cheatsheets/blob/main/docs/cncf/kind.md)
   - [Minikube](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/minikube.md) on all machines
   - [MicroK8s](https://microk8s.io/docs) from Canonical on Ubuntu
-
-### Kubernetes CLI
-
-[kubectl](https://github.com/devpro/everyday-cheatsheets/blob/master/docs/kubectl.md) is the command line that will manage Kubernetes, running locally in the command line and targetting the [Kubernetes API server](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/).
+- Kubernetes on workstations
+  - [Docker Desktop](https://www.docker.com/products/kubernetes) on Windows and MacOS
+  - Rancher Desktop
+  - Podman Desktop
 
 ## Cluster creation
 

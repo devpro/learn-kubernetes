@@ -14,7 +14,9 @@ Two types of accounts:
     - identity services
 - Service Accounts
 
--[A Kubernetes engineer’s guide to mTLS by Buoyant](https://buoyant.io/mtls-guide/)
+See:
+
+- [A Kubernetes engineer’s guide to mTLS by Buoyant](https://buoyant.io/mtls-guide/)
 
 ## Certificates
 
@@ -34,6 +36,10 @@ Certificates folders: /etc/kubernetes/pki (control plane), /var/lib/kubelet/pki 
 # check if a user can do actions
 k get pods --as dev-user
 ```
+
+## Operators
+
+- [Kubernetes Security Profiles Operator](https://github.com/kubernetes-sigs/security-profiles-operator)
 
 ## Tools
 
