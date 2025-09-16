@@ -1,11 +1,5 @@
 # Kubernetes related projects
 
-## Argo
-
-> Get stuff done with Kubernetes. Open source Kubernetes native workflows, events, CI and CD
-
-Reference: [argoproj.github.io](https://argoproj.github.io/), [argoproj/argo](https://github.com/argoproj/argo)
-
 ## Cloud Native Application Bundle (CNAB)
 
 > A spec for packaging distributed apps. CNABs facilitate the bundling, installing and managing of container-native apps — and their coupled services.
@@ -17,19 +11,6 @@ Reference: [cnab.io](https://cnab.io/)
 > Cloud Native Buildpacks transform your application source code to images that can run on any cloud. 
 
 Reference: [buildpacks.io](https://buildpacks.io/)
-
-## Cluster API
-
-> The Cluster API is a Kubernetes project to bring declarative, Kubernetes-style APIs to cluster creation, configuration, and management. It provides optional, additive functionality on top of core Kubernetes.
-
-Reference: [kubernetes-sigs/cluster-api](https://github.com/kubernetes-sigs/cluster-api), [The Cluster API Book](https://cluster-api.sigs.k8s.io/)
-
-<details>
-  <summary>Read more</summary>
- 
-  - [Tanzu - The What and the Why of the Cluster API](https://tanzu.vmware.com/content/blog/the-what-and-the-why-of-the-cluster-api) - Mar-14 '19
-  - [CNCF Webinar - Commoditise Kubernetes with cluster-api](https://www.cncf.io/webinars/commoditise-kubernetes-with-cluster-api/) - Jun-26 '20
-</details>
 
 ## Container Network Interface (CNI)
 
@@ -97,26 +78,6 @@ Reference: [cri-o.io](https://cri-o.io/)
 
 Reference: [dapr.io](https://dapr.io/), [dapr/dapr](https://github.com/dapr/dapr), [Announcement](https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-dapr-open-source-project-build-microservice-applications/)
 
-## Envoy
-
-> Envoy is an open source edge and service proxy, designed for cloud-native applications
-
-Reference: [envoyproxy.io](https://www.envoyproxy.io/), [envoyproxy/envoy](https://github.com/envoyproxy/envoy)
-
-Get started with [interactive labs](https://www.envoyproxy.io/try/) (powered by [Katacoda](https://www.katacoda.com/))
-
-## Fluentd
-
-> Fluentd is an open source data collector for unified logging layer. Fluentd allows you to unify data collection and consumption for a better use and understanding of data.
-
-Reference: [fluentd.org](https://www.fluentd.org/)
-
-## Keycloack
-
-> Open Source Identity and Access Management for Modern Applications and Services.
-
-Reference: [keycloak.org](https://www.keycloak.org/)
-
 ## Knative
 
 > Kubernetes-based platform to deploy and manage modern serverless workloads.
@@ -143,20 +104,8 @@ Reference: [book.kubebuilder.io](https://book.kubebuilder.io/introduction.html),
 
 Reference: [opencontainers.org](https://opencontainers.org/), [opencontainers/runtime-spec](https://github.com/opencontainers/runtime-spec)
 
-## Prometheus
-
-> From metrics to insight. Power your metrics and alerting with a leading open-source monitoring solution.
-
-Reference: [prometheus.io](https://prometheus.io/)
-
 ## runc
 
 > runc is a CLI tool for spawning and running containers according to the OCI specification.
 
 Reference: [opencontainers/runc](https://github.com/opencontainers/runc)
-
-## Velero
-
-> Velero is an open source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes cluster resources and persistent volumes.
-
-Reference: [velero.io](https://velero.io/), [vmware-tanzu/velero](https://github.com/vmware-tanzu/velero)

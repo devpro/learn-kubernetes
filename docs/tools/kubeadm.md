@@ -2,7 +2,7 @@
 
 > Kubeadm is a tool built to provide best-practice "fast paths" for creating Kubernetes clusters. It performs the actions necessary to get a minimum viable, secure cluster up and running in a user friendly way. Kubeadm's scope is limited to the local node filesystem and the Kubernetes API, and it is intended to be a composable building block of higher level tools.
 
-Reference: [GitHub](https://github.com/kubernetes/kubeadm)
+[kubernetes/kubeadm](https://github.com/kubernetes/kubeadm)
 
 ## Documentation
 
@@ -23,7 +23,7 @@ File path | Reason
 --------- | ------
 `/etc/kubernetes/manifests/kube-apiserver.yml` | kube-apiserver configuration file
 
-### Command line examples
+## Command line examples
 
 ```bash
 # make sure swap is disabled

@@ -1,18 +1,21 @@
 # Learn Kubernetes
 
-Here you'll find some training material about Kubernetes. It has been initiated in 2020 to prepare for CKA & CKAD exams, updated in 2023 to prepare for CKS.
+Here you'll find some training material about Kubernetes.
+It has been initiated in 2020 to prepare for CKA & CKAD exams, updated in 2023 to prepare for CKS.
 
 ## Content
 
 * [Basics](docs/basics.md)
 * Certifications
-  * [CKA](docs/certifications/cka/README.md)
-  * [CKAD](docs/certifications/ckad/README.md)
-  * [CKS](docs/certifications/cks/README.md)
+  * [CKA](docs/certifications/cka/cka.md)
+  * [CKAD](docs/certifications/ckad/ckad.md)
+  * [CKS](docs/certifications/cks/cks.md)
 * [Installation](docs/installation.md)
 * [Networking](docs/networking.md)
 * [Projects](docs/projects.md)
 * [Releases](docs/releases.md)
+* Sub-projects
+  * [Cluster API](docs/sub-projects/cluster-api/cluster-api.md)
 * Labs
   * [LF - Kubernetes for Developers](docs/labs/labs-lfd259.md)
   * [LF - Kubernetes Fundamentals](docs/labs/labs-lfs258.md)

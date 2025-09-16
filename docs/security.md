@@ -1,5 +1,7 @@
 # Security in Kubernetes
 
+[kubernetes.io/docs/concepts/security](https://kubernetes.io/docs/concepts/security/)
+
 ## Authentication
 
 Two types of accounts:
@@ -32,3 +34,9 @@ Certificates folders: /etc/kubernetes/pki (control plane), /var/lib/kubelet/pki 
 # check if a user can do actions
 k get pods --as dev-user
 ```
+
+## Tools
+
+- [Popeye](https://github.com/derailed/popeye)
+- [kubeaudit](https://github.com/Shopify/kubeaudit)
+- [kube-bench](https://github.com/aquasecurity/kube-bench)

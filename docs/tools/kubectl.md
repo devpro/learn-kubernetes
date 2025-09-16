@@ -1,19 +1,51 @@
-# kubectl (Kubernetes command line tool)
+# kubectl (Kubernetes CLI)
 
-[Kubernetes Documentation/Reference/kubectl CLI](https://kubernetes.io/docs/reference/kubectl/)
+> Command line tool for communicating with a Kubernetes cluster's control plane, using the [Kubernetes API](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/).
 
-> The kubectl command line tool lets you control Kubernetes clusters.
+[kubernetes.io/docs/reference/kubectl](https://kubernetes.io/docs/reference/kubectl/), [kubectl Quick Reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
 
 ## Quick start
 
-- Cheat sheets: [Official](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) ([everyday-cheatsheets](https://github.com/devpro/everyday-cheatsheets/blob/main/docs/cncf/kubectl.md))
-- [Cluster Administration > Managing Resources](https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/)
+- Convention
+
+```bash
+kubectl <action> <object_type> <arguments>
+```
+
+- Common cases
+
+Command                                         | Action
+------------------------------------------------|----------------------------------------------------------------------------------
+`kubectl apply -f <manifest_file>.yaml`         | Apply the Kubernetes definition written in a manifest file (YAML)
+`kubectl cluster-info --context <context_name>` | Display Kubernetes cluster information for a given context (see config.json file)
+`kubectl get nodes`                             | Displays Kubernetes cluster nodes
+`kubectl get ns`                                | Displays namespaces
 
 ## Examples
 
+Get all objects (pods, services, replicasets) having a specific label
+
 ```bash
-# get all objects (pods, services, replicasets) having a specific label
-k get all --selector env=prod
+kubectl get all --selector env=prod
+```
+
+Deploy a nginx web server:
+
+```bash
+# creates a deployment based on nginx image
+kubectl create deployment nginx --image=nginx --port=80
+
+# exposes the service through a nodeport on port 30000
+kubectl create service nodeport nginx --tcp=80:80 --node-port=30000
+
+# displays all objects
+kubectl get all
+
+# accesses the website (should work from WSL and Windows)
+curl localhost:30000
+
+# cleans-up
+kubectl delete svc,deploy nginx
 ```
 
 ## Plugins
