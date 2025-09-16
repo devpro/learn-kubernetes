@@ -41,7 +41,7 @@ kubectl create service nodeport nginx --tcp=80:80 --node-port=30000
 # displays all objects
 kubectl get all
 
-# accesses the website (should work from WSL and Windows)
+# accesses the website
 curl localhost:30000
 
 # cleans-up
@@ -54,8 +54,6 @@ kubectl delete svc,deploy nginx
 - kubectl krew install resource-capacity
 - kubectl krew install lineage
 
-## Q&A
+## Questions
 
-### Differences between Apply, Replace and Patch?
-
-- [Atomist - Kubernetes Apply vs. Replace vs. Patch](https://blog.atomist.com/kubernetes-apply-replace-patch/) - May, 2020
+- [Kubernetes Apply vs. Replace vs. Patch](https://blog.atomist.com/kubernetes-apply-replace-patch/) - Atomist (2020)

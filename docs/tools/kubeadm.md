@@ -2,26 +2,12 @@
 
 > Kubeadm is a tool built to provide best-practice "fast paths" for creating Kubernetes clusters. It performs the actions necessary to get a minimum viable, secure cluster up and running in a user friendly way. Kubeadm's scope is limited to the local node filesystem and the Kubernetes API, and it is intended to be a composable building block of higher level tools.
 
-[kubernetes/kubeadm](https://github.com/kubernetes/kubeadm)
-
-## Documentation
-
-- [Kubernetes Documentation/Getting started/Production environment/Installing Kubernetes with deployment tools/Bootstrapping clusters with kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/)
-- [Kubernetes Documentation/Reference/Setup tools reference/Kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/)
+[kubernetes.io/docs/reference/setup-tools/kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/), [kubernetes/kubeadm](https://github.com/kubernetes/kubeadm), [docs](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/)
 
 ## Configuration
 
-## Configuration folders
-
-Folder | Reason
------- | ------
-`/etc/kubernetes/manifests` | Manifest folder
-
-### Configuration files
-
-File path | Reason
---------- | ------
-`/etc/kubernetes/manifests/kube-apiserver.yml` | kube-apiserver configuration file
+- `/etc/kubernetes/manifests`
+- `/etc/kubernetes/manifests/kube-apiserver.yml`
 
 ## Command line examples
 
