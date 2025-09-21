@@ -6,10 +6,10 @@
 
 ## Providers
 
-Name                               | Resources
------------------------------------|----------
-[K3s](cluster-api-k3s.md)          | -
-[Google Cloud](cluster-api-gcp.md) | GKE
+* [Azure](capz.md)
+* [K3s](cluster-api-k3s.md)
+* [Google Cloud](capg.md)
+* [vSphere](capv.md)
 
 ## Use cases
 
