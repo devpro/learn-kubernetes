@@ -2,6 +2,11 @@
 
 - [The Kubernetes Networking Guide](https://www.tkng.io/)
 
+## CNI Providers
+
+- [Kubernetes Network Plugins](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/)
+- [Comparing Kubernetes CNI providers](https://kubevious.io/blog/post/comparing-kubernetes-container-network-interface-cni-providers) by Kubevious (2021)
+
 ## Linux basics
 
 ```bash
