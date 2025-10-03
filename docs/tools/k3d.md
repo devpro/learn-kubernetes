@@ -6,13 +6,15 @@
 
 ## Installation
 
-- Download & install latest release (ref. [Install current latest release](https://k3d.io/stable/#install-current-latest-release))
+🌐 [k3d.io/installation](https://k3d.io/stable/#installation)
+
+Install the latest release:
 
 ```bash
 wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 ```
 
-## Basic commands
+## Common commands
 
 Command                          | Action
 ---------------------------------|------------------
@@ -24,33 +26,51 @@ Command                          | Action
 
 ## Getting started
 
-- Create a cluster
+### Quick walkthrough with the default parameters
+
+Create a single node cluster:
 
 ```bash
-# creates a cluster
-k3d cluster create mycluster -p "8081:80@loadbalancer" -p "8082:443@loadbalancer" --agents 2
-
-# displays cluster information (kubectl configuration is automatically updated and set to use the new cluster context)
-kubectl cluster-info
-
-# ensures coredns and traefik (ingress controller) are deployed by default (k3s behavior)
-kubectl get deploy -n kube-system
-
-# (optional) writes and uses specific kubectl configuration
-export KUBECONFIG="$(k3d kubeconfig write mycluster)"
+k3d cluster create mycluster
 ```
 
-- Deploy a basic workflow (ref. [Exposing Services](https://k3d.io/v5.1.0/usage/exposing_services/))
+> [!NOTE]
+> Note: kubectl configuration (`~/.kube/config`) is automatically updated and set to use the new cluster context, look at [handling kubeconfigs](https://k3d.io/stable/usage/kubeconfig/) for more options
+
+Display cluster information:
 
 ```bash
-# creates a nginx (web server) deployment
-kubectl create deployment nginx --image=nginx
+kubectl cluster-info
+kubectl get nodes
+kubectl get deploy -n kube-system
+```
 
-# exposes the deployment with a service
-kubectl create service clusterip nginx --tcp=80:80
+> [!NOTE]
+> Note: coredns, local-path-provisioner, metrics-server, traefik are deployed
 
-# provides an ingress to the service
-cat <<EOF | kubectl apply -f -
+Finally, when we're done, delete the cluster and remove the configuration:
+
+```bash
+k3d cluster delete mycluster
+```
+
+### Two worker nodes cluster with ingresses
+
+🌐 [Exposing Services](https://k3d.io/stable/usage/exposing_services/)
+
+Create the cluster and expose HTTP/HTTPS ports:
+
+```bash
+k3d cluster create mycluster -p "8081:80@loadbalancer" -p "8082:443@loadbalancer" --agents 2
+```
+
+Install NGINX in the cluster:
+
+```bash
+kubectl create ns nginx
+kubectl create deployment nginx --image=nginx -n nginx
+kubectl create service clusterip nginx --tcp=80:80 -n nginx
+cat <<EOF | kubectl apply -n nginx -f -
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -59,51 +79,46 @@ metadata:
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-    - host: nginx.dev.local
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: nginx
-                port:
-                  number: 80
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: nginx
+            port:
+              number: 80
 EOF
+```
 
-# checks everything is ok
-kubectl get svc,pod,deploy,ingress
+Check everything is ok:
 
-# makes sure the website can be reached
+```bash
+kubectl get svc,pod,deploy,ingress -nginx
 curl localhost:8081/
 ```
 
-- Update `hosts` file
+Open [localhost:8081](http://localhost:8081) in a browser.
 
-```hosts
-127.0.0.1  nginx.dev.local
-```
-
-- Make sure ingress is working
+Clean-up everything:
 
 ```bash
-curl nginx.dev.local:8081/
-```
-
-- Clean-up
-
-```bash
-# deletes the cluster
+kubectl delete ns nginx
 k3d cluster delete mycluster
 ```
 
-## Advanced usage
+## Tips
 
-- [Kubernetes - K3D with Load Balancer](https://niehaitao.github.io/ops/ops-k3d-lb/)
-
-- CoreDNS configuration
+Look at the configuration of CoreDNS:
 
 ```bash
-# displays coredns configmap
 kubectl -n kube-system get configmap coredns -o yaml
 ```
+
+Optionally, write and use specific kubectl configuration:
+
+```bash
+export KUBECONFIG="$(k3d kubeconfig write mycluster)"
+```
+
+[Create Trafik V2 load balancer on a K3D kubernetes](https://niehaitao.github.io/ops/ops-k3d-lb/)
