@@ -16,13 +16,13 @@ wget -q -O - https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
 ## Common commands
 
-Command                          | Action
----------------------------------|------------------
-`k3d cluster create <mycluster>` | Create a cluster
-`k3d cluster list`               | List the clusters
-`k3d cluster stop <mycluster>`   | Stops a cluster
-`k3d cluster start <mycluster>`  | Starts a cluster
-`k3d cluster delete <mycluster>` | Delete a cluster
+Command                     | Action
+----------------------------|-------------------
+`k3d cluster create <name>` | Creates a cluster
+`k3d cluster list`          | Lists the clusters
+`k3d cluster stop <name>`   | Stops a cluster
+`k3d cluster start <name>`  | Starts a cluster
+`k3d cluster delete <name>` | Deletes a cluster
 
 ## Getting started
 
@@ -104,6 +104,44 @@ Clean-up everything:
 
 ```bash
 kubectl delete ns nginx
+k3d cluster delete mycluster
+```
+
+### Play a game on internet from a local cluster with ngrok
+
+Create the cluster and expose HTTP/HTTPS ports:
+
+```bash
+k3d cluster create mycluster --agents 1
+```
+
+Deploy [ngrok Kubernetes Operator](https://kwt.devpro.fr/application-guides/networking/ngrok.html).
+
+Create a domain in ngrok dashboard and set the value for `NGROK_DOMAIN`.
+
+Install the game in the cluster:
+
+```bash
+kubectl create ns demo
+wget -O- -q https://raw.githubusercontent.com/devpro/tech-notes/main/samples/kubernetes/manifests/game-2048.yml \
+| sed -e 's/XXX_INGRESS_CLASS/ngrok/g' \
+| sed -e "s/XXX_DOMAIN/$NGROK_DOMAIN/g" \
+| kubectl apply -n demo -f -
+```
+
+Check everything is ok:
+
+```bash
+kubectl get svc,pod,deploy,ingress -n demo
+curl -L $NGROK_DOMAIN
+```
+
+Open "NGROK_DOMAIN" in a browser.
+
+Clean-up everything:
+
+```bash
+kubectl delete ns demo
 k3d cluster delete mycluster
 ```
 
