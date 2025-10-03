@@ -1,10 +1,12 @@
 # kubectl (Kubernetes CLI)
 
-> Command line tool for communicating with a Kubernetes cluster's control plane, using the [Kubernetes API](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/).
+> Command line tool for communicating with a Kubernetes cluster's control plane, using the [Kubernetes API](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
 
 [docs](https://kubernetes.io/docs/reference/kubectl/), [quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/), [code](https://github.com/kubernetes/kubernetes/tree/master/pkg/kubectl)
 
 ## Quick start
+
+- Installation: [Linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-kubectl-binary-with-curl-on-linux)
 
 - Convention
 
@@ -268,8 +270,8 @@ kubectl delete pods $(kubectl get pods -o=name | grep mypodname | sed "s/^.\{4\}
 
 ### Known issues
 
-Issue | Advice
------ | ------
+Issue                                        | Advice
+---------------------------------------------|---------------------------------------------------------------------------------
 Pod with status `CreateContainerConfigError` | Look at the pod logs (`kubectl logs podxxx`), the issue should be detailed there
 
 ## Plugins
