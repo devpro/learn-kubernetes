@@ -43,10 +43,12 @@ Display cluster information:
 kubectl cluster-info
 kubectl get nodes
 kubectl get deploy -n kube-system
+kubectl get sc
+kubectl get ingressclass
 ```
 
 > [!NOTE]
-> Note: coredns, local-path-provisioner, metrics-server, traefik are deployed
+> Note: coredns, local-path-provisioner, metrics-server, traefik are deployed by default
 
 Finally, when we're done, delete the cluster and remove the configuration:
 
