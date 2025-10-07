@@ -1,6 +1,6 @@
 # Trivy
 
-📝 Read more: [devpro/tech-notes](https://github.com/devpro/tech-notes/blob/main/docs/companies/aqua/trivy.md)
+📝 Read more: [devpro/tech-notes](https://tech.devpro.fr/organizations/companies/aqua/trivy)
 
 ## Scan images
 
